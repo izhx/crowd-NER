@@ -4,6 +4,7 @@ from typing import Dict, Tuple, List, Any, cast, Union
 
 import torch
 from torch.nn import Module, Parameter, ParameterList, Linear, Embedding, init
+from torch.nn.modules.loss import CrossEntropyLoss
 
 from nmnlp.core import Vocabulary
 from nmnlp.core.trainer import format_metric, output
@@ -13,6 +14,7 @@ from nmnlp.modules.adapter import AdapterBertModel
 from nmnlp.modules.dropout import WordDropout
 from nmnlp.modules.encoder import LstmEncoder
 
+from grl import GradientReverseLayer
 from metric import ExactMatch
 from conditional_random_field import ConditionalRandomField
 
@@ -20,7 +22,7 @@ from conditional_random_field import ConditionalRandomField
 def build_model(name, **kwargs):
     m = {
         'ad': AdapterModel,
-        'pga': PGAdapterModel,
+        'adv': AdvModel,
     }
     return m[name](**kwargs)
 
@@ -39,7 +41,7 @@ class CRF(Module):
         num_tags: int,
         input_dim: int = 0,
         top_k: int = 1,
-        reduction='sum',
+        reduction='mean',
         constraints: List[Tuple[int, int]] = None,
         include_start_end_transitions: bool = True
     ) -> None:
@@ -58,16 +60,10 @@ class CRF(Module):
         labels: torch.LongTensor = None, reduction: str = None,
     ) -> Dict[str, Any]:
         bool_mask = mask.bool()
+
         if self.tag_projection:
             inputs = self.tag_projection(inputs)
         scores = inputs * mask.unsqueeze(-1)
-
-        # if self.training:
-        #     tags = None
-        # else:
-        best_paths = self.base.viterbi_tags(scores, bool_mask, top_k=self.top_k)
-        # Just get the top tags and ignore the scores.
-        tags = cast(List[List[int]], [x[0][0] for x in best_paths])
 
         if labels is None:
             loss = torch.tensor(0, dtype=torch.float, device=inputs.device)
@@ -75,19 +71,11 @@ class CRF(Module):
             # Add negative log-likelihood as loss
             loss = self.base(scores, labels, bool_mask, reduction)
 
-        return dict(scores=scores, predicted_tags=tags, loss=loss)
-
-    def predict(self, inputs: torch.FloatTensor, mask: torch.LongTensor) -> List:
-        bool_mask = mask.bool()
-        if self.tag_projection:
-            inputs = self.tag_projection(inputs)
-        scores = inputs * mask.unsqueeze(-1)
-
         best_paths = self.base.viterbi_tags(scores, bool_mask, top_k=self.top_k)
         # Just get the top tags and ignore the scores.
         tags = cast(List[List[int]], [x[0][0] for x in best_paths])
 
-        return tags
+        return dict(scores=scores, predicted_tags=tags, loss=loss)
 
 
 class Tagger(Module):
@@ -102,16 +90,13 @@ class Tagger(Module):
         lstm_size: int = 400,
         input_namespace: str = 'words',
         label_namespace: str = 'tags',
-        top_k: int = 1,
-        reduction: str = 'mean',
         save_embedding: bool = False,
         allowed: List[Tuple[int, int]] = None,
         **kwargs
     ) -> None:
         super().__init__()
-        self.word_embedding = build_word_embedding(num_embeddings=vocab.size_of(input_namespace),
-                                                   vocab=vocab,
-                                                   **word_embedding)
+        self.word_embedding = build_word_embedding(
+            num_embeddings=vocab.size_of(input_namespace), vocab=vocab, **word_embedding)
         feat_dim: int = self.word_embedding.output_dim
 
         if transform_dim > 0:
@@ -126,7 +111,7 @@ class Tagger(Module):
         self.tag_projection = Linear(self.lstm.output_dim, num_tags)
 
         self.word_dropout = WordDropout(0.20)
-        self.crf = CRF(num_tags, 0, top_k, reduction, allowed)
+        self.crf = CRF(num_tags, constraints=allowed)
         self.metric = ExactMatch(
             vocab.index_of('O', label_namespace),
             vocab.token_to_index[label_namespace],
@@ -154,18 +139,11 @@ class Tagger(Module):
 
     def add_metric(self, output_dict, tags, lengths, prefix=''):
         prediction = tensor_like(output_dict['predicted_tags'], tags)
-        # prediction[:, 0] = 1
-        # tags[:, 0] = 1
-        # prediction[:, lengths - 1] = 1
-        # tags[:, lengths - 1] = 1
         output_dict['metric'] = getattr(self, prefix + "metric")(prediction, tags, lengths)
         return output_dict
 
     def before_train_once(self, kwargs):
         self.epoch = kwargs['epoch']
-
-    def after_process_one(self, metric, kwargs):
-        output(format_metric(metric))
 
     def after_epoch_end(self, kwargs):
         writer, metric = kwargs['self'].writer, kwargs['metric']
@@ -228,16 +206,16 @@ class AdapterModel(Tagger):
         return
 
 
-class PGAdapterModel(AdapterModel):
+class AdvModel(AdapterModel):
     def __init__(self,
                  vocab: Vocabulary,
                  annotator_dim: int = 8,
-                 annotator_num: int = 70,
+                 annotator_num: int = 47,
                  adapter_size: int = 128,
                  num_adapters: int = 6,
-                 batched_param: bool = False,
+                 lstm_size: int = 400,
                  **kwargs):
-        super().__init__(vocab, adapter_size, [True] * num_adapters, **kwargs)
+        super().__init__(vocab, adapter_size, [True] * num_adapters, lstm_size=lstm_size, **kwargs)
         w = torch.randn(annotator_dim).expand(annotator_num, -1).contiguous()
         self.annotator_embedding = Embedding(
             annotator_num, annotator_dim, _weight=w)  # max_norm=1.0
@@ -248,10 +226,13 @@ class PGAdapterModel(AdapterModel):
             Parameter(torch.Tensor(num_adapters, 2, dim, adapter_size, annotator_dim)),
             Parameter(torch.zeros(num_adapters, 2, dim, annotator_dim)),
         ])
+        self.adv_lstm = LstmEncoder(dim, lstm_size, num_layers=1)
+        self.annotator_projection = Linear(self.adv_lstm.output_dim, annotator_num)
+        self.ce = CrossEntropyLoss()
+        self.grl = GradientReverseLayer()
         self.reset_parameters()
         self.adapter_size = adapter_size
         self.num_adapters = num_adapters
-        self.batched_param = batched_param
 
     def reset_parameters(self):
         bound = 1e-2
@@ -260,7 +241,7 @@ class PGAdapterModel(AdapterModel):
 
     def set_annotator(self, aid: torch.LongTensor):
         if self.training and aid is not None and aid[0].item() != -1:  # expert = -1
-            ann_emb = self.annotator_embedding(aid[0] if self.batched_param else aid)
+            ann_emb = self.annotator_embedding(aid[0])
         elif hasattr(self, 'scores'):
             weight = self.scores.softmax(0).unsqueeze(-1)
             ann_emb = self.annotator_embedding.weight.mul(weight).sum(0)
@@ -293,5 +274,27 @@ class PGAdapterModel(AdapterModel):
             self.set_annotator(aid)
         else:
             self.set_adapter_parameter(embedding)
-        output_dict = super().forward(words, lengths, mask, tags, **kwargs)
+
+        # return super().forward(words, lengths, mask, tags, **kwargs)
+
+        feature = self.word_embedding(words, mask=mask, **kwargs)
+        if self.word_transform is not None:
+            feature = self.word_transform(feature)
+        feature = self.word_dropout(feature)
+        special_feature = self.lstm(feature, lengths, **kwargs)
+        common_feature = self.adv_lstm(feature, lengths, **kwargs)
+        all_feature = special_feature + common_feature
+        scores = self.tag_projection(all_feature)
+        output_dict: Dict = self.crf(scores, mask, tags)
+
+        if aid is not None:
+            sentence_feature = self.grl(common_feature[:, 0])
+            ann_scores = self.annotator_projection(sentence_feature)
+            loss_2 = self.ce(ann_scores, aid)
+            loss_1 = output_dict.pop('loss')
+            loss = loss_1 + loss_2
+            output_dict.update(loss=loss)
+
+        if tags is not None and tags.dim() == 2:
+            output_dict = self.add_metric(output_dict, tags, lengths)
         return output_dict

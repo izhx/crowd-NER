@@ -38,13 +38,21 @@ class CoNLL03Crowd(DataSet):
 
         return dict(train=train_set, dev=dev_set)
 
+    @staticmethod
+    def to_instance(words, tags, tid, aid=None):
+        words = ["[CLS]"] + words + ["[SEP]"]
+        tags = ["O"] + tags + ["O"]
+        ins = dict(words=words, tags=tags, tid=tid, text=copy.deepcopy(words))
+        if aid is not None:
+            ins.update(aid=aid)
+        return ins
+
     @classmethod
     def single_label(cls, path) -> 'CoNLL03Crowd':
         data = list()
-        for lines in read_lines(path):
-            data.append(dict(
-                words=[li[0] for li in lines], tags=[li[1] for li in lines],
-                text=[li[0] for li in lines]))
+        for tid, lines in enumerate(read_lines(path)):
+            data.append(cls.to_instance(
+                [li[0] for li in lines], [li[1] for li in lines], tid))
         return cls(data)
 
     @classmethod
@@ -55,9 +63,8 @@ class CoNLL03Crowd(DataSet):
             for i in range(1, len(lines[0])):
                 tags = [li[i] for li in lines]
                 if len(set(tags)) > 1:
-                    data.append(dict(
-                        words=copy.deepcopy(words), tags=tags, aid=i-1,
-                        tid=tid, text=copy.deepcopy(words)))
+                    data.append(cls.to_instance(
+                        copy.deepcopy(words), tags, tid, aid=i-1))
         return cls(data)
 
 
