@@ -1,0 +1,3 @@
+[submodule "nmnlp"]
+	path = nmnlp
+	url = https://github.com/izhx/nmnlp.git
