@@ -93,9 +93,9 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
         trainer.train()
         output(model.metric.data_info)
 
-    # trainer.load()
-    # test_metric = trainer.test(dataset.test)
-    # return model.metric.best, test_metric
+    trainer.load()
+    test_metric = trainer.test(dataset.test)
+    return model.metric.best, test_metric
 
 
 def main():
@@ -120,7 +120,8 @@ def main():
 
     cache_name = _ARGS.yaml
     if not os.path.exists(cache_path(cache_name)):
-        dataset = argparse.Namespace(**CoNLL03Crowd.build(**cfg.data))
+        dataset = argparse.Namespace(
+            **CoNLL03Crowd.build(**cfg.data, tokenizer=tokenizer))
         vocab = Vocabulary.from_data(dataset, **vocab_kwargs)
         vocab.set_field(['O', 'B-LOC', 'I-LOC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC'], 'tags')
 
@@ -134,6 +135,7 @@ def main():
 
     dataset.train.index_with(vocab)
     dataset.dev.index_with(vocab)
+    dataset.test.index_with(vocab)
 
     cfg.model['allowed'] = allowed_transition(vocab)
     cfg.model['output_prediction'] = _ARGS.out
