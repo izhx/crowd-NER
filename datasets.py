@@ -75,7 +75,7 @@ def word_piece_tokenzie(texts, tags, tokenizer) -> Tuple[List[str], List[str]]:
     if tokenizer is None:
         return texts, tags
 
-    words, expanded_tags = list(), list()
+    words, expanded_tags = ["[CLS]"], ["O"]
     for text, tag in zip(texts, tags):
         pieces = tokenizer.tokenize(text)
         if tag.startswith("B-"):
@@ -85,6 +85,9 @@ def word_piece_tokenzie(texts, tags, tokenizer) -> Tuple[List[str], List[str]]:
             piece_tags = [tag for _ in pieces]
         words.extend(pieces)
         expanded_tags.extend(piece_tags)
+    else:
+        words.append("[SEP]")
+        expanded_tags.append("O")
 
     return words, expanded_tags
 
