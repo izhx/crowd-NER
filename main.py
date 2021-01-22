@@ -103,8 +103,10 @@ def main(seed):
         tokenizer = None
 
     cache_name = _ARGS.yaml
+    prefix = _ARGS.name if _ARGS.name else _ARGS.yaml
     if _ARGS.extra_gold is not None:
         cache_name += f"-s-{seed}-g{_ARGS.extra_gold}"
+        prefix += f"-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
 
     if not os.path.exists(cache_path(cache_name)):
@@ -128,7 +130,6 @@ def main(seed):
     cfg.model['allowed'] = allowed_transition(vocab)
     cfg.model['output_prediction'] = _ARGS.out
 
-    prefix = _ARGS.name if _ARGS.name else _ARGS.yaml
     if _ARGS.debug:
         log_dir = None
         cfg.trainer['save_strategy'] = 'no'

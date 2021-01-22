@@ -44,11 +44,11 @@ class CoNLL03Crowd(DataSet):
             train_set = cls(train)
         else:
             crowd = cls.crowd_label(data_dir + name, tokenizer, 1)
-            gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer, extra_gold)
-            if isinstance(extra_gold, float):
-                extra_gold = int(len(gold) * extra_gold)
-            sampled = random.sample(gold, extra_gold)
-            print(f"--- got {extra_gold} gold instances.")
+            gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
+            if extra_gold <= 1:
+                extra_gold = len(gold) * extra_gold
+            sampled = random.sample(gold, int(extra_gold))
+            print(f"--- got {int(extra_gold)} gold instances.")
             train_set = cls(crowd + sampled)
 
         return dict(train=train_set, dev=dev_set, test=test_set)
