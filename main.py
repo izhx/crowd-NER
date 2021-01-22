@@ -5,14 +5,13 @@ import os
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-p1',
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-semi',
                          help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='3', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
 _ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
 _ARG_PARSER.add_argument('--name', '-n', type=str, default=None, help='save name.')
 _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random seed')
-_ARG_PARSER.add_argument('--all', '-a', type=bool, default=False, help='all seed ?')
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
 
 _ARG_PARSER.add_argument('--adapter_size', type=int, default=None)
@@ -83,7 +82,7 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
     return model.metric.best, test_metric
 
 
-def main():
+def main(seed):
     cfg = argparse.Namespace(**load_yaml(f"./dev/config/{_ARGS.yaml}.yml"))
 
     device = torch.device("cuda:0")
@@ -104,8 +103,8 @@ def main():
         tokenizer = None
 
     cache_name = _ARGS.yaml
-    if isinstance(_ARGS.extra_gold, float):
-        cache_name += f"-g{_ARGS.extra_gold}"
+    if _ARGS.extra_gold is not None:
+        cache_name += f"-s-{seed}-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
 
     if not os.path.exists(cache_path(cache_name)):
@@ -130,7 +129,6 @@ def main():
     cfg.model['output_prediction'] = _ARGS.out
 
     prefix = _ARGS.name if _ARGS.name else _ARGS.yaml
-    info = list()
     if _ARGS.debug:
         log_dir = None
         cfg.trainer['save_strategy'] = 'no'
@@ -150,20 +148,14 @@ def main():
         cfg.model['share_param'] = _ARGS.share_param
         prefix += '-share'
 
-    seeds = SEEDS if _ARGS.all else [_ARGS.seed]
-    for seed in seeds:
-        print('\n')
-        set_seed(seed)
-        cfg.trainer['prefix'] = f"{prefix}_{seed}"
-        if 'pre_train_path' not in cfg.trainer:
-            cfg.trainer['pre_train_path'] = os.path.normpath(
-                f"./dev/model/{cfg.trainer['prefix']}_best.pth")
-        writer = Writer(log_dir, str(seed), 'tensorboard') if log_dir else None
-        info.append(run_once(cfg, dataset, vocab, device, writer, seed))
-
-    # print('\nAVG DEV: ', merge_dicts([i[0] for i in info], avg=True))
-    # print('AVG TEST: ', merge_dicts([i[1] for i in info], avg=True))
+    cfg.trainer['prefix'] = f"{prefix}_{seed}"
+    if 'pre_train_path' not in cfg.trainer:
+        cfg.trainer['pre_train_path'] = os.path.normpath(
+            f"./dev/model/{cfg.trainer['prefix']}_best.pth")
+    writer = Writer(log_dir, str(seed), 'tensorboard') if log_dir else None
+    return run_once(cfg, dataset, vocab, device, writer, seed)
 
 
 if __name__ == "__main__":
-    main()
+    set_seed(_ARGS.seed)
+    main(_ARGS.seed)

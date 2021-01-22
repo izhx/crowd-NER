@@ -45,7 +45,11 @@ class CoNLL03Crowd(DataSet):
         else:
             crowd = cls.crowd_label(data_dir + name, tokenizer, 1)
             gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer, extra_gold)
-            train_set = cls(crowd + gold)
+            if isinstance(extra_gold, float):
+                extra_gold = int(len(gold) * extra_gold)
+            sampled = random.sample(gold, extra_gold)
+            print(f"--- got {extra_gold} gold instances.")
+            train_set = cls(crowd + sampled)
 
         return dict(train=train_set, dev=dev_set, test=test_set)
 
@@ -55,14 +59,12 @@ class CoNLL03Crowd(DataSet):
         return ins
 
     @classmethod
-    def single_label(cls, path, tokenizer, ratio=None) -> List[Dict[str, Any]]:
+    def single_label(cls, path, tokenizer) -> List[Dict[str, Any]]:
         data = list()
         for tid, lines in enumerate(read_lines(path)):
             words, tags = word_piece_tokenzie(
                 [li[0] for li in lines], [li[-1] for li in lines], tokenizer)
             data.append(cls.to_instance(words, tags, tid))
-        if ratio:
-            data = random.sample(data, int(len(data) * ratio))
         return data
 
     @classmethod
