@@ -15,6 +15,12 @@ _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random see
 _ARG_PARSER.add_argument('--all', '-a', type=bool, default=False, help='all seed ?')
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
 
+_ARG_PARSER.add_argument('--adapter_size', type=int, default=None)
+_ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
+_ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
+_ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
+_ARG_PARSER.add_argument('--share_param', type=bool, default=None)
+
 _ARGS = _ARG_PARSER.parse_args()
 
 os.environ['CUDA_VISIBLE_DEVICES'] = _ARGS.cuda
@@ -128,6 +134,16 @@ def main():
         # if not os.path.exists(log_dir):
         #     os.mkdir(log_dir)
         log_dir = None
+
+    for k in ('lstm_size', 'adapter_size', 'pgn_layers', 'worker_dim'):
+        p = getattr(_ARGS, k)
+        if p is not None:
+            cfg.model[k] = p
+            prefix += f'-l{p}'
+
+    if _ARGS.share_param is not None:
+        cfg.model['share_param'] = _ARGS.share_param
+        prefix += 'share'
 
     seeds = SEEDS if _ARGS.all else [_ARGS.seed]
     for seed in seeds:

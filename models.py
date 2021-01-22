@@ -3,13 +3,12 @@ import shutil
 from typing import Dict, Tuple, List, Any, cast, Union
 
 import torch
-from torch.nn import Module, Parameter, ParameterList, Linear, Embedding, init
-from torch.nn.modules.loss import CrossEntropyLoss
+import torch.nn as nn
+from torch.nn import Parameter, ParameterList, init
 
 from nmnlp.core import Vocabulary
 from nmnlp.core.trainer import format_metric, output
 from nmnlp.embedding import build_word_embedding
-from nmnlp.modules.linear import NonLinear
 from nmnlp.modules.adapter import AdapterBertModel
 from nmnlp.modules.dropout import WordDropout
 from nmnlp.modules.encoder import LstmEncoder
@@ -23,7 +22,8 @@ def build_model(name, **kwargs):
     m = {
         'ad': AdapterModel,
         'pg': PGNModel,
-        'adv': AdvModel,
+        'lstm': LSTMCrowd,
+        'ft': Finetune
     }
     return m[name](**kwargs)
 
@@ -35,7 +35,7 @@ def tensor_like(data, t: torch.Tensor) -> torch.Tensor:
     return tensor
 
 
-class CRF(Module):
+class CRF(nn.Module):
     """ CRF classifier."""
     def __init__(
         self,
@@ -48,7 +48,7 @@ class CRF(Module):
     ) -> None:
         super().__init__()
         if input_dim > 0:
-            self.tag_projection = Linear(input_dim, num_tags)
+            self.tag_projection = nn.Linear(input_dim, num_tags)
         else:
             self.tag_projection = None
 
@@ -61,10 +61,13 @@ class CRF(Module):
         labels: torch.LongTensor = None, reduction: str = None,
     ) -> Dict[str, Any]:
         bool_mask = mask.bool()
-
         if self.tag_projection:
             inputs = self.tag_projection(inputs)
         scores = inputs * mask.unsqueeze(-1)
+
+        best_paths = self.base.viterbi_tags(scores, bool_mask, top_k=self.top_k)
+        # Just get the top tags and ignore the scores.
+        tags = cast(List[List[int]], [x[0][0] for x in best_paths])
 
         if labels is None:
             loss = torch.tensor(0, dtype=torch.float, device=inputs.device)
@@ -72,22 +75,15 @@ class CRF(Module):
             # Add negative log-likelihood as loss
             loss = self.base(scores, labels, bool_mask, reduction)
 
-        best_paths = self.base.viterbi_tags(scores, bool_mask, top_k=self.top_k)
-        # Just get the top tags and ignore the scores.
-        tags = cast(List[List[int]], [x[0][0] for x in best_paths])
-
         return dict(scores=scores, predicted_tags=tags, loss=loss)
 
 
-class Tagger(Module):
-    """
-    a
-    """
+class Tagger(nn.Module):
+    """ a """
     def __init__(
         self,
         vocab: Vocabulary,
         word_embedding: Dict[str, Any],
-        transform_dim: int = 0,
         lstm_size: int = 400,
         input_namespace: str = 'words',
         label_namespace: str = 'tags',
@@ -98,18 +94,18 @@ class Tagger(Module):
         super().__init__()
         self.word_embedding = build_word_embedding(
             num_embeddings=vocab.size_of(input_namespace), vocab=vocab, **word_embedding)
-        feat_dim: int = self.word_embedding.output_dim
 
-        if transform_dim > 0:
-            self.word_transform = NonLinear(feat_dim, transform_dim)
-            feat_dim: int = transform_dim
+        if lstm_size > 0:
+            self.lstm = LstmEncoder(
+                self.word_embedding.output_dim, lstm_size,
+                num_layers=1, bidirectional=True)
+            feat_dim = self.lstm.output_dim
         else:
-            self.word_transform = None
-
-        self.lstm = LstmEncoder(feat_dim, lstm_size, num_layers=1)
+            self.lstm = lambda *args: args[0]
+            feat_dim = self.word_embedding.output_dim
 
         num_tags = vocab.size_of(label_namespace)
-        self.tag_projection = Linear(self.lstm.output_dim, num_tags)
+        self.tag_projection = nn.Linear(feat_dim, num_tags)
 
         self.word_dropout = WordDropout(0.20)
         self.crf = CRF(num_tags, constraints=allowed)
@@ -126,16 +122,16 @@ class Tagger(Module):
         mask: torch.Tensor = None, tags: torch.Tensor = None, **kwargs
     ) -> Dict[str, Any]:
         embedding = self.word_embedding(words, mask=mask, **kwargs)
-        if self.word_transform is not None:
-            embedding = self.word_transform(embedding)
         embedding = self.word_dropout(embedding)
-        feature = self.lstm(embedding, lengths, **kwargs)
+        feature = self.lstm(embedding, lengths)
         scores = self.tag_projection(feature)
-        output_dict = self.crf(scores, mask, tags)
+        output_dict = self.decode(scores, mask, tags, lengths)
+        return output_dict
 
-        if tags is not None and tags.dim() == 2:
-            output_dict = self.add_metric(output_dict, tags, lengths)
-
+    def decode(self, scores, mask, labels, lengths):
+        output_dict = self.crf(scores, mask, labels)
+        if labels is not None:
+            output_dict = self.add_metric(output_dict, labels, lengths)
         return output_dict
 
     def add_metric(self, output_dict, tags, lengths, prefix=''):
@@ -147,10 +143,7 @@ class Tagger(Module):
         self.epoch = kwargs['epoch']
 
     def after_epoch_end(self, kwargs):
-        writer, metric = kwargs['self'].writer, kwargs['metric']
-        output(format_metric(metric))
-        if writer:
-            writer.add_scalars('Metric_Train', metric, kwargs['epoch'])
+        output(f"Train {format_metric(kwargs['metric'])}")
 
     def save(self, path):
         state_dict = self.state_dict()
@@ -182,6 +175,7 @@ class AdapterModel(Tagger):
         self.word_embedding = AdapterBertModel(
             self.word_embedding.bert, adapter_size, external_param)
         self.output_prediction = output_prediction
+        # self.out_dir = 'dev/out/ada-vote_123/'
 
     def drop_param(_, name: str):
         return super().drop_param(name) and 'LayerNorm' not in name
@@ -198,10 +192,13 @@ class AdapterModel(Tagger):
         if self.training or not self.output_prediction:
             return
         epoch, batch, out = kwargs['epoch'], kwargs['batch'], kwargs['output_dict']
-        path = f"{self.out_dir}/{'test' if epoch is None else 'dev'}-{self.epoch}.txt"
-        with open(path, mode='a') as file:
+        name = f"{'test' if epoch is None else 'dev'}-{self.epoch}"
+        if hasattr(self, 'worker'):
+            name += f"-w{self.worker}"
+        with open(f"{self.out_dir}/{name}.txt", mode='a') as file:
             for ins, pred in zip(batch, out['predicted_tags']):
-                for w, li, pi, in zip(ins['text'], ins['tags'], pred):
+                ziped = list(zip(ins['text'], ins['labels'], pred))[1:-1]
+                for w, li, pi, in ziped:
                     file.write(f"{w}\t{self.id_to_label[li]}\t{self.id_to_label[pi]}\n")
                 file.write('\n')
         return
@@ -210,33 +207,33 @@ class AdapterModel(Tagger):
 class PGNModel(AdapterModel):
     def __init__(self,
                  vocab: Vocabulary,
-                 annotator_dim: int = 8,
-                 annotator_num: int = 47,
+                 worker_dim: int = 8,
+                 worker_num: int = 47,
                  adapter_size: int = 128,
-                 num_adapters: int = 12,
+                 pgn_layers: int = 12,
                  batched_param: bool = False,
                  share_param: bool = False,
                  same_embedding: bool = False,
                  **kwargs):
-        super().__init__(vocab, adapter_size, [True] * num_adapters, **kwargs)
+        super().__init__(vocab, adapter_size, [True] * pgn_layers, **kwargs)
         if same_embedding:
-            w = torch.randn(annotator_dim).expand(annotator_num, -1).contiguous()
+            w = torch.randn(worker_dim).expand(worker_num, -1).contiguous()
         else:
-            w = torch.randn(annotator_num, annotator_dim)
-        self.annotator_embedding = Embedding(
-            annotator_num, annotator_dim, _weight=w)  # max_norm=1.0
+            w = torch.randn(worker_num, worker_dim)
+        self.worker_embedding = nn.Embedding(
+            worker_num, worker_dim, _weight=w)  # max_norm=1.0
 
         dim = self.word_embedding.output_dim
-        size = [2] if share_param else [num_adapters, 2]
+        size = [2] if share_param else [pgn_layers, 2]
         self.weight = ParameterList([
-            Parameter(torch.Tensor(*size, adapter_size, dim, annotator_dim)),
-            Parameter(torch.zeros(*size, adapter_size, annotator_dim)),
-            Parameter(torch.Tensor(*size, dim, adapter_size, annotator_dim)),
-            Parameter(torch.zeros(*size, dim, annotator_dim)),
+            Parameter(torch.Tensor(*size, adapter_size, dim, worker_dim)),
+            Parameter(torch.zeros(*size, adapter_size, worker_dim)),
+            Parameter(torch.Tensor(*size, dim, adapter_size, worker_dim)),
+            Parameter(torch.zeros(*size, dim, worker_dim)),
         ])
         self.reset_parameters()
         self.adapter_size = adapter_size
-        self.num_adapters = num_adapters
+        self.pgn_layers = pgn_layers
         self.batched_param = batched_param
         self.share_param = share_param
 
@@ -247,17 +244,17 @@ class PGNModel(AdapterModel):
         init.normal_(self.weight[0], std=1e-3)
         init.normal_(self.weight[2], std=1e-3)
 
-    def set_annotator(self, user: torch.LongTensor):
-        if self.training and user is not None and user[0].item() != -1:  # expert = -1
-            ann_emb = self.annotator_embedding(user[0] if self.batched_param else user)
+    def set_worker(self, aid: torch.LongTensor):
+        if self.training and aid is not None and aid[0].item() != -1:  # expert = -1
+            embedding = self.worker_embedding(aid[0] if self.batched_param else aid)
         elif hasattr(self, 'scores'):
             weight = self.scores.softmax(0).unsqueeze(-1)
-            ann_emb = self.annotator_embedding.weight.mul(weight).sum(0)
-        elif hasattr(self, 'ann_id'):
-            ann_emb = self.annotator_embedding.weight[self.ann_id]
+            embedding = self.worker_embedding.weight.mul(weight).sum(0)
+        elif hasattr(self, 'worker'):
+            embedding = self.worker_embedding.weight[self.worker]
         else:
-            ann_emb = self.annotator_embedding.weight.mean(0)
-        self.set_adapter_parameter(ann_emb)
+            embedding = self.worker_embedding.weight.mean(0)
+        self.set_adapter_parameter(embedding)
 
     def set_adapter_parameter(self, embedding: torch.Tensor):
         def batch_matmul(w: torch.Tensor, e):
@@ -270,7 +267,7 @@ class PGNModel(AdapterModel):
         embedding = embedding.softmax(-1)
         param_list = [matmul(w, embedding) for w in self.weight]
 
-        for i, adapters in enumerate(self.word_embedding.adapters[-self.num_adapters:]):
+        for i, adapters in enumerate(self.word_embedding.adapters[-self.pgn_layers:]):
             for j, adapter in enumerate(adapters):
                 params: List[torch.Tensor] = [p[j] if self.share_param else p[i, j] for p in param_list]
                 setattr(adapter, 'params', params)
@@ -281,27 +278,24 @@ class PGNModel(AdapterModel):
         tags: torch.Tensor = None, **kwargs
     ) -> Dict[str, Any]:
         if embedding is None:
-            self.set_annotator(aid)
+            self.set_worker(aid)
         else:
             self.set_adapter_parameter(embedding)
-        output_dict = super().forward(words, lengths, mask, tags, **kwargs)
-        if self.training and tags.dim() == 2:
-            output_dict = self.add_metric(output_dict, tags, lengths)
-        return output_dict
+        return super().forward(words, lengths, mask, tags, **kwargs)
 
 
 class AdvModel(PGNModel):
     def __init__(self,
                  vocab: Vocabulary,
                  lstm_size: int = 400,
-                 annotator_num: int = 47,
+                 worker_num: int = 47,
                  **kwargs):
         super().__init__(vocab, lstm_size=lstm_size, **kwargs)
         self.adv_lstm = LstmEncoder(self.word_embedding.output_dim, lstm_size, num_layers=1)
         dim = self.adv_lstm.output_dim
-        self.feature_projection = Linear(dim * 2, dim, bias=True)
-        self.annotator_projection = Linear(dim, annotator_num)
-        self.ce = CrossEntropyLoss()
+        self.feature_projection = nn.Linear(dim * 2, dim, bias=True)
+        self.worker_projection = nn.Linear(dim, worker_num)
+        self.ce = nn.CrossEntropyLoss()
         self.grl = GradientReverseLayer()
 
     def forward(
@@ -310,7 +304,7 @@ class AdvModel(PGNModel):
         tags: torch.Tensor = None, **kwargs
     ) -> Dict[str, Any]:
         if embedding is None:
-            self.set_annotator(aid)
+            self.set_worker(aid)
         else:
             self.set_adapter_parameter(embedding)
 
@@ -327,9 +321,9 @@ class AdvModel(PGNModel):
 
         if aid is not None:
             sentence_feature = self.grl(common_feature[:, 0])
-            ann_scores = self.annotator_projection(sentence_feature)
+            ann_scores = self.worker_projection(sentence_feature)
             loss_2 = self.ce(ann_scores, aid)
-            ann_scores = self.annotator_projection(special_feature[:, 0])
+            ann_scores = self.worker_projection(special_feature[:, 0])
             loss_3 = self.ce(ann_scores, aid)
             loss_1 = output_dict.pop('loss')
             loss = loss_1 + loss_2 + loss_3
@@ -338,3 +332,61 @@ class AdvModel(PGNModel):
         if tags is not None and tags.dim() == 2:
             output_dict = self.add_metric(output_dict, tags, lengths)
         return output_dict
+
+
+class LSTMCrowd(AdapterModel):
+    def __init__(self,
+                 vocab: Vocabulary,
+                 worker_num: int = 47,
+                 label_namespace: str = 'tags',
+                 cat=False,
+                 **kwargs):
+        super().__init__(vocab, label_namespace=label_namespace, **kwargs)
+        self.cat = cat
+        label_num = vocab.size_of(label_namespace)
+        if cat:
+            self.tag_projection = nn.Linear(self.lstm.output_dim * 2, label_num)
+            self.woker_matrix = nn.Embedding(
+                worker_num, self.lstm.output_dim,
+                _weight=torch.zeros(worker_num, self.lstm.output_dim))
+        else:
+            self.woker_matrix = nn.Embedding(
+                worker_num, label_num, _weight=torch.zeros(worker_num, label_num))
+
+    def forward(
+        self, words: torch.Tensor, lengths: torch.Tensor, mask: torch.Tensor,
+        aid: torch.Tensor = None, tags: torch.Tensor = None, **kwargs
+    ) -> Dict[str, Any]:
+        embedding = self.word_embedding(words, mask=mask, **kwargs)
+        embedding = self.word_dropout(embedding)
+        feature = self.lstm(embedding, lengths)
+
+        if self.training:
+            vector = self.woker_matrix(aid).unsqueeze(1).expand(-1, words.size(1), -1)
+        elif hasattr(self, 'worker'):
+            vector = self.woker_matrix.weight[self.worker]
+            vector = vector.unsqueeze(0).unsqueeze(0).expand(words.size(0), words.size(1), -1)
+        else:
+            vector = torch.zeros_like(feature)
+
+        if self.cat:
+            feature = torch.cat([feature, vector], dim=-1)
+
+        scores = self.tag_projection(feature)
+        if not self.cat and (self.training or hasattr(self, 'worker')):
+            scores += vector
+
+        output_dict = self.decode(scores, mask, tags, lengths)
+        return output_dict
+
+
+class Finetune(Tagger):
+    def __init__(self,
+                 vocab: Vocabulary,
+                 **kwargs):
+        super().__init__(vocab, lstm_size=0, **kwargs)
+        for param in self.word_embedding.parameters():
+            param.requires_grad = True
+
+    def drop_param(_, name: str):
+        return False

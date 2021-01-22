@@ -14,16 +14,16 @@ class ExactMatch(TaggingMetric):
     def __init__(self, o_id, token_to_id, ouput_class=False, output_detail=False):
         super().__init__(o_id)
         self.o_id = o_id
-        self.id_to_label = dict()
+        self.id_to_label = dict()  # map[i_x] = x
         self.bi_map = dict()  # map[b_x] = i_x
         for label, index in token_to_id.items():
             if label.startswith('B-'):
                 self.bi_map[label[2:]] = index
-                self.id_to_label[index] = label[2:]
         for label, index in token_to_id.items():
             if label.startswith('I-'):
                 b_id = self.bi_map.pop(label[2:])
                 self.bi_map[b_id] = index
+                self.id_to_label[index] = label[2:]
 
         self.label_counter = {k: self.counter_factory() for k in self.id_to_label}
         self.ouput_class = ouput_class
@@ -57,19 +57,16 @@ class ExactMatch(TaggingMetric):
 
     def get_entities(self, labels) -> Set[Tuple[int]]:
         entities, one = set(), None
-        for i, label in enumerate(labels):
+        for i, label in enumerate(chain(labels, [self.o_id])):
             if one:
-                if label == self.bi_map[one[2]]:
+                if label == one[2]:  # I-x
                     one[1] = i
                     continue
-                elif i - 1 == one[0]:
-                    entities.add((one[0], one[0], one[2]))
                 else:
                     entities.add(tuple(one))
-            if label in self.bi_map:
-                one = [i, -1, label]
-            else:
-                one = None
+                    one = None
+            if label in self.bi_map:  # B-x
+                one = [i, i, self.bi_map[label]]  # start, end, I-x
         return entities
 
     @staticmethod
