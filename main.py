@@ -5,7 +5,7 @@ import os
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-pg',
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-p1',
                          help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='3', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
@@ -20,6 +20,7 @@ _ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
 _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
 _ARG_PARSER.add_argument('--share_param', type=bool, default=None)
+_ARG_PARSER.add_argument('--extra_gold', type=float, default=None)
 
 _ARGS = _ARG_PARSER.parse_args()
 
@@ -103,6 +104,10 @@ def main():
         tokenizer = None
 
     cache_name = _ARGS.yaml
+    if isinstance(_ARGS.extra_gold, float):
+        cache_name += f"-g{_ARGS.extra_gold}"
+        cfg.data['extra_gold'] = _ARGS.extra_gold
+
     if not os.path.exists(cache_path(cache_name)):
         dataset = argparse.Namespace(
             **CoNLL03Crowd.build(**cfg.data, tokenizer=tokenizer))
@@ -139,11 +144,11 @@ def main():
         p = getattr(_ARGS, k)
         if p is not None:
             cfg.model[k] = p
-            prefix += f'-l{p}'
+            prefix += f'-{k}{p}'
 
-    if _ARGS.share_param is not None:
+    if _ARGS.share_param:
         cfg.model['share_param'] = _ARGS.share_param
-        prefix += 'share'
+        prefix += '-share'
 
     seeds = SEEDS if _ARGS.all else [_ARGS.seed]
     for seed in seeds:

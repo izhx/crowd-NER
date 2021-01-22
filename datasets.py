@@ -2,7 +2,8 @@
 """
 
 import copy
-from typing import Dict, List, Tuple
+import random
+from typing import Any, Dict, List, Tuple
 from itertools import chain
 
 from nmnlp.core import DataSet
@@ -22,8 +23,8 @@ def read_lines(path, sep=" "):
                 cols = line.split(sep)
                 if len(cols) > 1:
                     sentence.append(cols)
-                # else:
-                #     print(cols)
+                else:
+                    print(cols)
 
 
 class CoNLL03Crowd(DataSet):
@@ -31,44 +32,52 @@ class CoNLL03Crowd(DataSet):
     label_set = set()
 
     @classmethod
-    def build(cls, data_dir, name, tokenizer=None) -> Dict[str, 'CoNLL03Crowd']:
-        test_set = cls.single_label(data_dir + 'test.bio', tokenizer)
-        dev_set = cls.single_label(data_dir + 'dev.bio', tokenizer)
-        if 'answers' in name:
-            train_set = cls.crowd_label(data_dir + name, tokenizer)
+    def build(cls, data_dir, name, extra_gold=None, tokenizer=None) -> Dict[str, 'CoNLL03Crowd']:
+        test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
+        dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
+
+        if extra_gold is None:
+            if 'answers' in name:
+                train = cls.crowd_label(data_dir + name, tokenizer)
+            else:
+                train = cls.single_label(data_dir + name, tokenizer)
+            train_set = cls(train)
         else:
-            train_set = cls.single_label(data_dir + name, tokenizer)
+            crowd = cls.crowd_label(data_dir + name, tokenizer, 1)
+            gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer, extra_gold)
+            train_set = cls(crowd + gold)
 
         return dict(train=train_set, dev=dev_set, test=test_set)
 
     @staticmethod
-    def to_instance(words, tags, tid, aid=None):
-        ins = dict(words=words, tags=tags, tid=tid, text=copy.deepcopy(words))
-        if aid is not None:
-            ins.update(aid=aid)
+    def to_instance(words, tags, tid, aid=0):
+        ins = dict(words=words, tags=tags, aid=aid, tid=tid, text=copy.deepcopy(words))
         return ins
 
     @classmethod
-    def single_label(cls, path, tokenizer) -> 'CoNLL03Crowd':
+    def single_label(cls, path, tokenizer, ratio=None) -> List[Dict[str, Any]]:
         data = list()
         for tid, lines in enumerate(read_lines(path)):
             words, tags = word_piece_tokenzie(
                 [li[0] for li in lines], [li[-1] for li in lines], tokenizer)
             data.append(cls.to_instance(words, tags, tid))
-        return cls(data)
+        if ratio:
+            data = random.sample(data, int(len(data) * ratio))
+        return data
 
     @classmethod
-    def crowd_label(cls, path, tokenizer) -> 'CoNLL03Crowd':
+    def crowd_label(cls, path, tokenizer, expert=0) -> List[Dict[str, Any]]:
         data = list()
         for tid, lines in enumerate(read_lines(path)):
             words = [li[0] for li in lines]
             for i in range(1, len(lines[0])):
+                aid = i - 1 + expert
                 tags = [li[i] for li in lines]
                 if len(set(tags)) > 1:
                     aw, tags = word_piece_tokenzie(
                         copy.deepcopy(words), tags, tokenizer)
-                    data.append(cls.to_instance(aw, tags, tid, i-1))
-        return cls(data)
+                    data.append(cls.to_instance(aw, tags, tid, aid))
+        return data
 
 
 def word_piece_tokenzie(texts, tags, tokenizer) -> Tuple[List[str], List[str]]:

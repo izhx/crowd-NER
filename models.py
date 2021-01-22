@@ -213,16 +213,10 @@ class PGNModel(AdapterModel):
                  pgn_layers: int = 12,
                  batched_param: bool = False,
                  share_param: bool = False,
-                 same_embedding: bool = False,
+                 worker: int = None,
                  **kwargs):
         super().__init__(vocab, adapter_size, [True] * pgn_layers, **kwargs)
-        if same_embedding:
-            w = torch.randn(worker_dim).expand(worker_num, -1).contiguous()
-        else:
-            w = torch.randn(worker_num, worker_dim)
-        self.worker_embedding = nn.Embedding(
-            worker_num, worker_dim, _weight=w)  # max_norm=1.0
-
+        self.worker_embedding = nn.Embedding(worker_num, worker_dim)  # max_norm=1.0
         dim = self.word_embedding.output_dim
         size = [2] if share_param else [pgn_layers, 2]
         self.weight = ParameterList([
@@ -236,6 +230,7 @@ class PGNModel(AdapterModel):
         self.pgn_layers = pgn_layers
         self.batched_param = batched_param
         self.share_param = share_param
+        self.worker = worker
 
     def reset_parameters(self):
         # bound = 1e-2
@@ -250,7 +245,7 @@ class PGNModel(AdapterModel):
         elif hasattr(self, 'scores'):
             weight = self.scores.softmax(0).unsqueeze(-1)
             embedding = self.worker_embedding.weight.mul(weight).sum(0)
-        elif hasattr(self, 'worker'):
+        elif isinstance(self.worker, int):
             embedding = self.worker_embedding.weight[self.worker]
         else:
             embedding = self.worker_embedding.weight.mean(0)
