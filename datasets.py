@@ -32,7 +32,7 @@ class CoNLL03Crowd(DataSet):
     label_set = set()
 
     @classmethod
-    def build(cls, data_dir, name, extra_gold=None, tokenizer=None) -> Dict[str, 'CoNLL03Crowd']:
+    def build(cls, data_dir, name, extra_gold=None, only_gold=False, tokenizer=None) -> Dict[str, 'CoNLL03Crowd']:
         test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
         dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
 
@@ -41,17 +41,17 @@ class CoNLL03Crowd(DataSet):
                 train = cls.crowd_label(data_dir + name, tokenizer)
             else:
                 train = cls.single_label(data_dir + name, tokenizer)
-            train_set = cls(train)
         else:
-            crowd = cls.crowd_label(data_dir + name, tokenizer)
             gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
             if extra_gold <= 1:
                 extra_gold = len(gold) * extra_gold
-            sampled = random.sample(gold, int(extra_gold))
+            train = random.sample(gold, int(extra_gold))
             print(f"--- got {int(extra_gold)} gold instances.")
-            train_set = cls(crowd + sampled)
+            if not only_gold:
+                crowd = cls.crowd_label(data_dir + name, tokenizer)
+                train = crowd + train
 
-        return dict(train=train_set, dev=dev_set, test=test_set)
+        return dict(train=cls(train), dev=dev_set, test=test_set)
 
     @staticmethod
     def to_instance(words, tags, tid, aid=0):

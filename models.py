@@ -23,7 +23,8 @@ def build_model(name, **kwargs):
         'ad': AdapterModel,
         'pg': PGNModel,
         'lstm': LSTMCrowd,
-        'ft': Finetune
+        'ft': Finetune,
+        'gold': GoldFineTune
     }
     return m[name](**kwargs)
 
@@ -277,6 +278,19 @@ class PGNModel(AdapterModel):
         else:
             self.set_adapter_parameter(embedding)
         return super().forward(words, lengths, mask, tags, **kwargs)
+
+
+class GoldFineTune(PGNModel):
+    def __init__(
+        self, vocab: Vocabulary, path: str = None, **kwargs
+    ):
+        super().__init__(vocab, **kwargs)
+        self.path = path
+
+    def before_time_start(self, dataset, trainer, kwargs):
+        if self.path is None:
+            return
+        self.load(self.path, trainer.device)
 
 
 class AdvModel(PGNModel):
