@@ -43,7 +43,7 @@ class CoNLL03Crowd(DataSet):
                 train = cls.single_label(data_dir + name, tokenizer)
             train_set = cls(train)
         else:
-            crowd = cls.crowd_label(data_dir + name, tokenizer, 1)
+            crowd = cls.crowd_label(data_dir + name, tokenizer)
             gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
             if extra_gold <= 1:
                 extra_gold = len(gold) * extra_gold
@@ -68,17 +68,16 @@ class CoNLL03Crowd(DataSet):
         return data
 
     @classmethod
-    def crowd_label(cls, path, tokenizer, expert=0) -> List[Dict[str, Any]]:
+    def crowd_label(cls, path, tokenizer) -> List[Dict[str, Any]]:
         data = list()
         for tid, lines in enumerate(read_lines(path)):
             words = [li[0] for li in lines]
             for i in range(1, len(lines[0])):
-                aid = i - 1 + expert
                 tags = [li[i] for li in lines]
                 if len(set(tags)) > 1:
                     aw, tags = word_piece_tokenzie(
                         copy.deepcopy(words), tags, tokenizer)
-                    data.append(cls.to_instance(aw, tags, tid, aid))
+                    data.append(cls.to_instance(aw, tags, tid, i))
         return data
 
 

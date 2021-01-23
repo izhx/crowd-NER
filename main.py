@@ -5,9 +5,9 @@ import os
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-semi',
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-pg',
                          help='configuration file path.')
-_ARG_PARSER.add_argument('--cuda', '-c', type=str, default='3', help='gpu ids, like: 1,2,3')
+_ARG_PARSER.add_argument('--cuda', '-c', type=str, default='0', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
 _ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
 _ARG_PARSER.add_argument('--name', '-n', type=str, default=None, help='save name.')
@@ -105,7 +105,7 @@ def main(seed):
     cache_name = _ARGS.yaml
     prefix = _ARGS.name if _ARGS.name else _ARGS.yaml
     if _ARGS.extra_gold is not None:
-        cache_name += f"-s-{seed}-g{_ARGS.extra_gold}"
+        cache_name += f"-s{seed}-g{_ARGS.extra_gold}"
         prefix += f"-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
 
