@@ -13,7 +13,6 @@ from nmnlp.modules.adapter import AdapterBertModel
 from nmnlp.modules.dropout import WordDropout
 from nmnlp.modules.encoder import LstmEncoder
 
-from grl import GradientReverseLayer
 from metric import ExactMatch
 from conditional_random_field import ConditionalRandomField
 
@@ -209,7 +208,7 @@ class PGNModel(AdapterModel):
     def __init__(self,
                  vocab: Vocabulary,
                  worker_dim: int = 8,
-                 worker_num: int = 47,
+                 worker_num: int = 48,
                  adapter_size: int = 128,
                  pgn_layers: int = 12,
                  batched_param: bool = False,
@@ -282,71 +281,25 @@ class PGNModel(AdapterModel):
 
 class GoldFineTune(PGNModel):
     def __init__(
-        self, vocab: Vocabulary, path: str = None, **kwargs
+        self, vocab: Vocabulary, path: str, **kwargs
     ):
         super().__init__(vocab, **kwargs)
         self.path = path
 
     def before_time_start(self, dataset, trainer, kwargs):
-        if self.path is None:
-            return
+        print('load ', self.path)
         self.load(self.path, trainer.device)
-
-
-class AdvModel(PGNModel):
-    def __init__(self,
-                 vocab: Vocabulary,
-                 lstm_size: int = 400,
-                 worker_num: int = 47,
-                 **kwargs):
-        super().__init__(vocab, lstm_size=lstm_size, **kwargs)
-        self.adv_lstm = LstmEncoder(self.word_embedding.output_dim, lstm_size, num_layers=1)
-        dim = self.adv_lstm.output_dim
-        self.feature_projection = nn.Linear(dim * 2, dim, bias=True)
-        self.worker_projection = nn.Linear(dim, worker_num)
-        self.ce = nn.CrossEntropyLoss()
-        self.grl = GradientReverseLayer()
-
-    def forward(
-        self, words: torch.Tensor, lengths: torch.Tensor, mask: torch.Tensor,
-        aid: torch.LongTensor = None, embedding: torch.Tensor = None,
-        tags: torch.Tensor = None, **kwargs
-    ) -> Dict[str, Any]:
-        if embedding is None:
-            self.set_worker(aid)
-        else:
-            self.set_adapter_parameter(embedding)
-
-        # return super().forward(words, lengths, mask, tags, **kwargs)
-
-        feature = self.word_embedding(words, mask=mask, **kwargs)
-        feature = self.word_dropout(feature)
-        common_feature = self.lstm(feature, lengths, **kwargs)
-        special_feature = self.adv_lstm(feature, lengths, **kwargs)
-        all_feature = torch.cat((special_feature, common_feature), dim=-1)
-        all_feature = self.feature_projection(all_feature)
-        scores = self.tag_projection(all_feature)
-        output_dict: Dict = self.crf(scores, mask, tags)
-
-        if aid is not None:
-            sentence_feature = self.grl(common_feature[:, 0])
-            ann_scores = self.worker_projection(sentence_feature)
-            loss_2 = self.ce(ann_scores, aid)
-            ann_scores = self.worker_projection(special_feature[:, 0])
-            loss_3 = self.ce(ann_scores, aid)
-            loss_1 = output_dict.pop('loss')
-            loss = loss_1 + loss_2 + loss_3
-            output_dict.update(loss=loss)
-
-        if tags is not None and tags.dim() == 2:
-            output_dict = self.add_metric(output_dict, tags, lengths)
-        return output_dict
+        print('avg')
+        trainer.test(dataset.test)
+        print('expert')
+        self.worker = 0
+        trainer.test(dataset.test)
 
 
 class LSTMCrowd(AdapterModel):
     def __init__(self,
                  vocab: Vocabulary,
-                 worker_num: int = 47,
+                 worker_num: int = 48,
                  label_namespace: str = 'tags',
                  cat=False,
                  **kwargs):
@@ -356,7 +309,7 @@ class LSTMCrowd(AdapterModel):
         if cat:
             self.tag_projection = nn.Linear(self.lstm.output_dim * 2, label_num)
             self.woker_matrix = nn.Embedding(
-                worker_num, self.lstm.output_dim,
+                worker_num, self.lstm.output_dim, padding_idx=0,
                 _weight=torch.zeros(worker_num, self.lstm.output_dim))
         else:
             self.woker_matrix = nn.Embedding(
@@ -366,6 +319,9 @@ class LSTMCrowd(AdapterModel):
         self, words: torch.Tensor, lengths: torch.Tensor, mask: torch.Tensor,
         aid: torch.Tensor = None, tags: torch.Tensor = None, **kwargs
     ) -> Dict[str, Any]:
+        with torch.no_grad():  # set expert to 0
+            self.woker_matrix.weight[0].zero_()
+
         embedding = self.word_embedding(words, mask=mask, **kwargs)
         embedding = self.word_dropout(embedding)
         feature = self.lstm(embedding, lengths)

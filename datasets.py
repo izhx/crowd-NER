@@ -36,20 +36,21 @@ class CoNLL03Crowd(DataSet):
         test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
         dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
 
-        if extra_gold is None:
-            if 'answers' in name:
-                train = cls.crowd_label(data_dir + name, tokenizer)
-            else:
-                train = cls.single_label(data_dir + name, tokenizer)
+        if 'answers' in name:
+            train = cls.crowd_label(data_dir + name, tokenizer)
         else:
+            train = cls.single_label(data_dir + name, tokenizer)
+
+        if extra_gold is not None:
             gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
             if extra_gold <= 1:
                 extra_gold = len(gold) * extra_gold
-            train = random.sample(gold, int(extra_gold))
-            print(f"--- got {int(extra_gold)} gold instances.")
-            if not only_gold:
-                crowd = cls.crowd_label(data_dir + name, tokenizer)
-                train = crowd + train
+            sampled = random.sample(gold, int(extra_gold))
+            print(f"--- sampled {int(extra_gold)} gold instances.")
+            if only_gold:
+                train = sampled
+            else:
+                train.extend(sampled)
 
         return dict(train=cls(train), dev=dev_set, test=test_set)
 

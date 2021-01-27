@@ -5,7 +5,7 @@ import os
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-ft', help='configuration file path.')
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='lstm-crowd-semi', help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='0', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
 _ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
@@ -18,8 +18,9 @@ _ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
 _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
 _ARG_PARSER.add_argument('--share_param', type=bool, default=None)
-_ARG_PARSER.add_argument('--extra_gold', type=float, default=None)
+_ARG_PARSER.add_argument('--extra_gold', type=float, default=60)
 _ARG_PARSER.add_argument('--start', type=int, default=None)
+_ARG_PARSER.add_argument('--lr', type=float, default=None)
 
 _ARGS = _ARG_PARSER.parse_args()
 
@@ -151,6 +152,9 @@ def main(seed):
     if isinstance(_ARGS.start, int):
         cfg.model['path'] = f"./dev/model/cc-pg_{seed}_{_ARGS.start}.pth"
         prefix += f'-start{_ARGS.start}'
+    if isinstance(_ARGS.lr, float):
+        cfg.optim['lr'] = _ARGS.lr
+        prefix += f'-lr{_ARGS.lr}'
 
     cfg.trainer['prefix'] = f"{prefix}_{seed}"
     if 'pre_train_path' not in cfg.trainer:
