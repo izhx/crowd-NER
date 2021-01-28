@@ -23,7 +23,9 @@ def build_model(name, **kwargs):
         'pg': PGNModel,
         'lstm': LSTMCrowd,
         'ft': Finetune,
-        'gold': GoldFineTune
+        'gold': GoldFineTune,
+        'adft': AdaFineTune,
+        'lcft': LCFineTune
     }
     return m[name](**kwargs)
 
@@ -296,6 +298,20 @@ class GoldFineTune(PGNModel):
         trainer.test(dataset.test)
 
 
+class AdaFineTune(AdapterModel):
+    def __init__(
+        self, vocab: Vocabulary, path: str, **kwargs
+    ):
+        super().__init__(vocab, **kwargs)
+        self.path = path
+
+    def before_time_start(self, dataset, trainer, kwargs):
+        print('load ', self.path)
+        self.load(self.path, trainer.device)
+        print('test')
+        trainer.test(dataset.test)
+
+
 class LSTMCrowd(AdapterModel):
     def __init__(self,
                  vocab: Vocabulary,
@@ -343,6 +359,28 @@ class LSTMCrowd(AdapterModel):
 
         output_dict = self.decode(scores, mask, tags, lengths)
         return output_dict
+
+
+class LCFineTune(LSTMCrowd):
+    def __init__(
+        self, vocab: Vocabulary, path: str, **kwargs
+    ):
+        super().__init__(vocab, **kwargs)
+        self.path = path
+
+    def before_time_start(self, dataset, trainer, kwargs):
+        print('load ', self.path)
+        state = torch.load(self.path, map_location=trainer.device)
+        _ = state.pop('woker_matrix.weight')
+        info = self.load_state_dict(state, strict=False)
+        missd = [i for i in info[0] if not self.drop_param(i)]
+        if missd:
+            print(missd)
+        # with torch.no_grad():
+        #     for i in range(vec.size(0)):
+        #         self.woker_matrix[i + 1] = vec[i]
+        print('test')
+        trainer.test(dataset.test)
 
 
 class Finetune(Tagger):

@@ -3,7 +3,9 @@
 
 import copy
 import random
+import pickle
 from typing import Any, Dict, List, Tuple
+# from difflib import SequenceMatcher
 from itertools import chain
 
 from nmnlp.core import DataSet
@@ -32,7 +34,10 @@ class CoNLL03Crowd(DataSet):
     label_set = set()
 
     @classmethod
-    def build(cls, data_dir, name, extra_gold=None, only_gold=False, tokenizer=None) -> Dict[str, 'CoNLL03Crowd']:
+    def build(
+        cls, data_dir, name, extra_gold=None, only_gold=False, replace=False,
+        distant_gold=False, tokenizer=None
+    ) -> Dict[str, 'CoNLL03Crowd']:
         test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
         dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
 
@@ -42,13 +47,34 @@ class CoNLL03Crowd(DataSet):
             train = cls.single_label(data_dir + name, tokenizer)
 
         if extra_gold is not None:
-            gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
+            if distant_gold:
+                with open('dev/data/distant.pkl', mode='rb') as f:
+                    gold = pickle.load(f)
+                    print('loaded distant train')
+            else:
+                gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
+                # conll = cls.single_label(data_dir + 'train.bio', tokenizer)
+                # distant, matched = set(), set()
+                # for i, c in enumerate(conll):
+                #     text = ''.join(c['text'])
+                #     for j, g in enumerate(gold):
+                #         if j in matched:
+                #             continue
+                #         sim = SequenceMatcher(None, text, ''.join(g['text'])).quick_ratio()
+                #         if sim > 0.98:
+                #             matched.add(j)
+                #             break
+                #     else:
+                #         distant.add(i)
+                # gold = [c for i, c in enumerate(conll) if i in distant]
             if extra_gold <= 1:
-                extra_gold = len(gold) * extra_gold
+                extra_gold = 5985 * extra_gold
             sampled = random.sample(gold, int(extra_gold))
             print(f"--- sampled {int(extra_gold)} gold instances.")
             if only_gold:
                 train = sampled
+            elif replace:
+                train = cls.replace_gold(train, sampled)
             else:
                 train.extend(sampled)
 
@@ -80,6 +106,20 @@ class CoNLL03Crowd(DataSet):
                         copy.deepcopy(words), tags, tokenizer)
                     data.append(cls.to_instance(aw, tags, tid, i))
         return data
+
+    @staticmethod
+    def replace_gold(train, sampled):
+        matched = set()
+        for ins in train:
+            for g in range(len(sampled)):
+                if g in matched:
+                    continue
+                gold = sampled[g]
+                if ins['text'] == gold['text']:
+                    ins['tags'] = gold['tags']
+                    matched.add(g)
+                    break
+        return train
 
 
 def word_piece_tokenzie(texts, tags, tokenizer) -> Tuple[List[str], List[str]]:
