@@ -2,16 +2,14 @@
 """
 
 import copy
-import random
-import pickle
 from typing import Any, Dict, List, Tuple
-# from difflib import SequenceMatcher
 from itertools import chain
 
 from nmnlp.core import DataSet
 
 
 def read_lines(path, sep=" "):
+    print('reading ', path)
     with open(path, mode='r', encoding='UTF-8') as conllu_file:
         sentence = list()
         for line in chain(conllu_file, [""]):
@@ -48,29 +46,10 @@ class CoNLL03Crowd(DataSet):
 
         if extra_gold is not None:
             if distant_gold:
-                with open('dev/data/distant.pkl', mode='rb') as f:
-                    gold = pickle.load(f)
-                    print('loaded distant train')
+                name = 'rest'
             else:
-                gold = cls.single_label(data_dir + 'ground_truth.txt', tokenizer)
-                # conll = cls.single_label(data_dir + 'train.bio', tokenizer)
-                # distant, matched = set(), set()
-                # for i, c in enumerate(conll):
-                #     text = ''.join(c['text'])
-                #     for j, g in enumerate(gold):
-                #         if j in matched:
-                #             continue
-                #         sim = SequenceMatcher(None, text, ''.join(g['text'])).quick_ratio()
-                #         if sim > 0.98:
-                #             matched.add(j)
-                #             break
-                #     else:
-                #         distant.add(i)
-                # gold = [c for i, c in enumerate(conll) if i in distant]
-            if extra_gold <= 1:
-                extra_gold = 5985 * extra_gold
-            sampled = random.sample(gold, int(extra_gold))
-            print(f"--- sampled {int(extra_gold)} gold instances.")
+                name = 'gold'
+            sampled = cls.single_label(f"{data_dir}/{name}-{extra_gold}.txt", tokenizer)
             if only_gold:
                 train = sampled
             elif replace:
@@ -78,17 +57,10 @@ class CoNLL03Crowd(DataSet):
             else:
                 train.extend(sampled)
 
+        out = dict(train=cls(train), dev=dev_set, test=test_set)
         if reserve_crowd:
-            out = dict(dev=dev_set, test=test_set)
-            kept = list()
-            for i in range(len(train)):
-                if random.uniform(0, 1) >= 0.85:
-                    kept.append(i)
-            crowd = [ins for i, ins in enumerate(train) if i not in kept]
-            kept = [ins for i, ins in enumerate(train) if i in kept]
-            out = dict(train=cls(crowd), dev=dev_set, test=test_set, kept=cls(kept))
-        else:
-            out = dict(train=cls(train), dev=dev_set, test=test_set)
+            kept = cls.crowd_label(data_dir + 'answers-15.txt', tokenizer)
+            out.update(kept=cls(kept))
 
         return out
 

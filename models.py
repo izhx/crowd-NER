@@ -156,6 +156,8 @@ class Tagger(nn.Module):
     def load(self, path_or_state, device):
         if isinstance(path_or_state, str):
             path_or_state = torch.load(path_or_state, map_location=device)
+        # if 'woker_matrix.weight' in path_or_state:
+        #     path_or_state.pop('woker_matrix.weight')
         info = self.load_state_dict(path_or_state, strict=False)
         missd = [i for i in info[0] if not self.drop_param(i)]
         if missd:
@@ -178,7 +180,7 @@ class AdapterModel(Tagger):
         self.word_embedding = AdapterBertModel(
             self.word_embedding.bert, adapter_size, adapter_num, external_param)
         self.output_prediction = output_prediction
-        # self.out_dir = 'dev/out/ada-vote_123/'
+        # self.out_dir = 'dev/out/cc-mv-semi-rep_123/'
 
     def drop_param(_, name: str):
         return super().drop_param(name) and 'LayerNorm' not in name
@@ -200,7 +202,7 @@ class AdapterModel(Tagger):
             name += f"-w{self.worker}"
         with open(f"{self.out_dir}/{name}.txt", mode='a') as file:
             for ins, pred in zip(batch, out['predicted_tags']):
-                ziped = list(zip(ins['text'], ins['labels'], pred))[1:-1]
+                ziped = list(zip(ins['text'], ins['tags'], pred))[1:-1]
                 for w, li, pi, in ziped:
                     file.write(f"{w}\t{self.id_to_label[li]}\t{self.id_to_label[pi]}\n")
                 file.write('\n')
@@ -243,7 +245,7 @@ class PGNModel(AdapterModel):
         init.normal_(self.weight[2], std=1e-3)
 
     def set_worker(self, aid: torch.LongTensor):
-        if self.training and aid is not None and aid[0].item() != -1:  # expert = -1
+        if self.training and aid is not None and aid[0].item() != -1:
             embedding = self.worker_embedding(aid[0] if self.batched_param else aid)
         elif hasattr(self, 'scores'):
             weight = self.scores.softmax(0).unsqueeze(-1)
@@ -272,13 +274,9 @@ class PGNModel(AdapterModel):
 
     def forward(
         self, words: torch.Tensor, lengths: torch.Tensor, mask: torch.Tensor,
-        aid: torch.LongTensor = None, embedding: torch.Tensor = None,
-        tags: torch.Tensor = None, **kwargs
+        aid: torch.LongTensor = None, tags: torch.Tensor = None, **kwargs
     ) -> Dict[str, Any]:
-        if embedding is None:
-            self.set_worker(aid)
-        else:
-            self.set_adapter_parameter(embedding)
+        self.set_worker(aid)
         return super().forward(words, lengths, mask, tags, **kwargs)
 
 

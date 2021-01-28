@@ -6,10 +6,10 @@ import copy
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-pg-res', help='configuration file path.')
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-gt-semi', help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='0', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
-_ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
+_ARG_PARSER.add_argument('--out', '-o', type=bool, default=True, help='预测结果输出')
 _ARG_PARSER.add_argument('--name', '-n', type=str, default=None, help='save name.')
 _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random seed')
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
@@ -20,7 +20,7 @@ _ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
 _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
 _ARG_PARSER.add_argument('--share_param', type=bool, default=None)
-_ARG_PARSER.add_argument('--extra_gold', type=float, default=None)
+_ARG_PARSER.add_argument('--extra_gold', type=float, default=1.0)
 _ARG_PARSER.add_argument('--start', type=int, default=None)
 _ARG_PARSER.add_argument('--lr', type=float, default=None)
 
@@ -80,7 +80,9 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
         trainer.train()
         output(model.metric.data_info)
 
+    trainer.load()
     if hasattr(dataset, 'kept'):
+        dataset.kept.index_with(vocab)
         for a in range(48):
             setattr(model, 'worker', a)
             train_a = copy.copy(dataset.train)
@@ -89,7 +91,7 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
             trainer.test(train_a)
 
             test_a = copy.copy(dataset.kept)
-            test_a.data = [i for i in dataset.train.data if i['aid'] == a]
+            test_a.data = [i for i in test_a.data if i['aid'] == a]
             output("ann: ", a, ", kept num: ", len(test_a))
             trainer.test(test_a)
 
@@ -98,7 +100,6 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
             print('\n')
         delattr(model, 'worker')
 
-    trainer.load()
     test_metric = trainer.test(dataset.test)
     return model.metric.best, test_metric
 
@@ -126,7 +127,7 @@ def main(seed):
     cache_name = _ARGS.yaml
     prefix = _ARGS.name if _ARGS.name else _ARGS.yaml
     if _ARGS.extra_gold is not None:
-        cache_name += f"-s{seed}-g{_ARGS.extra_gold}"
+        cache_name += f"-g{_ARGS.extra_gold}"
         prefix += f"-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
 
