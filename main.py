@@ -2,10 +2,11 @@
 """
 
 import os
+import copy
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-all-dis', help='configuration file path.')
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-pg-res', help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='0', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
 _ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
@@ -14,6 +15,7 @@ _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random see
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
 
 _ARG_PARSER.add_argument('--adapter_size', type=int, default=None)
+_ARG_PARSER.add_argument('--adapter_num', type=int, default=None)
 _ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
 _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
@@ -78,6 +80,24 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
         trainer.train()
         output(model.metric.data_info)
 
+    if hasattr(dataset, 'kept'):
+        for a in range(48):
+            setattr(model, 'worker', a)
+            train_a = copy.copy(dataset.train)
+            train_a.data = [i for i in dataset.train.data if i['aid'] == a]
+            output("ann: ", a, ", train num: ", len(train_a))
+            trainer.test(train_a)
+
+            test_a = copy.copy(dataset.kept)
+            test_a.data = [i for i in dataset.train.data if i['aid'] == a]
+            output("ann: ", a, ", kept num: ", len(test_a))
+            trainer.test(test_a)
+
+            output("ann: ", a, ", test ", len(dataset.test))
+            trainer.test(dataset.test)
+            print('\n')
+        delattr(model, 'worker')
+
     trainer.load()
     test_metric = trainer.test(dataset.test)
     return model.metric.best, test_metric
@@ -140,7 +160,7 @@ def main(seed):
         #     os.mkdir(log_dir)
         log_dir = None
 
-    for k in ('lstm_size', 'adapter_size', 'pgn_layers', 'worker_dim'):
+    for k in ('lstm_size', 'adapter_size', 'adapter_num', 'pgn_layers', 'worker_dim'):
         p = getattr(_ARGS, k)
         if p is not None:
             cfg.model[k] = p

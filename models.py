@@ -171,11 +171,12 @@ class AdapterModel(Tagger):
                  vocab: Vocabulary,
                  adapter_size: int = 128,
                  external_param: Union[bool, List[bool]] = False,
+                 adapter_num: int = 12,
                  output_prediction: bool = False,
                  **kwargs):
         super().__init__(vocab, **kwargs)
         self.word_embedding = AdapterBertModel(
-            self.word_embedding.bert, adapter_size, external_param)
+            self.word_embedding.bert, adapter_size, adapter_num, external_param)
         self.output_prediction = output_prediction
         # self.out_dir = 'dev/out/ada-vote_123/'
 

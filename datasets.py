@@ -36,7 +36,7 @@ class CoNLL03Crowd(DataSet):
     @classmethod
     def build(
         cls, data_dir, name, extra_gold=None, only_gold=False, replace=False,
-        distant_gold=False, tokenizer=None
+        distant_gold=False, reserve_crowd=False, tokenizer=None
     ) -> Dict[str, 'CoNLL03Crowd']:
         test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
         dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
@@ -78,7 +78,19 @@ class CoNLL03Crowd(DataSet):
             else:
                 train.extend(sampled)
 
-        return dict(train=cls(train), dev=dev_set, test=test_set)
+        if reserve_crowd:
+            out = dict(dev=dev_set, test=test_set)
+            kept = list()
+            for i in range(len(train)):
+                if random.uniform(0, 1) >= 0.85:
+                    kept.append(i)
+            crowd = [ins for i, ins in enumerate(train) if i not in kept]
+            kept = [ins for i, ins in enumerate(train) if i in kept]
+            out = dict(train=cls(crowd), dev=dev_set, test=test_set, kept=cls(kept))
+        else:
+            out = dict(train=cls(train), dev=dev_set, test=test_set)
+
+        return out
 
     @staticmethod
     def to_instance(words, tags, tid, aid=0):
