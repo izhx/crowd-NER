@@ -6,13 +6,14 @@ import copy
 import argparse
 
 _ARG_PARSER = argparse.ArgumentParser(description="我的实验，需要指定配置文件")
-_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-gt-semi', help='configuration file path.')
+_ARG_PARSER.add_argument('--yaml', '-y', type=str, default='cc-pg-res', help='configuration file path.')
 _ARG_PARSER.add_argument('--cuda', '-c', type=str, default='0', help='gpu ids, like: 1,2,3')
 _ARG_PARSER.add_argument('--test', '-t', type=bool, default=False, help='只进行测试')
-_ARG_PARSER.add_argument('--out', '-o', type=bool, default=True, help='预测结果输出')
+_ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测结果输出')
 _ARG_PARSER.add_argument('--name', '-n', type=str, default=None, help='save name.')
 _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random seed')
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
+_ARG_PARSER.add_argument('--cache', type=bool, default=True, help='cache data')
 
 _ARG_PARSER.add_argument('--adapter_size', type=int, default=None)
 _ARG_PARSER.add_argument('--adapter_num', type=int, default=None)
@@ -20,7 +21,8 @@ _ARG_PARSER.add_argument('--lstm_size', type=int, default=None)
 _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
 _ARG_PARSER.add_argument('--share_param', type=bool, default=None)
-_ARG_PARSER.add_argument('--extra_gold', type=float, default=1.0)
+_ARG_PARSER.add_argument('--extra_gold', type=float, default=None)
+_ARG_PARSER.add_argument('--exclude_bad', type=bool, default=None)
 _ARG_PARSER.add_argument('--start', type=int, default=None)
 _ARG_PARSER.add_argument('--lr', type=float, default=None)
 
@@ -83,22 +85,49 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
     trainer.load()
     if hasattr(dataset, 'kept'):
         dataset.kept.index_with(vocab)
-        for a in range(48):
+        from util import scores_by_worker, save_csv
+        scores = scores_by_worker()
+        info_train, info_test = list(), list()
+        for a in range(1, 48):
+            r = [a, scores[a][2]]
             setattr(model, 'worker', a)
             train_a = copy.copy(dataset.train)
             train_a.data = [i for i in dataset.train.data if i['aid'] == a]
             output("ann: ", a, ", train num: ", len(train_a))
-            trainer.test(train_a)
+            m = trainer.test(train_a)
+            r.append(len(train_a))
+            r.append(m['main_F1'])
 
             test_a = copy.copy(dataset.kept)
             test_a.data = [i for i in test_a.data if i['aid'] == a]
             output("ann: ", a, ", kept num: ", len(test_a))
-            trainer.test(test_a)
+            m = trainer.test(test_a)
+            r.append(len(test_a))
+            r.append(m['main_F1'])
 
             output("ann: ", a, ", test ", len(dataset.test))
-            trainer.test(dataset.test)
+            m = trainer.test(dataset.test)
+            r.append(m['main_F1'])
+
+            r_train, r_test = copy.copy(r), copy.copy(r)
+            for w in range(1, 48):
+                train_i = copy.copy(dataset.train)
+                train_i.data = [i for i in train_i.data if i['aid'] == w]
+                m = trainer.test(train_i)
+                r_train.append(m['main_F1'])
+
+                test_i = copy.copy(dataset.kept)
+                test_i.data = [i for i in test_i.data if i['aid'] == w]
+                m = trainer.test(test_i)
+                r_test.append(m['main_F1'])
+            info_train.append(r_train)
+            info_test.append(r_test)
             print('\n')
-        delattr(model, 'worker')
+        setattr(model, 'worker', None)
+        head = ['worker', 'f1-gold', 'train_num', 'train_f1', 'test_num', 'test_f1', 'conll_test_f1']
+        head += [f"at_{wid}" for wid in range(1, 48)]
+        save_csv([head] + info_test, 'dev/info_test.csv')
+        save_csv([head] + info_train, 'dev/info_train.csv')
 
     test_metric = trainer.test(dataset.test)
     return model.metric.best, test_metric
@@ -130,6 +159,10 @@ def main(seed):
         cache_name += f"-g{_ARGS.extra_gold}"
         prefix += f"-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
+    if _ARGS.exclude_bad:
+        cache_name += "-exclude_bad"
+        prefix += "-exclude_bad"
+        cfg.data['exclude_bad'] = _ARGS.exclude_bad
 
     if not os.path.exists(cache_path(cache_name)):
         dataset = argparse.Namespace(
@@ -141,7 +174,8 @@ def main(seed):
             # 若用BERT，则把words词表替换为BERT的
             vocab.token_to_index['words'] = tokenizer.vocab
             vocab.index_to_token['words'] = tokenizer.ids_to_tokens
-        dump_cache((dataset, vocab), cache_name)
+        if _ARGS.cache:
+            dump_cache((dataset, vocab), cache_name)
     else:
         dataset, vocab = load_cache(cache_name)
 
@@ -149,6 +183,8 @@ def main(seed):
     dataset.dev.index_with(vocab)
     dataset.test.index_with(vocab)
 
+    if '-dis' in _ARGS.yaml:
+        cfg.trainer['batch_size'] = 32
     cfg.model['allowed'] = allowed_transition(vocab)
     cfg.model['output_prediction'] = _ARGS.out
 

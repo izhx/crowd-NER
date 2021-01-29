@@ -7,6 +7,9 @@ from itertools import chain
 
 from nmnlp.core import DataSet
 
+BAD_AID = (24, 20, 42, 18, 11, 13, 46, 38, 35, 12, 37, 5, 16, 21, 14, 33)
+# 3, 27, 44, 32, 45, 29, 17,
+
 
 def read_lines(path, sep=" "):
     print('reading ', path)
@@ -34,13 +37,13 @@ class CoNLL03Crowd(DataSet):
     @classmethod
     def build(
         cls, data_dir, name, extra_gold=None, only_gold=False, replace=False,
-        distant_gold=False, reserve_crowd=False, tokenizer=None
+        distant_gold=False, crowd_test=False, exclude_bad=False, tokenizer=None
     ) -> Dict[str, 'CoNLL03Crowd']:
         test_set = cls(cls.single_label(data_dir + 'test.bio', tokenizer))
         dev_set = cls(cls.single_label(data_dir + 'dev.bio', tokenizer))
 
         if 'answers' in name:
-            train = cls.crowd_label(data_dir + name, tokenizer)
+            train = cls.crowd_label(data_dir + name, tokenizer, exclude_bad)
         else:
             train = cls.single_label(data_dir + name, tokenizer)
 
@@ -58,9 +61,10 @@ class CoNLL03Crowd(DataSet):
                 train.extend(sampled)
 
         out = dict(train=cls(train), dev=dev_set, test=test_set)
-        if reserve_crowd:
-            kept = cls.crowd_label(data_dir + 'answers-15.txt', tokenizer)
-            out.update(kept=cls(kept))
+        if crowd_test:
+            kept = cls.crowd_label(data_dir + 'answers-15.txt', tokenizer, exclude_bad)
+            conll_dev = out['dev']
+            out.update(dev=cls(kept), conll_dev=conll_dev)
 
         return out
 
@@ -79,11 +83,13 @@ class CoNLL03Crowd(DataSet):
         return data
 
     @classmethod
-    def crowd_label(cls, path, tokenizer) -> List[Dict[str, Any]]:
+    def crowd_label(cls, path, tokenizer, exclude_bad) -> List[Dict[str, Any]]:
         data = list()
         for tid, lines in enumerate(read_lines(path)):
             words = [li[0] for li in lines]
             for i in range(1, len(lines[0])):
+                if exclude_bad and i in BAD_AID:
+                    continue
                 tags = [li[i] for li in lines]
                 if len(set(tags)) > 1:
                     aw, tags = word_piece_tokenzie(

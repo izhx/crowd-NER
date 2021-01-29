@@ -1,9 +1,10 @@
-
+import csv
 import random
 import pickle
 from typing import List, Tuple
 # from difflib import SequenceMatcher
 from itertools import chain
+from collections import defaultdict
 
 from nmnlp.core import Vocabulary
 
@@ -51,6 +52,62 @@ def write_lines(data, path, sep=' '):
                 file.write(sep.join(line) + '\n')
             file.write('\n')
     print('write to ', path)
+
+
+def save_csv(rows, path='dev/metrics.csv'):
+    with open(path, mode='w') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(rows)
+    print(f"saved at <{path}>")
+
+
+def bio_to_span_t(tokens: List[str], seq: List[str]):
+    spans = list()
+    one = None  # [i, j, label, length]  如果切片要+1
+    for i, (t, w) in enumerate(zip(chain(seq, ['O']), chain(tokens, ['_']))):
+        if t.startswith("B-"):
+            if one:
+                spans.append(tuple(one))
+            one = [i, i, t[2:], 1]
+        elif t.startswith("I-"):
+            if one is None:
+                print("有I前面无B")
+                # raise Exception("有I前面无B")
+            elif one[2] != t[2:]:
+                raise Exception("BI不一致")
+            else:
+                one[1] = i
+                if not w.startswith('##'):
+                    one[3] += 1
+        elif one:
+            spans.append(tuple(one))
+            one = None
+
+    return spans
+
+
+def bio_to_span(seq: List[str]):
+    spans = list()
+    one = None  # [i, j, label]  如果切片要+1
+    for i, t in enumerate(chain(seq, ['O'])):
+        if t.startswith("B-"):
+            if one:
+                spans.append(tuple(one))
+            one = [i, i, t[2:]]
+        elif t.startswith("I-"):
+            if one is None:
+                print('有I前面无B')
+                # raise Exception("有I前面无B")
+            elif one[2] != t[2:]:
+                print('BI不一致')
+                # raise Exception("BI不一致")
+            else:
+                one[1] = i
+        elif one:
+            spans.append(tuple(one))
+            one = None
+
+    return spans
 
 
 def sample_data():
@@ -151,8 +208,108 @@ def sample_data():
     return
 
 
+def scores_by_entity(path):
+    data = read_lines(path, sep='\t')
+    # total_gold, correct_gold, total_pred, correct_pred = 0, 0, 0, 0
+    info = defaultdict(lambda: [0, 0, 0, 0])
+
+    def add_info(length, i):
+        if length > 3:
+            info[4][i] += 1
+        else:
+            info[length][i] += 1
+
+    for ins in data:
+        tokens = [i[0] for i in ins]
+        tags = [i[1] for i in ins]
+        pres = [i[2] for i in ins]
+        gold = bio_to_span_t(tokens, tags)
+        for e in gold:
+            add_info(e[3], 0)
+        pred = bio_to_span_t(tokens, pres)
+        for e in pred:
+            add_info(e[3], 2)
+        gc = [g for g in gold if g in pred]
+        for e in gc:
+            add_info(e[3], 1)
+        pc = [p for p in pred if p in gold]
+        for e in pc:
+            add_info(e[3], 3)
+
+    for k, v in info.items():
+        p = v[3] / v[2]
+        r = v[1] / v[0]
+        f = 2 * p * r / (p + r)
+        print(f"len {k}, ng: {v[0]}, np: {v[2]},  p: {p:.4f}, r: {r:.4f}, f: {f:.4f}")
+
+    return ''
+
+
+def scores_by_worker():
+    # crowd = list(read_lines('data/answers.txt'))
+    # gold = list(read_lines('data/ground_truth.txt'))
+    # matched, mg = list(), set()
+    # for c in crowd:
+    #     ct = [i[0] for i in c]
+    #     for gi, g in enumerate(gold):
+    #         if gi in mg:
+    #             continue
+    #         cg = [i[0] for i in g]
+    #         if ct == cg:
+    #             mg.add(gi)
+    #             break
+    #     else:
+    #         print(ct)
+    #         continue
+    #     for i, j in zip(c, g):
+    #         i[0] = j[1]
+    #     matched.append(c)
+
+    with open('dev/data/match.pkl', mode='rb') as f:
+        matched = pickle.load(f)
+
+    info = defaultdict(lambda: [0, 0, 0])
+    for ins in matched:
+        gt = [i[0] for i in ins]
+        egt = set(bio_to_span(gt))
+        for w in range(1, 48):
+            if ins[0][w] == '?':
+                continue
+            ti = [i[w] for i in ins]
+            eti = set(bio_to_span(ti))
+            cti = egt & eti
+            info[w][0] += len(egt)
+            info[w][1] += len(eti)
+            info[w][2] += len(cti)
+
+    scores = dict()
+    for k, v in info.items():
+        p = v[2] / v[1]
+        r = v[2] / v[0]
+        f = 2 * p * r / (p + r)
+        scores[k] = [p, r, f]
+
+    for k in sorted(scores, key=lambda x: scores[x][2]):
+        p, r, f = scores[k]
+        print(f"worker {k}, ng: {info[k][0]}, np: {info[k][1]},  p: {p:.4f}, r: {r:.4f}, f: {f:.4f}")
+
+    return scores
+
+
 def main():
     # sample_data()
+    # for p in (
+    #     # 'dev/out/cc-gt/test.txt',
+    #     # 'dev/out/cc-mv/test.txt',
+    #     # 'dev/out/lc-cat_123/test-3.txt',
+    #     # 'dev/out/cc-pg_123/test-4-wNone.txt',
+    #     # 'dev/out/cc-mv-semi-g0.05_123/test-6.txt',
+    #     # 'dev/out/lc-cat-semi-g0.05_123/test-3.txt',
+    #     # 'dev/out/cc-pg-semi-g0.05_123/test-13-w0.txt',
+    # ):
+    #     print('\n', p)
+    #     print(scores_by_entity(p))
+    scores_by_worker()
     return
 
 

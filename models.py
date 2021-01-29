@@ -219,6 +219,7 @@ class PGNModel(AdapterModel):
                  batched_param: bool = False,
                  share_param: bool = False,
                  worker: int = None,
+                 crowd_test: bool = False,
                  **kwargs):
         super().__init__(vocab, adapter_size, [True] * pgn_layers, **kwargs)
         self.worker_embedding = nn.Embedding(worker_num, worker_dim)  # max_norm=1.0
@@ -236,6 +237,7 @@ class PGNModel(AdapterModel):
         self.batched_param = batched_param
         self.share_param = share_param
         self.worker = worker
+        self.crowd_test = crowd_test
 
     def reset_parameters(self):
         # bound = 1e-2
@@ -245,11 +247,8 @@ class PGNModel(AdapterModel):
         init.normal_(self.weight[2], std=1e-3)
 
     def set_worker(self, aid: torch.LongTensor):
-        if self.training and aid is not None and aid[0].item() != -1:
+        if (self.training or self.crowd_test) and aid is not None and aid[0].item() != 0:
             embedding = self.worker_embedding(aid[0] if self.batched_param else aid)
-        elif hasattr(self, 'scores'):
-            weight = self.scores.softmax(0).unsqueeze(-1)
-            embedding = self.worker_embedding.weight.mul(weight).sum(0)
         elif isinstance(self.worker, int):
             embedding = self.worker_embedding.weight[self.worker]
         else:
@@ -288,6 +287,7 @@ class GoldFineTune(PGNModel):
         self.path = path
 
     def before_time_start(self, dataset, trainer, kwargs):
+        super().before_time_start(dataset, trainer, kwargs)
         print('load ', self.path)
         self.load(self.path, trainer.device)
         print('avg')
@@ -305,6 +305,7 @@ class AdaFineTune(AdapterModel):
         self.path = path
 
     def before_time_start(self, dataset, trainer, kwargs):
+        super().before_time_start(dataset, trainer, kwargs)
         print('load ', self.path)
         self.load(self.path, trainer.device)
         print('test')
@@ -317,6 +318,7 @@ class LSTMCrowd(AdapterModel):
                  worker_num: int = 48,
                  label_namespace: str = 'tags',
                  cat=False,
+                 crowd_test: bool = False,
                  **kwargs):
         super().__init__(vocab, label_namespace=label_namespace, **kwargs)
         self.cat = cat
@@ -329,6 +331,7 @@ class LSTMCrowd(AdapterModel):
         else:
             self.woker_matrix = nn.Embedding(
                 worker_num, label_num, _weight=torch.zeros(worker_num, label_num))
+        self.crowd_test = crowd_test
 
     def forward(
         self, words: torch.Tensor, lengths: torch.Tensor, mask: torch.Tensor,
@@ -341,7 +344,7 @@ class LSTMCrowd(AdapterModel):
         embedding = self.word_dropout(embedding)
         feature = self.lstm(embedding, lengths)
 
-        if self.training:
+        if self.training or (self.crowd_test and aid[0].item() != 0):
             vector = self.woker_matrix(aid).unsqueeze(1).expand(-1, words.size(1), -1)
         elif hasattr(self, 'worker'):
             vector = self.woker_matrix.weight[self.worker]
@@ -353,7 +356,7 @@ class LSTMCrowd(AdapterModel):
             feature = torch.cat([feature, vector], dim=-1)
 
         scores = self.tag_projection(feature)
-        if not self.cat and (self.training or hasattr(self, 'worker')):
+        if not self.cat and (self.training or (self.crowd_test and aid[0].item() != 0) or hasattr(self, 'worker')):
             scores += vector
 
         output_dict = self.decode(scores, mask, tags, lengths)
@@ -368,9 +371,10 @@ class LCFineTune(LSTMCrowd):
         self.path = path
 
     def before_time_start(self, dataset, trainer, kwargs):
+        super().before_time_start(dataset, trainer, kwargs)
         print('load ', self.path)
         state = torch.load(self.path, map_location=trainer.device)
-        _ = state.pop('woker_matrix.weight')
+        # _ = state.pop('woker_matrix.weight')
         info = self.load_state_dict(state, strict=False)
         missd = [i for i in info[0] if not self.drop_param(i)]
         if missd:
