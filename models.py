@@ -216,10 +216,10 @@ class PGNModel(AdapterModel):
                  worker_num: int = 48,
                  adapter_size: int = 128,
                  pgn_layers: int = 12,
-                 batched_param: bool = False,
                  share_param: bool = False,
                  worker: int = None,
                  crowd_test: bool = False,
+                 bad_ids=(0,),
                  **kwargs):
         super().__init__(vocab, adapter_size, [True] * pgn_layers, **kwargs)
         self.worker_embedding = nn.Embedding(worker_num, worker_dim)  # max_norm=1.0
@@ -234,10 +234,10 @@ class PGNModel(AdapterModel):
         self.reset_parameters()
         self.adapter_size = adapter_size
         self.pgn_layers = pgn_layers
-        self.batched_param = batched_param
         self.share_param = share_param
         self.worker = worker
         self.crowd_test = crowd_test
+        self.mean_ids = [i for i in range(48) if i not in bad_ids]
 
     def reset_parameters(self):
         # bound = 1e-2
@@ -247,12 +247,13 @@ class PGNModel(AdapterModel):
         init.normal_(self.weight[2], std=1e-3)
 
     def set_worker(self, aid: torch.LongTensor):
-        if (self.training or self.crowd_test) and aid is not None and aid[0].item() != 0:
-            embedding = self.worker_embedding(aid[0] if self.batched_param else aid)
+        if self.training or self.crowd_test:
+            embedding = self.worker_embedding(aid)
         elif isinstance(self.worker, int):
             embedding = self.worker_embedding.weight[self.worker]
         else:
-            embedding = self.worker_embedding.weight.mean(0)
+            ids = torch.tensor(self.mean_ids, device=self.worker_embedding.weight.device)
+            embedding = self.worker_embedding(ids).mean(0)
         self.set_adapter_parameter(embedding)
 
     def set_adapter_parameter(self, embedding: torch.Tensor):

@@ -13,7 +13,7 @@ _ARG_PARSER.add_argument('--out', '-o', type=bool, default=False, help='预测�
 _ARG_PARSER.add_argument('--name', '-n', type=str, default=None, help='save name.')
 _ARG_PARSER.add_argument('--seed', '-s', type=int, default=123, help='random seed')
 _ARG_PARSER.add_argument('--debug', '-d', default=False, action="store_true")
-_ARG_PARSER.add_argument('--cache', type=bool, default=True, help='cache data')
+_ARG_PARSER.add_argument('--cache', type=bool, default=False, help='cache data')
 
 _ARG_PARSER.add_argument('--adapter_size', type=int, default=None)
 _ARG_PARSER.add_argument('--adapter_num', type=int, default=None)
@@ -47,7 +47,7 @@ if _ARGS:
 
     from util import allowed_transition
     from models import build_model
-    from datasets import CoNLL03Crowd
+    from datasets import CoNLL03Crowd, BAD_AID
 else:
     raise Exception('Argument error.')
 
@@ -163,6 +163,7 @@ def main(seed):
         cache_name += "-exclude_bad"
         prefix += "-exclude_bad"
         cfg.data['exclude_bad'] = _ARGS.exclude_bad
+        cfg.model['bad_ids'] = [0] + list(BAD_AID)
 
     if not os.path.exists(cache_path(cache_name)):
         dataset = argparse.Namespace(
