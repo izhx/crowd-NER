@@ -298,18 +298,39 @@ def scores_by_worker():
 
 def main():
     # sample_data()
-    # for p in (
-    #     # 'dev/out/cc-gt/test.txt',
-    #     # 'dev/out/cc-mv/test.txt',
-    #     # 'dev/out/lc-cat_123/test-3.txt',
-    #     # 'dev/out/cc-pg_123/test-4-wNone.txt',
-    #     # 'dev/out/cc-mv-semi-g0.05_123/test-6.txt',
-    #     # 'dev/out/lc-cat-semi-g0.05_123/test-3.txt',
-    #     # 'dev/out/cc-pg-semi-g0.05_123/test-13-w0.txt',
-    # ):
-    #     print('\n', p)
-    #     print(scores_by_entity(p))
-    scores_by_worker()
+    data = list()
+    for p in (
+        'dev/out/cc-gt/test.txt',
+        'dev/out/cc-mv/test.txt',
+        'dev/out/lc-cat_123/test-3.txt',
+        'dev/out/cc-pg_123/test-4-wNone.txt',
+        'dev/out/cc-mv-semi-g0.05_123/test-6.txt',
+        'dev/out/lc-cat-semi-g0.05_123/test-3.txt',
+        'dev/out/cc-pg-semi-g0.05_123/test-13-w0.txt',
+    ):
+        data.append(list(read_lines(p, sep='\t')))
+        # print('\n', p)
+        # print(scores_by_entity(p))
+    predictions = list()
+    for i in range(len(data[0])):
+        if len(data[0][i]) < 7:
+            continue
+        if len(data[0][i]) > 30:
+            continue
+        ins = list([[s[0] for s in data[0][i]], [s[1] for s in data[0][i]], [s[2] for s in data[0][i]]])
+        for j in range(1, len(data)):
+            ins.append([s[2] for s in data[j][i]])
+        predictions.append(ins)
+
+    print(len(predictions))
+
+    head = ['WORD', 'LA', 'GT', 'MV', 'LC', 'PG', 'MVS', 'LCS', 'PGS']
+    for p in predictions:  # 422
+        for r, h in zip(p, head):
+            print(h, '\t', '\t'.join(r))
+        input('任意键继续')
+
+    # scores_by_worker()
     return
 
 
