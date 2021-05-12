@@ -1,0 +1,13901 @@
+It O
+was O
+mostly O
+short O
+points O
+. O
+" O
+
+Stabaek B-ORG
+4 O
+Stromsgodset B-ORG
+0 O
+
+BRATISLAVA B-LOC
+1996-08-26 O
+
+She O
+played O
+one O
+great O
+game O
+and O
+than O
+a O
+few O
+errors O
+. O
+
+The O
+challenge O
+was O
+just O
+for O
+me O
+to O
+keep O
+playing O
+my O
+own O
+game O
+. O
+" O
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+Of O
+that O
+amount O
+, O
+4.05 O
+million O
+and O
+5.67 O
+million O
+shares O
+will O
+be O
+allocated O
+to O
+the O
+company O
+'s O
+trade O
+creditors O
+. O
+
+The O
+price O
+will O
+be O
+determined O
+through O
+book-building O
+. O
+
+LARNACA B-LOC
+, O
+Cyprus B-LOC
+1996-08-27 O
+
+No1 O
+Bare O
+Bright O
+91 O
+to O
+92 O
+cents O
+/ O
+pound O
+
+Lead O
+batteries O
+, O
+delivered O
+consumer O
+4.5 O
+to O
+6.0 O
+cents O
+/ O
+pound O
+
+( O
+D O
+) O
+
+CHILLICOTHE B-LOC
+, O
+Ohio B-LOC
+1996-08-25 O
+
+PARIS B-LOC
+1996-08-26 O
+
+But O
+there O
+was O
+no O
+repeat O
+of O
+the O
+ugly O
+scenes O
+that O
+used O
+to O
+scar O
+the O
+street O
+festival O
+, O
+and O
+police O
+praised O
+the O
+crowds O
+over O
+the O
+two O
+days O
+of O
+festivities O
+as O
+good-natured O
+. O
+
+Shopkeepers O
+still O
+board O
+up O
+their O
+windows O
+and O
+many O
+residents O
+leave O
+town O
+for O
+the O
+weekend O
+, O
+but O
+for O
+four O
+or O
+five O
+years O
+there O
+has O
+been O
+no O
+disorder O
+and O
+relatively O
+little O
+crime O
+. O
+
+played O
+on O
+Tuesday O
+: O
+
+10. O
+Teutenberg B-PER
+0:10 O
+
+He O
+'s O
+certainly O
+is O
+still O
+very O
+much O
+part O
+of O
+my O
+plans O
+for O
+the O
+future O
+. O
+
+TALLINN B-LOC
+1996-08-27 O
+
+In O
+the O
+latest O
+attack O
+, O
+the O
+killer O
+raped O
+and O
+stabbed O
+a O
+young O
+woman O
+in O
+a O
+lift O
+, O
+leaving O
+her O
+body O
+on O
+a O
+landing O
+. O
+
+The O
+total O
+number O
+of O
+victims O
+was O
+still O
+unknown O
+. O
+
+It O
+also O
+offers O
+to O
+refinance O
+up O
+to O
+50 O
+percent O
+of O
+the O
+debt O
+held O
+by O
+state O
+banks O
+whose O
+governments O
+decide O
+to O
+keep O
+control O
+of O
+their O
+banks O
+. O
+
+He O
+will O
+leave O
+on O
+Thursday O
+. O
+
+Rep B-MISC
+. O
+
+NORTH B-LOC
+DAKOTA I-LOC
+
+-- O
+Chicago B-LOC
+newsdesk O
+312-408-8720-- O
+
+LANKADEEPA B-ORG
+
+" O
+This O
+is O
+not O
+desireable O
+... O
+
+The O
+so-called O
+order O
+handling O
+rules O
+, O
+which O
+were O
+proposed O
+last O
+September O
+, O
+were O
+approved O
+in O
+a O
+4-0 O
+vote O
+. O
+
+Men O
+'s O
+400 O
+metres O
+: O
+
+Some O
+say O
+that O
+'s O
+too O
+old O
+for O
+an O
+athlete O
+, O
+" O
+he O
+said O
+. O
+
+15-7 O
+15-6 O
+
+Results O
+of O
+Major B-MISC
+League I-MISC
+
+Attendance O
+27,600 O
+. O
+
+Attendance O
+9,000 O
+. O
+
+0-0 O
+. O
+
+Pay O
+Sept O
+30 O
+
+I O
+said O
+you O
+should O
+n't O
+smoke O
+either O
+. O
+
+He O
+said O
+the O
+market O
+began O
+strong O
+, O
+gave O
+up O
+some O
+gains O
+at O
+midday O
+and O
+then O
+was O
+able O
+to O
+recover O
+back O
+at O
+the O
+close O
+, O
+but O
+all O
+on O
+light O
+volume O
+. O
+
+Rating O
+: O
+Aa2 O
+/ O
+VMIG O
+1 O
+
+ROME B-LOC
+1996-08-28 O
+
+First O
+half O
+1996 O
+
+Turnover O
+119.49 O
+vs O
+134.40 O
+
+She O
+gave O
+no O
+further O
+details O
+. O
+
+BRUSSELS B-LOC
+1996-08-28 O
+
+Extras O
+( O
+b-2 O
+lb-4 O
+w-7 O
+) O
+13 O
+
+W O
+L O
+PCT O
+GB O
+
+W O
+L O
+PCT O
+GB O
+
+Baseball O
+games O
+played O
+on O
+Wednesday O
+( O
+home O
+team O
+in O
+CAPS O
+) O
+: O
+
+" O
+The O
+request O
+I O
+have O
+received O
+is O
+for O
+their O
+officials O
+to O
+come O
+and O
+talk O
+to O
+my O
+officials O
+. O
+
+I O
+expect O
+to O
+have O
+a O
+great O
+deal O
+of O
+up O
+and O
+down O
+days O
+between O
+now O
+and O
+then O
+, O
+" O
+she O
+said O
+of O
+the O
+November O
+5 O
+election O
+date O
+. O
+
+Muscular O
+dystrophy O
+is O
+a O
+fatal O
+illness O
+in O
+which O
+the O
+body O
+'s O
+muscle O
+tissue O
+degenerates O
+and O
+is O
+replaced O
+by O
+fat O
+. O
+
+SEATTLE B-LOC
+1996-08-29 O
+
+17,024,000 O
+18,174,000 O
+31,834,000 O
+24,137,000 O
+
+" O
+There O
+will O
+be O
+fluctuations O
+in O
+individual O
+years O
+, O
+but O
+it O
+wo O
+n't O
+be O
+a O
+big O
+margin O
+, O
+" O
+he O
+said O
+. O
+
+Both O
+state O
+agency O
+bonds O
+will O
+have O
+seven-year O
+maturity O
+and O
+will O
+be O
+issued O
+on O
+September O
+5 O
+, O
+he O
+said O
+. O
+
+Jul-18.Jul O
+
+Ride O
+for O
+third O
+place O
+: O
+
+No O
+one O
+benefits O
+from O
+wars O
+. O
+" O
+
+Women O
+'s O
+100 O
+metres O
+hurdles O
+
+3,000 O
+metres O
+steeplechase O
+
+Men O
+'s O
+triple O
+jump O
+
+" O
+
+premier O
+league O
+soccer O
+match O
+: O
+
+LONDON B-LOC
+1996-08-26 O
+
+Leeds B-ORG
+1 O
+Wimbledon B-ORG
+0 O
+
+points O
+, O
+total O
+points O
+) O
+: O
+
+Essex B-ORG
+24 O
+points O
+, O
+
+Warwickshire B-ORG
+10 O
+. O
+
+Ethiopia B-LOC
+1 O
+Uganda B-LOC
+1 O
+
+Seychelles B-LOC
+1 O
+Mauritius B-LOC
+1 O
+
+Stadler B-ORG
+0 O
+Haladas B-ORG
+0 O
+
+Monterrey B-ORG
+2 O
+Veracruz B-ORG
+1 O
+
+MANILA B-LOC
+1996-08-26 O
+
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+for O
+, O
+goals O
+against O
+, O
+points O
+) O
+: O
+
+Results O
+of O
+South B-MISC
+Korean I-MISC
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+" O
+I O
+think O
+I O
+did O
+n't O
+play O
+that O
+bad O
+today O
+. O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+WESTERN B-MISC
+DIVISION I-MISC
+
+OAKLAND B-ORG
+AT O
+BALTIMORE B-LOC
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+He O
+was O
+back O
+in O
+the O
+starting O
+lineup O
+Thursday O
+night O
+and O
+went O
+1-for-2 O
+before O
+exiting O
+in O
+the O
+third O
+inning O
+. O
+
+division O
+soccer O
+match O
+played O
+on O
+Sunday O
+: O
+
+Total O
+( O
+for O
+seven O
+wickets O
+- O
+50 O
+overs O
+) O
+263 O
+
+COLOMBO B-LOC
+1996-08-26 O
+
+KIRKLAND B-LOC
+, O
+Wash B-LOC
+. O
+
+International O
+observers O
+say O
+the O
+alleged O
+irregularities O
+could O
+affect O
+the O
+outcome O
+of O
+voting O
+for O
+municipal O
+assemblies O
+. O
+
+There O
+were O
+about O
+1,400 O
+to O
+1,600 O
+people O
+at O
+the O
+protest O
+today O
+-- O
+much O
+less O
+then O
+last O
+week O
+. O
+
+The O
+firm O
+also O
+revised O
+down O
+its O
+year-end O
+peso O
+forecast O
+to O
+7.85-8.15 O
+per O
+dollar O
+from O
+8.20-8.50 O
+. O
+
+It O
+forecast O
+an O
+end O
+1997 O
+peso O
+in O
+the O
+range O
+of O
+9.20-9.40 O
+. O
+
+1.206 O
+bln O
+3 O
+days O
+
+" O
+Remarkably O
+both O
+the O
+train O
+driver O
+and O
+the O
+truck O
+driver O
+were O
+not O
+injured O
+, O
+" O
+the O
+rail O
+spokesman O
+said O
+. O
+
+The O
+company O
+said O
+it O
+was O
+not O
+aware O
+of O
+any O
+reason O
+for O
+the O
+surge O
+. O
+
+It O
+was O
+softer O
+in O
+the O
+morning O
+due O
+to O
+relatively O
+ample O
+rupiah O
+liquidity O
+but O
+recovered O
+later O
+. O
+
+" O
+There O
+is O
+a O
+question O
+mark O
+over O
+this O
+issue O
+. O
+
+He O
+was O
+saved O
+only O
+by O
+a O
+miracle O
+. O
+" O
+
+No2 O
+Refined O
+75 O
+to O
+77 O
+cents O
+/ O
+pound O
+
+Our O
+personal O
+and O
+religious O
+liberties O
+would O
+be O
+at O
+risk O
+. O
+
+We O
+'re O
+not O
+going O
+to O
+let O
+them O
+get O
+away O
+with O
+that O
+. O
+" O
+
+DALLAS B-LOC
+1996-08-26 O
+
+We O
+have O
+a O
+record O
+of O
+going O
+beyond O
+regulatory O
+requirements O
+... O
+and O
+we O
+consistently O
+share O
+the O
+most O
+current O
+information O
+available O
+... O
+with O
+customers O
+and O
+employees O
+. O
+" O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+CALL O
+: O
+Non-Callable O
+NIC O
+
+STATE B-LOC
+OF I-LOC
+OHIO I-LOC
+
+She O
+even O
+worked O
+ropelines O
+, O
+shaking O
+hands O
+with O
+excited O
+fans O
+. O
+
+But O
+the O
+only O
+thing O
+really O
+worrying O
+the O
+market O
+was O
+the O
+bonds O
+, O
+and O
+that O
+dragged O
+us O
+lower O
+, O
+" O
+one O
+dealer O
+said O
+. O
+
+" O
+I O
+will O
+no O
+longer O
+be O
+deputy O
+by O
+the O
+time O
+the O
+film O
+opens O
+, O
+" O
+he O
+said O
+in O
+a O
+broadcast O
+interview O
+. O
+
+It O
+accepted O
+bids O
+for O
+44.3 O
+billion O
+francs O
+in O
+new O
+liquidity O
+, O
+3.9 O
+billion O
+less O
+than O
+the O
+48.2 O
+billion O
+leaving O
+the O
+market O
+on O
+Tuesday O
+when O
+a O
+previous O
+pact O
+expires O
+. O
+
+AMSTERDAM B-LOC
+1996-08-26 O
+
+BUSINESS O
+PAGES O
+
+HELSINKI B-LOC
+1996-08-26 O
+
+LATEST O
+PREVIOUS O
+ACTUAL O
+
+NovDec O
+unq O
+732.50 O
+unq O
+unq O
+
+L-ORIZZONT B-LOC
+
+" O
+I O
+do O
+often O
+hear O
+on O
+the O
+industry O
+circuit O
+of O
+tales O
+where O
+the O
+company O
+tenders O
+at O
+low O
+margins O
+and O
+the O
+demonstrations O
+which O
+follow O
+means O
+they O
+are O
+running O
+the O
+project O
+at O
+a O
+loss O
+. O
+" O
+
+BELCHATOW B-LOC
+, O
+Poland B-LOC
+1996-08-27 O
+
+English B-MISC
+league O
+soccer O
+standings O
+
+after O
+Tuesday O
+'s O
+matches O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+
+Divisionn O
+two O
+
+Portsmouth B-ORG
+1 O
+Southend B-ORG
+0 O
+
+Watford B-ORG
+0 O
+Plymouth B-ORG
+2 O
+
+Wycombe B-ORG
+0 O
+Bury B-ORG
+1 O
+
+highest O
+score O
+, O
+average O
+) O
+: O
+
+15-4 O
+12-15 O
+15-14 O
+
+Women O
+'s O
+singles O
+
+Republic B-LOC
+) O
+6-4 O
+6-1 O
+
+Women O
+'s O
+singles O
+
+CLEVELAND B-ORG
+AT O
+DETROIT B-LOC
+
+LOS B-ORG
+ANGELES I-ORG
+AT O
+MONTREAL B-LOC
+
+FLORIDA B-ORG
+AT O
+ST B-LOC
+LOUIS I-LOC
+
+It O
+gave O
+me O
+more O
+life O
+in O
+all O
+of O
+my O
+pitches O
+, O
+so O
+the O
+ball O
+moved O
+more O
+. O
+" O
+
+TORONTO B-ORG
+5 O
+Minnesota B-ORG
+3 O
+
+Larry B-PER
+Fine I-PER
+
+Attendance O
+: O
+20,000 O
+
+The O
+bill O
+looked O
+promising O
+but O
+both O
+sides O
+, O
+struggling O
+to O
+find O
+their O
+form O
+early O
+in O
+the O
+season O
+, O
+were O
+disappointing O
+. O
+
+BONN B-LOC
+1996-08-27 O
+
+1-0 O
+. O
+
+division O
+soccer O
+match O
+played O
+on O
+Tuesday O
+: O
+
+Leading O
+overall O
+standings O
+after O
+first O
+stage O
+. O
+
+( O
+CZK O
+) O
+( O
+CZK O
+) O
+( O
+shares O
+) O
+( O
+CZK O
+000 O
+'s O
+) O
+
+DUBLIN B-LOC
+1996-08-27 O
+
+NAIROBI B-LOC
+1996-08-27 O
+
+Diplomats O
+say O
+the O
+effect O
+of O
+the O
+electoral O
+engineering O
+would O
+be O
+to O
+establish O
+political O
+control O
+over O
+districts O
+they O
+conquered O
+and O
+ethnically O
+cleansed O
+in O
+war O
+. O
+
+Dmitry B-PER
+Kuznets I-PER
+
+We O
+might O
+also O
+help O
+them O
+to O
+do O
+it O
+, O
+if O
+they O
+go O
+on O
+like O
+this O
+, O
+" O
+he O
+said O
+. O
+
+A O
+third O
+and O
+final O
+vote O
+was O
+due O
+to O
+be O
+held O
+when O
+parliament O
+reconvened O
+on O
+Tuesday O
+but O
+legislators O
+were O
+not O
+expecting O
+a O
+clear O
+result O
+. O
+
+This O
+support O
+only O
+inched O
+up O
+to O
+49 O
+in O
+the O
+second O
+vote O
+. O
+
+He O
+also O
+said O
+the O
+company O
+expect O
+to O
+record O
+a O
+83 O
+billion O
+rupiah O
+of O
+net O
+profit O
+in O
+1997 O
+. O
+
+He O
+was O
+spotted O
+by O
+a O
+passerby O
+trying O
+to O
+climb O
+into O
+an O
+apartment O
+in O
+the O
+early O
+hours O
+of O
+Monday O
+morning O
+, O
+" O
+the O
+spokesman O
+said O
+. O
+
+ANKARA B-LOC
+1996-08-27 O
+
+Spring O
+Chg O
+Durum O
+( O
+m O
+) O
+Chg O
+White O
+Chg O
+
+Issuer O
+: O
+Akron B-ORG
+
+Expected O
+Sale O
+Date O
+: O
+08/28/96 O
+
+MIAMI B-LOC
+1996-08-27 O
+
+DAILY B-ORG
+NEWS I-ORG
+
+Bread O
+and O
+flour O
+prices O
+have O
+been O
+raised O
+with O
+immediate O
+effect O
+but O
+government O
+will O
+provide O
+relief O
+to O
+underpriviledged O
+sections O
+of O
+society O
+. O
+
+DINAMINA B-ORG
+
+She O
+later O
+suffered O
+heart O
+failure O
+and O
+was O
+diagnosed O
+with O
+malaria O
+. O
+
+All O
+of O
+us O
+know O
+about O
+her O
+. O
+
+M1 O
+money O
+supply O
+( O
+bln O
+taka O
+) O
+144.5 O
+139.3 O
+131.7 O
+
+Helibor B-MISC
+market O
+interest O
+rates O
+
+SPOT O
+REFERENCE O
+95.35 O
+PCT O
+
+TORONTO B-LOC
+1996-08-27 O
+
+The O
+censorship O
+office O
+denied O
+they O
+had O
+confiscated O
+the O
+newspapers O
+but O
+declined O
+to O
+say O
+when O
+they O
+could O
+go O
+on O
+sale O
+. O
+
+Nasdaq B-MISC
+Stock O
+symbol O
+TKTX O
+
+CHICAGO B-LOC
+1996-08-26 O
+
+But O
+it O
+noted O
+in O
+a O
+brief O
+statement O
+: O
+" O
+However O
+, O
+it O
+is O
+too O
+early O
+to O
+say O
+at O
+this O
+stage O
+whether O
+or O
+not O
+terms O
+can O
+be O
+agreed O
+. O
+" O
+
+They O
+said O
+police O
+and O
+the O
+emergency O
+services O
+were O
+implementing O
+a O
+well-rehearsed O
+contingency O
+plan O
+to O
+handle O
+the O
+hijacking O
+. O
+
+Total O
+( O
+in O
+billion O
+rupiah O
+) O
+38.43 O
+218.50 O
+
+BEIJING B-LOC
+1996-08-27 O
+
+TOKYO B-LOC
+1996-08-27 O
+
+July O
+inventories O
+stood O
+at O
+75,632 O
+tonnes O
+, O
+down O
+2.6 O
+percent O
+from O
+the O
+prior O
+month O
+. O
+
+June O
+mill O
+output O
+data O
+were O
+revised O
+slightly O
+downward O
+to O
+210,622 O
+tonnes O
+from O
+the O
+preliminary O
+210,683 O
+, O
+while O
+shipments O
+were O
+revised O
+marginally O
+upward O
+to O
+213,989 O
+tonnes O
+from O
+213,845 O
+. O
+
+BEIJING B-LOC
+1996-08-27 O
+
+Specialists O
+and O
+market O
+makers O
+are O
+companies O
+or O
+individuals O
+recognised O
+as O
+qualified O
+to O
+maintain O
+an O
+orderly O
+market O
+in O
+a O
+stock O
+. O
+
+ROME B-LOC
+1996-08-28 O
+
+Leading O
+results O
+from O
+an O
+
+4. O
+Teutenberg B-PER
+4 O
+seconds O
+
+6. O
+Koerts B-PER
+7 O
+
+7. O
+Ozers B-PER
+8 O
+
+Selected O
+result O
+from O
+first O
+round O
+
+4:20.241 O
+
+MANCHESTER B-LOC
+, O
+England B-LOC
+1996-08-28 O
+
+LONDON B-LOC
+1996-08-28 O
+
+( O
+80th O
+) O
+
+CLEVELAND B-ORG
+AT O
+DETROIT B-LOC
+
+MINNESOTA B-ORG
+AT O
+TORONTO B-LOC
+
+PITTSBURGH B-ORG
+3 O
+Atlanta B-ORG
+2 O
+
+But O
+the O
+day O
+was O
+not O
+without O
+its O
+seeded O
+casualties O
+on O
+the O
+women O
+'s O
+side O
+. O
+
+AMSTERDAM B-LOC
+1996-08-28 O
+
+first O
+division O
+after O
+Wednesday O
+'s O
+matches O
+: O
+
+Attendance O
+5,696 O
+. O
+
+1-1 O
+. O
+
+Played O
+Tuesday O
+: O
+
+Auxerre B-ORG
+0 O
+Marseille B-ORG
+0 O
+
+Teams O
+: O
+
+the O
+FDA B-ORG
+said O
+. O
+
+subject O
+to O
+limit O
+5,124.053 O
+5,122.084 O
+
+The O
+reduction O
+in O
+noise O
+levels O
+is O
+the O
+same O
+as O
+proposed O
+in O
+a O
+consultation O
+paper O
+which O
+was O
+published O
+in O
+October O
+1995 O
+. O
+
+CAIRO B-LOC
+1996-08-28 O
+
+MONROVIA B-LOC
+1996-08-28 O
+
+BRATISLAVA B-LOC
+1996-08-28 O
+
+In O
+the O
+original O
+state O
+budget O
+, O
+approved O
+in O
+March O
+, O
+revenues O
+were O
+envisaged O
+at O
+around O
+16.98 O
+trillion O
+lei O
+and O
+expenditures O
+20.17 O
+trillion O
+lei O
+for O
+1996 O
+. O
+
+" O
+Extradition O
+is O
+not O
+on O
+the O
+government O
+'s O
+legislative O
+agenda O
+, O
+" O
+he O
+told O
+reporters O
+on O
+Tuesday O
+. O
+
+The O
+maximum O
+sentence O
+for O
+heroin O
+trafficking O
+is O
+the O
+death O
+penalty O
+, O
+although O
+it O
+is O
+normally O
+commuted O
+to O
+life O
+imprisonment O
+. O
+
+" O
+He O
+'ll O
+probably O
+mention O
+his O
+war O
+on O
+drugs O
+, O
+which O
+he O
+'s O
+going O
+to O
+start O
+like O
+everything O
+else O
+-- O
+next O
+year O
+. O
+
+We O
+want O
+to O
+stop O
+drugs O
+at O
+the O
+border O
+, O
+" O
+he O
+said O
+. O
+
+2003 O
+705M O
+- O
+795M O
+
+Greg B-PER
+Frost I-PER
+
+The O
+bank O
+said O
+most O
+of O
+the O
+charges O
+resulted O
+from O
+loan O
+portfolios O
+from O
+banks O
+and O
+thrifts O
+that O
+were O
+acquired O
+in O
+the O
+1980s O
+. O
+
+AMSTERDAM B-LOC
+1996-08-28 O
+
+Witnesses O
+said O
+protesters O
+carrying O
+colourful O
+party O
+flags O
+walked O
+for O
+several O
+miles O
+, O
+chanting O
+anti-government O
+slogans O
+. O
+
+CURRENCIES O
+AT O
+1500 O
+GMT B-MISC
+
+( O
+$ O
+1=.6421 O
+Sterling O
+) O
+
+" O
+Both O
+countries O
+' O
+governments O
+were O
+formed O
+recently O
+. O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+Auth B-ORG
+. I-ORG
+
+-- O
+The O
+stock O
+was O
+up O
+3/4 O
+at O
+35-7/8 O
+. O
+
+Gun-wielding O
+motorist O
+snapped O
+by O
+cool O
+passenger O
+. O
+
+The O
+new O
+law O
+was O
+introduced O
+with O
+much O
+fanfare O
+in O
+1993 O
+. O
+
+- O
+Operating O
+profit O
+46 O
+vs O
+48 O
+
+-- O
+Inflows O
+of O
+more O
+than O
+$ O
+500 O
+million O
+are O
+seen O
+in O
+the O
+interbank O
+market O
+and O
+the O
+bourse O
+in O
+the O
+last O
+three O
+days O
+reflecting O
+confidence O
+in O
+the O
+post-election O
+economic O
+policy O
+
+NAFTEMBORIKI O
+
+Tax O
+13.26 O
+vs O
+11.16 O
+
+The O
+company O
+did O
+not O
+declare O
+an O
+interim O
+dividend O
+as O
+in O
+the O
+previous O
+year O
+. O
+
+" O
+It O
+is O
+one O
+step O
+short O
+of O
+an O
+emergency O
+situation O
+, O
+" O
+a O
+police O
+spokesman O
+said O
+via O
+telephone O
+from O
+a O
+command O
+post O
+in O
+the O
+bush O
+. O
+
+" O
+It O
+'s O
+a O
+possibility O
+, O
+not O
+a O
+probability O
+, O
+he O
+may O
+take O
+a O
+hostage O
+, O
+but O
+we O
+have O
+measures O
+in O
+place O
+if O
+that O
+is O
+the O
+case O
+. O
+" O
+
+ARANYAPRATHET O
+, O
+Thailand B-LOC
+1996-08-28 O
+
+BEIJING B-LOC
+1996-08-28 O
+
+But O
+many O
+analysts O
+and O
+politicians O
+believe O
+he O
+may O
+dissolve O
+parliament O
+soon O
+after O
+it O
+reconvenes O
+in O
+early O
+October O
+. O
+
+EL B-ORG
+PAIS I-ORG
+
+DIARIO B-ORG
+16 I-ORG
+
+BONN B-LOC
+1996-08-28 O
+
+PARIS B-LOC
+1996-08-29 O
+
+66 O
+75 O
+
+1. O
+Sorensen B-PER
+11.20:33 O
+
+Saqlain B-PER
+Mushtaq I-PER
+. O
+
+1-6 O
+6-1 O
+
+6-4 O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+6-2 O
+6-2 O
+
+standings O
+after O
+games O
+played O
+on O
+Wednesday O
+( O
+tabulate O
+under O
+won O
+, O
+
+BALTIMORE B-ORG
+AT O
+SEATTLE B-LOC
+
+NATIONAL B-MISC
+LEAGUE I-MISC
+
+You O
+have O
+to O
+concentrate O
+for O
+these O
+two O
+weeks O
+. O
+" O
+
+" O
+Sometimes O
+the O
+transportation O
+they O
+( O
+the O
+tournament O
+) O
+provide O
+gets O
+a O
+little O
+messed O
+up O
+. O
+
+He O
+has O
+always O
+insisted O
+that O
+they O
+were O
+just O
+friends O
+. O
+
+- O
+Cabinet O
+meeting O
+establishes O
+five O
+new O
+administrative O
+regions O
+and O
+four O
+new O
+departments O
+as O
+part O
+of O
+government O
+decentralisation O
+policy O
+. O
+
+SKOPJE B-LOC
+1996-08-29 O
+
+" O
+As O
+we O
+have O
+said O
+publicly O
+before O
+, O
+if O
+there O
+is O
+any O
+effort O
+to O
+do O
+so O
+( O
+hold O
+local O
+elections O
+) O
+these O
+elections O
+will O
+not O
+be O
+valid O
+, O
+" O
+he O
+said O
+. O
+" O
+
+They O
+caused O
+damage O
+but O
+no O
+casualties O
+, O
+police O
+said O
+. O
+
+Illness O
+from O
+viral O
+meningitis O
+lasts O
+around O
+a O
+week O
+. O
+
+We O
+can O
+talk O
+about O
+it O
+and O
+I O
+am O
+prepared O
+to O
+take O
+all O
+the O
+consequences O
+of O
+mismanagement O
+if O
+any O
+. O
+" O
+
+Nevertheless O
+, O
+exports O
+over O
+the O
+first O
+seven O
+months O
+of O
+the O
+year O
+were O
+16.8 O
+percent O
+lower O
+than O
+during O
+the O
+same O
+period O
+last O
+year O
+, O
+at O
+$ O
+2.240 O
+billion O
+compared O
+to O
+$ O
+2.693 O
+billion O
+. O
+
+Maturing O
+credits O
+are O
+seen O
+at O
+2.209 O
+billion O
+pesos O
+, O
+and O
+there O
+is O
+an O
+oversupply O
+of O
+684 O
+billion O
+pesos O
+from O
+the O
+primary O
+auction O
+. O
+
+Dealers O
+estimate O
+that O
+the O
+shortfall O
+will O
+increase O
+due O
+to O
+the O
+inflow O
+of O
+funds O
+before O
+the O
+end O
+of O
+the O
+month O
+. O
+
+Some O
+electoral O
+watchdog O
+groups O
+also O
+said O
+the O
+presence O
+of O
+the O
+army O
+, O
+which O
+has O
+fanned O
+out O
+across O
+the O
+state O
+in O
+the O
+past O
+month O
+in O
+search O
+of O
+a O
+new O
+guerrilla O
+group O
+, O
+was O
+likely O
+to O
+intimidate O
+voters O
+and O
+had O
+stirred O
+up O
+tension O
+in O
+the O
+state O
+. O
+
+HONG B-LOC
+KONG I-LOC
+1996-08-29 O
+
+Nearly O
+two-thirds O
+of O
+the O
+people O
+surveyed O
+thought O
+the O
+government O
+was O
+dishonest O
+and O
+insincere O
+, O
+and O
+65 O
+percent O
+blamed O
+the O
+government O
+'s O
+poor O
+performance O
+for O
+the O
+country O
+'s O
+economic O
+slowdown O
+. O
+
+SKHIRAT B-LOC
+, O
+Morocco B-LOC
+1996-08-29 O
+
+Michael B-PER
+Conlon I-PER
+
+15 O
+Year O
+A-rated O
+Gen'l O
+Obligation O
+5.40 O
+% O
+5.35 O
+% O
++0.05 O
+
+Recent O
+want-ad O
+figures O
+indicate O
+that O
+conservative O
+hiring O
+plans O
+are O
+keeping O
+job O
+growth O
+below O
+the O
+rate O
+of O
+overall O
+economic O
+activity O
+. O
+" O
+
+A O
+second O
+man O
+and O
+two O
+women O
+also O
+were O
+being O
+sought O
+. O
+
+Jackie B-PER
+Frank I-PER
+
+He O
+told O
+reporters O
+a O
+court O
+order O
+not O
+to O
+talk O
+about O
+his O
+case O
+kept O
+him O
+from O
+detailing O
+how O
+he O
+has O
+fulfilled O
+his O
+pledge O
+to O
+find O
+the O
+killers O
+. O
+
+" O
+I O
+'m O
+broke O
+. O
+
+I O
+can O
+get O
+along O
+just O
+fine O
+, O
+" O
+he O
+said O
+. O
+" O
+
+" O
+I O
+will O
+not O
+subject O
+my O
+wife O
+, O
+family O
+or O
+friends O
+to O
+the O
+sadistic O
+, O
+vitriol O
+of O
+yellow O
+journalism O
+. O
+
+RENNES B-ORG
+1996-08-29 O
+
+- O
+The O
+government O
+is O
+facing O
+extreme O
+difficulties O
+in O
+meeting O
+its O
+revenue O
+collections O
+targets O
+for O
+1996/97 O
+. O
+
+Pay O
+Sept O
+27 O
+
+The O
+company O
+has O
+announced O
+plans O
+to O
+take O
+a O
+charge O
+against O
+earnings O
+of O
+$ O
+50 O
+million O
+to O
+$ O
+80 O
+million O
+to O
+write O
+down O
+the O
+value O
+of O
+assets O
+and O
+inventories O
+and O
+cover O
+severance O
+payments O
+. O
+
+Pro O
+forma O
+net O
+
+Pro O
+forma O
+weighted O
+average O
+
+" O
+I O
+hate O
+you O
+f... O
+ing O
+lot O
+, O
+yet O
+you O
+'re O
+always O
+asking O
+me O
+too O
+many O
+things O
+. O
+
+The O
+differential O
+is O
+not O
+normally O
+as O
+wide O
+as O
+this O
+, O
+" O
+he O
+added O
+. O
+
+Unknown O
+- O
+161,600 O
+
+B- O
+reflects O
+55,000 O
+tonnes O
+changed O
+from O
+unknown O
+. O
+
+BOSTON B-LOC
+1996-08-29 O
+
+No O
+one O
+immediately O
+claimed O
+responsibility O
+for O
+Thursday O
+'s O
+incidents O
+, O
+which O
+brought O
+to O
+23 O
+the O
+number O
+of O
+guerrilla O
+attacks O
+on O
+the O
+resort O
+island O
+since O
+mid-August O
+, O
+when O
+separatist O
+guerrillas O
+ended O
+a O
+shaky O
+seven-month O
+truce O
+. O
+
+Fuel O
+oil O
+inventories O
+dipped O
+slightly O
+with O
+some O
+straight-run O
+arrivals O
+, O
+but O
+fair O
+bunkering O
+demand O
+removing O
+more O
+material O
+. O
+
+GENOA B-LOC
+, O
+Italy B-LOC
+1996-08-29 O
+
+The O
+rise O
+has O
+been O
+very O
+quick O
+and O
+very O
+crazy O
+. O
+" O
+
+" O
+It O
+'s O
+very O
+difficult O
+to O
+predict O
+the O
+market O
+( O
+trend O
+) O
+this O
+year O
+. O
+
+" O
+You O
+know O
+, O
+we O
+went O
+through O
+a O
+little O
+climb O
+and O
+a O
+little O
+trough O
+over O
+the O
+last O
+few O
+years O
+. O
+
+LAST O
+JCR O
+LAST O
+JBRI O
+A O
+LAST O
+NIS O
+
+JAKARTA B-LOC
+1996-08-29 O
+
+" O
+We O
+are O
+having O
+a O
+lot O
+of O
+problems O
+, O
+" O
+said O
+a O
+source O
+. O
+
+BANGKOK B-LOC
+1996-08-29 O
+
+Trade O
+( O
+bln O
+pts O
+) O
+May O
+- O
+196.8 O
+- O
+180.6 O
+- O
+279.9 O
+- O
+- O
+
+May O
+- O
+- O
+- O
+- O
+- O
+
+ABC B-ORG
+
+EXPANSION B-ORG
+
+Donna B-PER
+Sells I-PER
+
+Scorers O
+: O
+
+Division O
+three O
+
+" O
+The O
+problem O
+is O
+over O
+. O
+
+" O
+I O
+'m O
+pleased O
+because O
+I O
+did O
+n't O
+play O
+that O
+great O
+today O
+, O
+but O
+I O
+fought O
+really O
+well O
+, O
+" O
+he O
+said O
+. O
+" O
+
+" O
+She O
+'s O
+fine O
+with O
+it O
+. O
+
+That O
+'s O
+the O
+truth O
+. O
+" O
+
+The O
+message O
+was O
+quite O
+clear O
+, O
+" O
+she O
+told O
+one O
+interviewer O
+. O
+" O
+
+Results O
+in O
+the O
+Malaysian B-MISC
+
+BRUSSELS B-LOC
+1996-08-23 O
+
+Women O
+'s O
+discus O
+
+Men O
+'s O
+110 O
+metres O
+hurdles O
+
+Men O
+'s O
+400 O
+metres O
+hurdles O
+
+Women O
+'s O
+1,500 O
+metres O
+
+Women O
+'s O
+1,000 O
+metres O
+
+( O
+world O
+record O
+) O
+
+Men O
+'s O
+1,500 O
+metres O
+
+8 O
+equal O
+. O
+
+" O
+That O
+'s O
+a O
+perennial O
+problem O
+. O
+
+, O
+said O
+the O
+contract O
+was O
+" O
+not O
+unique O
+, O
+but O
+it O
+'s O
+big O
+. O
+" O
+
+" O
+It O
+'s O
+not O
+as O
+though O
+it O
+has O
+n't O
+had O
+an O
+impact O
+, O
+" O
+he O
+said O
+. O
+" O
+
+Women O
+'s O
+200 O
+metres O
+
+Men O
+'s O
+200 O
+metres O
+
+Men O
+'s O
+100 O
+metres O
+
+OSLO B-LOC
+1996-08-25 O
+
+soccer O
+matches O
+at O
+the O
+weekend O
+: O
+
+" O
+I O
+do O
+n't O
+think O
+one O
+should O
+have O
+expected O
+more O
+than O
+what O
+one O
+got O
+, O
+" O
+he O
+said O
+. O
+" O
+
+" O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+Other O
+shares O
+were O
+slightly O
+lower O
+, O
+mirroring O
+bonds O
+. O
+
+Bradford B-ORG
+finished O
+third O
+. O
+
+Result O
+of O
+the O
+1,000 B-MISC
+
+LONDON B-LOC
+1996-08-26 O
+
+league O
+soccer O
+match O
+on O
+Monday O
+: O
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+gave O
+him O
+his O
+300th O
+test O
+match O
+wicket O
+. O
+
+the O
+feat O
+. O
+
+English B-MISC
+County I-MISC
+Championship I-MISC
+
+cricket O
+standings O
+after O
+Monday O
+'s O
+matches O
+( O
+tabulated O
+under O
+
+Results O
+on O
+the O
+final O
+day O
+of O
+
+Gloucestershire B-ORG
+3 O
+. O
+
+declared O
+. O
+
+Yorkshire B-ORG
+529-8 O
+declared O
+
+Leicestershire B-ORG
+353 O
+. O
+
+Hampshire B-ORG
+137 O
+
+Monday O
+: O
+
+Extras O
+( O
+b-6 O
+lb-2 O
+w-1 O
+nb-13 O
+) O
+22 O
+
+Total O
+242 O
+
+8-238 O
+9-242 O
+
+10-3-30-0 O
+
+Total O
+( O
+for O
+one O
+wicket O
+) O
+48 O
+
+Pakistan B-LOC
+win O
+series O
+2-0 O
+
+LONDON B-LOC
+1996-08-26 O
+
+points O
+for O
+, O
+against O
+, O
+total O
+points O
+) O
+: O
+
+LONDON B-LOC
+1996-08-26 O
+
+Saturday O
+, O
+August O
+31 O
+: O
+
+Swindon B-ORG
+. O
+
+v O
+Stranraer B-ORG
+. O
+
+Sunday O
+, O
+September O
+1 O
+: O
+
+drew O
+1-1 O
+( O
+halftime O
+1-0 O
+) O
+in O
+a O
+friendly O
+soccer O
+international O
+on O
+
+Sunday O
+. O
+
+Mark B-PER
+Gleeson I-PER
+
+JOHANNESBURG B-LOC
+1996-08-26 O
+
+2-2 O
+on O
+aggregate O
+. O
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+MOSCOW B-LOC
+1996-08-26 O
+
+Results O
+of O
+Slovak B-MISC
+first O
+
+division O
+soccer O
+matches O
+at O
+the O
+weekend O
+: O
+
+goals O
+for O
+, O
+goals O
+against O
+, O
+points O
+) O
+: O
+
+Hungarian B-MISC
+first O
+division O
+
+MTK B-ORG
+3 O
+Ferencvaros B-ORG
+0 O
+
+Bekescsaba B-ORG
+0 O
+BVSC B-ORG
+1 O
+
+ZTE B-ORG
+1 O
+Debrecen B-ORG
+5 O
+
+Siofok B-ORG
+0 O
+Ujpest B-ORG
+2 O
+
+Vac B-ORG
+0 O
+Vasas B-ORG
+1 O
+
+Kispest B-ORG
+3 O
+Pecs B-ORG
+1 O
+
+for O
+, O
+goals O
+against O
+, O
+points O
+) O
+: O
+
+PRAGUE B-LOC
+1996-08-26 O
+
+goals O
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+Pachuca B-ORG
+3 O
+Toluca B-ORG
+0 O
+
+Puebla B-ORG
+2 O
+UNAM B-ORG
+1 O
+
+Santos B-ORG
+2 O
+Morelia B-ORG
+1 O
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+Group O
+4 O
+
+SOCCER O
+- O
+PLAYERS O
+LEAVE O
+MATCH O
+EARLY O
+TO O
+CATCH O
+PLANE O
+. O
+
+Brian B-PER
+Homewood I-PER
+
+BUENOS B-LOC
+AIRES I-LOC
+1996-08-26 O
+
+Huracan-Corrientes B-ORG
+3 O
+Union B-ORG
+6 O
+
+( O
+halftime O
+3-0 O
+) O
+in O
+a O
+friendly O
+soccer O
+international O
+on O
+Sunday O
+. O
+
+RIO B-LOC
+DE I-LOC
+JANEIRO I-LOC
+1996-08-26 O
+
+Results O
+of O
+Brazilian B-MISC
+
+Bahia B-ORG
+1 O
+Botafogo B-ORG
+2 O
+
+Cricuma B-ORG
+4 O
+Fluminense B-ORG
+1 O
+
+Cruzeiro B-ORG
+2 O
+Flamengo B-ORG
+1 O
+
+Parana B-ORG
+3 O
+Guarani B-ORG
+0 O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+Note O
+: O
+Top O
+eight O
+teams O
+qualify O
+for O
+the O
+quarter-finals O
+. O
+
+If O
+
+number O
+of O
+games O
+won O
+. O
+
+games O
+played O
+on O
+Sunday O
+. O
+
+pro-baseball O
+games O
+played O
+on O
+Sunday O
+. O
+
+OB B-ORG
+2 O
+Lotte B-ORG
+1 O
+
+Hanwha B-ORG
+3 O
+Haitai B-ORG
+2 O
+
+Hyundai B-ORG
+8 O
+Samsung B-ORG
+1 O
+
+Ssangbangwool B-ORG
+3 O
+LG B-ORG
+1 O
+
+Standings O
+after O
+games O
+played O
+on O
+Sunday O
+( O
+tabulate O
+under O
+won O
+, O
+
+soccer O
+matches O
+played O
+on O
+Sunday O
+: O
+
+Settat B-ORG
+1 O
+Marrakesh B-ORG
+0 O
+
+Khouribga B-ORG
+3 O
+Mohammedia B-ORG
+0 O
+
+Bill B-PER
+Berkrot I-PER
+
+When O
+the O
+tournament O
+began O
+on O
+Monday O
+it O
+was O
+the O
+fans O
+' O
+turn O
+to O
+be O
+offended O
+. O
+
+Indeed O
+, O
+a O
+nice O
+glass O
+of O
+chardonnay O
+or O
+white O
+zinfandel O
+was O
+going O
+for O
+$ O
+4.75 O
+, O
+while O
+an O
+imported O
+beer O
+was O
+just O
+a O
+bit O
+more O
+than O
+the O
+water O
+at O
+$ O
+4.50 O
+. O
+
+Fans O
+will O
+be O
+shelling O
+out O
+$ O
+12.50 O
+for O
+a O
+hamburger O
+and O
+a O
+large O
+french O
+fries O
+. O
+
+Make O
+that O
+$ O
+16.50 O
+. O
+
+Even O
+a O
+sandwich O
+as O
+pedestrian O
+as O
+a O
+ham O
+and O
+swiss O
+cheese O
+is O
+going O
+for O
+a O
+whopping O
+$ O
+8.00 O
+. O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+I O
+know O
+that O
+if O
+I O
+want O
+to O
+play O
+professional O
+tennis O
+I O
+have O
+to O
+do O
+my O
+best O
+to O
+try O
+to O
+beat O
+her O
+and O
+I O
+ca O
+n't O
+be O
+scared O
+. O
+" O
+
+" O
+In O
+terms O
+of O
+tennis O
+, O
+I O
+think O
+the O
+junior O
+players O
+are O
+really O
+good O
+now O
+. O
+
+In O
+a O
+few O
+years O
+, O
+it O
+could O
+change O
+a O
+lot O
+among O
+the O
+top O
+players O
+. O
+" O
+
+" O
+But O
+there O
+are O
+so O
+many O
+reasons O
+to O
+play O
+, O
+especially O
+spectators O
+and O
+the O
+kids O
+who O
+come O
+out O
+here O
+and O
+want O
+to O
+enjoy O
+watching O
+tennis O
+, O
+that O
+I O
+decided O
+to O
+stay O
+. O
+" O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+Women O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+Women O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+Women O
+'s O
+singles O
+
+ATLANTA B-LOC
+1996-08-25 O
+
+Also O
+, O
+I O
+was O
+able O
+to O
+keep O
+my O
+changeup O
+down O
+. O
+" O
+
+He O
+left O
+the O
+game O
+with O
+a O
+knot O
+in O
+his O
+right O
+shoulder O
+. O
+
+standings O
+after O
+games O
+played O
+on O
+Sunday O
+( O
+tabulate O
+under O
+won O
+, O
+
+lost O
+, O
+winning O
+percentage O
+and O
+games O
+behind O
+) O
+: O
+
+AMERICAN B-MISC
+LEAGUE I-MISC
+
+EASTERN B-MISC
+DIVISION I-MISC
+
+W O
+L O
+PCT O
+GB O
+
+MILWAUKEE B-ORG
+AT O
+CHICAGO B-LOC
+
+BOSTON B-ORG
+AT O
+CALIFORNIA B-LOC
+
+NEW B-ORG
+YORK I-ORG
+AT O
+SEATTLE B-LOC
+
+MONDAY O
+, O
+AUGUST O
+26TH O
+SCHEDULE O
+
+PHILADELPHIA B-ORG
+AT O
+SAN B-LOC
+FRANCISCO I-LOC
+
+ST B-ORG
+LOUIS I-ORG
+AT O
+HOUSTON B-LOC
+
+CINCINNATI B-ORG
+AT O
+COLORADO B-LOC
+
+SAN B-LOC
+FRANCISCO I-LOC
+1996-08-25 O
+
+ROTTERDAM B-LOC
+1996-08-26 O
+
+BARCELONA B-LOC
+1996-08-26 O
+
+VIENNA B-LOC
+1996-08-26 O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+COLOMBO B-LOC
+1996-08-26 O
+
+COLOMBO B-LOC
+1996-08-26 O
+
+Zimbabwe B-LOC
+on O
+Monday O
+: O
+
+Australia B-LOC
+
+Extras O
+( O
+b-1 O
+lb-8 O
+w-3 O
+nb-3 O
+) O
+15 O
+
+Extras O
+( O
+lb-4 O
+w-10 O
+nb-7 O
+) O
+21 O
+
+Fall O
+of O
+wickets O
+: O
+1-16 O
+2-16 O
+3-33 O
+4-35 O
+5-56 O
+6-98 O
+7-100 O
+8-120 O
+
+MAPUTO B-LOC
+1996-08-26 O
+
+NOTICIAS B-ORG
+
+1996-08-26 O
+
+Unsecured O
+claims O
+, O
+including O
+those O
+of O
+company O
+bondholders O
+, O
+will O
+be O
+satisfied O
+by O
+issuing O
+new O
+common O
+stock O
+and O
+warrants O
+. O
+
+Unsecured O
+claims O
+are O
+estimated O
+at O
+about O
+$ O
+90 O
+million O
+. O
+
+Management O
+will O
+receive O
+options O
+to O
+purchase O
+10 O
+percent O
+of O
+the O
+company O
+'s O
+outstanding O
+common O
+stock O
+with O
+protection O
+against O
+dilution O
+at O
+an O
+option O
+exercise O
+price O
+of O
+$ O
+1 O
+million O
+. O
+
+LONDON B-LOC
+1996-08-26 O
+
+" O
+Tomorrow O
+... O
+
+" O
+In O
+the O
+run-up O
+to O
+elections O
+, O
+nationalistic O
+political O
+leaders O
+are O
+playing O
+the O
+ethnic O
+/ O
+sectarian O
+card O
+, O
+drumming O
+up O
+support O
+within O
+their O
+constituencies O
+by O
+playing O
+on O
+bitter O
+memories O
+or O
+fear O
+. O
+" O
+
+Alastair B-PER
+Macdonald I-PER
+
+MOSCOW B-LOC
+1996-08-26 O
+
+It O
+is O
+not O
+known O
+what O
+caused O
+the O
+delay O
+in O
+the O
+peace O
+plan O
+. O
+
+MOSCOW B-LOC
+1996-08-26 O
+
+He O
+would O
+continue O
+working O
+on O
+various O
+documents O
+and O
+might O
+meet O
+" O
+one O
+state O
+offical O
+or O
+another O
+" O
+. O
+
+Many O
+of O
+those O
+documents O
+return O
+to O
+the O
+president O
+'s O
+administration O
+the O
+same O
+day O
+, O
+" O
+he O
+said O
+. O
+
+" O
+But O
+there O
+is O
+a O
+significant O
+influence O
+of O
+opposition O
+parties O
+that O
+are O
+collecting O
+points O
+ahead O
+of O
+coming O
+elections O
+. O
+" O
+
+The O
+party O
+official O
+said O
+the O
+union O
+'s O
+figure O
+on O
+the O
+number O
+of O
+protesters O
+was O
+exaggerated O
+. O
+" O
+
+" O
+But O
+there O
+were O
+more O
+observers O
+and O
+passers O
+by O
+, O
+" O
+he O
+said O
+. O
+
+ZAGREB B-LOC
+1996-08-26 O
+
+Supply O
+stood O
+at O
+a O
+high O
+180 O
+million O
+kuna O
+. O
+
+The O
+controllers O
+are O
+demanding O
+the O
+monthly O
+wage O
+be O
+increased O
+to O
+$ O
+1,000 O
+per O
+month O
+from O
+the O
+current O
+$ O
+230 O
+, O
+as O
+well O
+as O
+the O
+resignation O
+of O
+the O
+air O
+traffic O
+service O
+'s O
+management O
+. O
+
+He O
+also O
+said O
+shareholders O
+approved O
+the O
+issue O
+of O
+2.6 O
+million O
+new O
+shares O
+, O
+two O
+million O
+of O
+which O
+are O
+earmarked O
+for O
+large O
+investors O
+and O
+600,000 O
+for O
+retail O
+domestic O
+investors O
+. O
+
+MEXICO B-LOC
+CITY I-LOC
+1996-08-26 O
+
+MEXICO B-LOC
+CITY I-LOC
+1996-08-26 O
+
+" O
+We O
+have O
+a O
+suitable O
+exchange O
+rate O
+. O
+
+We O
+have O
+n't O
+felt O
+a O
+drop-off O
+in O
+demand O
+.... O
+
+It O
+was O
+the O
+second O
+consecutive O
+session O
+that O
+saw O
+the O
+peso O
+, O
+which O
+ended O
+at O
+1,041 O
+Friday O
+, O
+close O
+lower O
+. O
+
+Contributing O
+to O
+the O
+peso O
+'s O
+weakness O
+, O
+another O
+dealer O
+said O
+banks O
+who O
+might O
+have O
+sold O
+greenbacks O
+in O
+Monday O
+'s O
+trading O
+appeared O
+to O
+shy O
+away O
+from O
+the O
+market O
+. O
+
+Dealers O
+reported O
+355 O
+trades O
+for O
+a O
+total O
+of O
+$ O
+142 O
+million O
+and O
+said O
+the O
+peso O
+hit O
+an O
+intra-day O
+high O
+of O
+1,037 O
+before O
+heading O
+lower O
+into O
+the O
+close O
+. O
+
+MEXICO B-LOC
+CITY I-LOC
+1996-08-26 O
+
+1.206 O
+bln O
+9 O
+days O
+
+1.000 O
+bln O
+1 O
+day O
+
+No O
+other O
+details O
+were O
+immediately O
+available O
+. O
+
+The O
+train O
+was O
+derailed O
+when O
+a O
+corner O
+of O
+the O
+driver O
+'s O
+compartment O
+caught O
+the O
+rear O
+of O
+the O
+truck O
+, O
+the O
+spokesman O
+said O
+. O
+
+" O
+It O
+had O
+the O
+potential O
+to O
+be O
+quite O
+a O
+nasty O
+accident O
+. O
+" O
+
+AUCKLAND B-LOC
+1996-08-27 O
+
+Police O
+said O
+he O
+did O
+not O
+have O
+a O
+weapon O
+when O
+taken O
+into O
+custody O
+and O
+was O
+now O
+cooperating O
+with O
+them O
+. O
+
+A O
+shot O
+was O
+fired O
+, O
+but O
+onlookers O
+managed O
+to O
+disarm O
+the O
+man O
+. O
+
+WELLINGTON B-LOC
+1996-08-27 O
+
+Tomorrow O
+and O
+today O
+rupiah O
+closed O
+at O
+2,342.00 O
+/ O
+42.45 O
+and O
+2,341.5 O
+/ O
+42.0 O
+, O
+respectively O
+. O
+
+" O
+There O
+are O
+two O
+factors O
+which O
+determine O
+the O
+market O
+at O
+present O
+. O
+
+The O
+hearing O
+is O
+due O
+to O
+resume O
+on O
+Thursday O
+. O
+
+He O
+said O
+liquidity O
+would O
+be O
+the O
+main O
+concern O
+for O
+the O
+next O
+few O
+days O
+. O
+
+Overnight O
+swap O
+was O
+at O
+0.45 O
+/ O
+0.48 O
+and O
+tom O
+/ O
+next O
+at O
+0.50 O
+/ O
+0.55 O
+. O
+
+It O
+is O
+not O
+clear O
+when O
+the O
+conference O
+will O
+be O
+held O
+. O
+
+Premium O
+includes O
+price O
+for O
+delivery O
+to O
+consumer O
+'s O
+works O
+. O
+
+Lead O
+3.50-4.00 O
+cents O
+/ O
+pound O
+
+-- O
+
+delivered O
+to O
+consumer O
+
+Turnings O
+, O
+clean O
+and O
+dry O
+43 O
+to O
+44 O
+cents O
+/ O
+pound O
+
+-- O
+
+delivered O
+to O
+consumer O
+
+-- O
+
+-- O
+
+P1020 O
+ingot O
+75 O
+cents O
+/ O
+pound O
+
+extrusion O
+billet O
+85 O
+cents O
+/ O
+pound O
+
+The O
+boy O
+was O
+last O
+seen O
+alive O
+Sunday O
+night O
+when O
+he O
+joined O
+his O
+two O
+younger O
+brothers O
+and O
+father O
+in O
+a O
+bedtime O
+prayer O
+. O
+
+CBOT O
+rice O
+closes O
+higher O
+on O
+technical O
+bounce O
+. O
+
+CBOT O
+rice O
+futures O
+closed O
+higher O
+on O
+a O
+technical O
+bounce O
+tied O
+to O
+signs O
+the O
+market O
+was O
+oversold O
+, O
+traders O
+said O
+. O
+
+" O
+It O
+rallied O
+on O
+ideas O
+the O
+market O
+was O
+oversold O
+, O
+" O
+a O
+trader O
+said O
+. O
+
+Rice O
+futures O
+volume O
+was O
+estimated O
+at O
+450 O
+contracts O
+, O
+up O
+from O
+202 O
+Friday O
+. O
+
+Sam B-PER
+Nelson I-PER
+312-408-8721 O
+
+There O
+'s O
+a O
+fairly O
+intensive O
+diplomatic O
+calendar O
+coming O
+up O
+in O
+the O
+fall O
+. O
+" O
+
+The O
+demand O
+was O
+sparked O
+by O
+Saturday O
+'s O
+active O
+slaughter O
+, O
+which O
+left O
+some O
+packers O
+short O
+on O
+supplies O
+to O
+get O
+Monday O
+operations O
+started O
+, O
+they O
+said O
+. O
+
+Attempts O
+to O
+move O
+prices O
+higher O
+again O
+Tuesday O
+could O
+be O
+offset O
+by O
+expected O
+increased O
+hog O
+marketings O
+this O
+week O
+, O
+sources O
+said O
+. O
+
+" O
+They O
+want O
+to O
+drive O
+you O
+out O
+of O
+politics O
+and O
+they O
+ca O
+n't O
+, O
+" O
+he O
+added O
+. O
+" O
+
+" O
+I O
+want O
+you O
+to O
+ask O
+this O
+question O
+. O
+
+Gore B-PER
+said O
+. O
+
+Education O
+would O
+be O
+at O
+risk O
+. O
+
+The O
+environment O
+would O
+be O
+at O
+risk O
+from O
+the O
+polluters O
+that O
+control O
+that O
+coalition O
+, O
+" O
+he O
+said O
+. O
+
+Thomas B-PER
+Daschle I-PER
+. O
+
+That O
+allowed O
+him O
+to O
+be O
+moved O
+to O
+a O
+semi-upright O
+position O
+. O
+
+A O
+shotgun O
+and O
+a O
+.357 O
+handgun O
+were O
+found O
+in O
+the O
+car O
+. O
+
+A O
+police O
+spokesman O
+said O
+the O
+boy O
+was O
+being O
+questioned O
+. O
+" O
+
+They O
+are O
+talking O
+to O
+him O
+now O
+about O
+the O
+motive O
+and O
+everything O
+else O
+. O
+" O
+
+-- O
+Karachi B-LOC
+newsroom O
+9221-5685192 O
+
+NWE O
+oil O
+products O
+mixed O
+, O
+holiday O
+dulls O
+trade O
+. O
+
+Fuel O
+oil O
+markets O
+were O
+also O
+listless O
+. O
+
+Offers O
+were O
+around O
+a O
+dollar O
+a O
+tonne O
+higher O
+at O
+$ O
+102 O
+fob O
+ARA O
+but O
+bids O
+were O
+scarce O
+. O
+
+WINNIPEG B-LOC
+1996-08-26 O
+
+The O
+customer O
+employee O
+suits O
+were O
+filed O
+in O
+1990-95 O
+, O
+he O
+said O
+. O
+
+After O
+a O
+delayed O
+opening O
+, O
+the O
+stock O
+was O
+off O
+1-1/2 O
+to O
+18-7/8 O
+. O
+
+He O
+cut O
+his O
+third-quarter O
+share O
+earnings O
+estimate O
+on O
+: O
+
+M O
+/ O
+SP O
+/ O
+F O
+: O
+NA O
+/ O
+NA O
+/ O
+NA O
+BOOK O
+ENTRY O
+: O
+Y O
+
+DTD O
+: O
+09/01/96 O
+SURE O
+BID O
+: O
+N O
+
+DUE O
+: O
+5/1/98-02 O
+SR O
+MGR O
+: O
+
+Year O
+Amount O
+Coupon O
+Yield O
+Price O
+Conc O
+. O
+
+1999 O
+610,000 O
+
+2002 O
+730,000 O
+
+RE O
+: O
+$ O
+70,375,000 O
+
+STATE O
+FACILITIES O
+REFUNDING O
+BONDS O
+
+Delivery O
+Date O
+: O
+08/29/1996 O
+
+10/01 O
+/ O
+1998C O
+125M O
+4.50 O
+4.20 O
+
+6,045,000.00 O
+
+CONFIRMED O
+CONFIRMED O
+
+Delivery O
+Date O
+: O
+08/29/1996 O
+
+10/01 O
+/ O
+1998D O
+165M O
+4.50 O
+4.20 O
+
+They O
+were O
+trading O
+unchanged O
+just O
+before O
+the O
+release O
+of O
+figures O
+but O
+closed O
+2.40 O
+guilders O
+down O
+at O
+80.70 O
+after O
+it O
+reported O
+net O
+profits O
+of O
+34.9 O
+million O
+guilders O
+against O
+36.6 O
+million O
+last O
+year O
+and O
+estimates O
+ranging O
+from O
+37.5 O
+to O
+47.2 O
+million O
+. O
+
+PARIS B-LOC
+1996-08-26 O
+
+That O
+is O
+why O
+I O
+will O
+no O
+longer O
+be O
+deputy O
+by O
+the O
+time O
+the O
+film O
+opens O
+. O
+" O
+
+The O
+new O
+pact O
+expires O
+on O
+September O
+3 O
+. O
+
+It O
+allotted O
+a O
+further O
+30.9 O
+billion O
+to O
+bidders O
+putting O
+up O
+private O
+paper O
+, O
+satisfying O
+12.5 O
+percent O
+of O
+this O
+demand O
+. O
+
+He O
+said O
+growth O
+in O
+customer O
+demand O
+in O
+the O
+first O
+half O
+was O
+50 O
+percent O
+above O
+normal O
+but O
+it O
+was O
+hard O
+to O
+maintain O
+this O
+pace O
+. O
+
+The O
+bank O
+earlier O
+warned O
+that O
+profit O
+growth O
+would O
+slow O
+in O
+the O
+second O
+half O
+, O
+citing O
+the O
+increasing O
+momentum O
+in O
+profit O
+growth O
+in O
+the O
+comparative O
+period O
+of O
+1995 O
+and O
+increased O
+investment O
+. O
+
+-- O
+World O
+steel O
+market O
+shows O
+signs O
+of O
+upturn O
+. O
+
+BRUSSELS B-LOC
+
+BANGKOK B-LOC
+1996-08-26 O
+
+His O
+critics O
+allege O
+he O
+may O
+be O
+attempting O
+to O
+delay O
+the O
+debate O
+. O
+
+" O
+In O
+my O
+opinion O
+September O
+18 O
+would O
+be O
+a O
+convenient O
+date O
+for O
+the O
+government O
+to O
+answer O
+questions O
+. O
+
+September O
+18 O
+is O
+regarded O
+as O
+tentative O
+because O
+we O
+still O
+have O
+not O
+received O
+the O
+order O
+to O
+fix O
+it O
+on O
+the O
+agenda O
+, O
+" O
+said O
+an O
+official O
+at O
+parliament O
+'s O
+agenda O
+section O
+. O
+
+Six O
+months O
+to O
+August O
+31 O
+, O
+1996 O
+
+( O
+Parent O
+) O
+FORECAST O
+FORECAST O
+YEAR-AGO O
+
+Net O
+170 O
+million O
+170 O
+million O
+142 O
+million O
+
+MANILA B-LOC
+1996-08-26 O
+
+JulAug O
+775 O
+787.50 O
+unq O
+unq O
+
+TOKYO B-LOC
+1996-08-26 O
+
+TUNIS B-LOC
+1996-08-26 O
+
+MANAMA B-LOC
+1996-08-26 O
+
+Almost O
+no O
+chance O
+at O
+all O
+for O
+any O
+complete O
+ticket O
+to O
+win O
+altogether O
+and O
+the O
+results O
+will O
+weaken O
+some O
+leaders O
+. O
+
+- O
+The O
+surprise O
+... O
+
+- O
+Prices O
+of O
+alimentary O
+goods O
+up O
+13.4 O
+percent O
+in O
+1996 O
+. O
+
+AL-ANWAR B-ORG
+
+AD-DIYAR B-ORG
+
+THE B-ORG
+TIMES I-ORG
+
+- O
+Government O
+considering O
+measures O
+for O
+better O
+road O
+discipline O
+. O
+
+GENEVA B-LOC
+1996-08-26 O
+
+Leonard B-PER
+Santorelli I-PER
+
+LONDON B-LOC
+1996-08-27 O
+
+But O
+it O
+recovered O
+at O
+the O
+close O
+of O
+trade O
+. O
+
+The O
+market O
+is O
+trading O
+100 O
+percent O
+on O
+fundamentals O
+at O
+the O
+moment O
+as O
+interest O
+rate O
+fantasy O
+disappears O
+-- O
+it O
+'s O
+all O
+company O
+news O
+, O
+" O
+said O
+one O
+trader O
+. O
+
+There O
+is O
+still O
+the O
+summer O
+malaise O
+hanging O
+over O
+the O
+market O
+. O
+" O
+
+STANSTED B-LOC
+, O
+England B-LOC
+1996-08-27 O
+
+Later O
+they O
+said O
+the O
+number O
+of O
+passengers O
+released O
+from O
+the O
+plane O
+had O
+reached O
+80 O
+. O
+
+Edna B-PER
+Fernandes I-PER
+
+The O
+government O
+has O
+slashed O
+its O
+road-building O
+spending O
+. O
+
+Although O
+protests O
+may O
+have O
+contributed O
+to O
+the O
+decision O
+it O
+has O
+been O
+seen O
+primarily O
+as O
+economic O
+rather O
+than O
+ecological O
+. O
+
+There O
+'s O
+no O
+doubt O
+it O
+'s O
+a O
+big O
+issue O
+now O
+. O
+" O
+
+Hundreds O
+of O
+thousands O
+of O
+pounds O
+( O
+dollars O
+) O
+of O
+damage O
+was O
+done O
+in O
+one O
+day O
+. O
+
+Plus O
+there O
+was O
+the O
+knock-on O
+cost O
+of O
+lost O
+production O
+and O
+extra O
+security O
+in O
+future O
+. O
+" O
+
+For O
+an O
+industry O
+already O
+suffering O
+from O
+razor-thin O
+margins O
+, O
+overcapacity O
+and O
+stagnant O
+demand O
+, O
+eco-terrorism O
+is O
+the O
+latest O
+bizarre O
+twist O
+in O
+the O
+construction O
+sector O
+'s O
+tale O
+of O
+woe O
+. O
+
+LONDON B-LOC
+1996-08-26 O
+
+Around O
+400 O
+police O
+were O
+wounded O
+in O
+riots O
+in O
+1976 O
+when O
+the O
+carnival O
+, O
+now O
+in O
+its O
+31st O
+year O
+, O
+acquired O
+its O
+darker O
+reputation O
+from O
+which O
+it O
+is O
+now O
+only O
+slowly O
+recovering O
+. O
+
+* O
+
+ANNEX O
+
+ANNEX O
+A O
+
+The O
+newspaper O
+said O
+it O
+was O
+the O
+central O
+bank O
+'s O
+first O
+public O
+scandal O
+in O
+its O
+43-year O
+history O
+. O
+
+( O
+$ O
+1 O
+= O
+2,341 O
+rupiah O
+) O
+
+NORTHAMPTON B-LOC
+, O
+England B-LOC
+1996-08-27 O
+
+You O
+'ve O
+got O
+to O
+have O
+a O
+rule O
+for O
+everybody O
+and O
+I O
+do O
+n't O
+think O
+it O
+'s O
+feasible O
+. O
+" O
+
+2-2 O
+( O
+halftime O
+0-0 O
+) O
+in O
+a O
+friendly O
+soccer O
+international O
+on O
+
+Tuesday O
+. O
+
+tour O
+maltch O
+on O
+Tuesday O
+. O
+
+Scorers O
+: O
+
+LONDON B-LOC
+1996-08-27 O
+
+lost O
+, O
+goals O
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+Division O
+three O
+
+Division O
+two O
+
+Chesterfield B-ORG
+1 O
+Walsall B-ORG
+0 O
+
+Preston B-ORG
+2 O
+Crewe B-ORG
+1 O
+
+Stockport B-ORG
+0 O
+Bournemouth B-ORG
+1 O
+
+Rovers B-ORG
+
+Chester B-ORG
+2 O
+Swansea B-ORG
+0 O
+
+Darlington B-ORG
+1 O
+Colchester B-ORG
+1 O
+
+Exeter B-ORG
+1 O
+Doncaster B-ORG
+1 O
+
+Hartlepool B-ORG
+2 O
+Mansfield B-ORG
+2 O
+
+Hereford B-ORG
+0 O
+Hull B-ORG
+1 O
+
+Lincoln B-ORG
+1 O
+Cambridge B-ORG
+1 O
+
+Northampton B-ORG
+1 O
+Torquay B-ORG
+1 O
+
+Scunthorpe B-ORG
+0 O
+Scarborough B-ORG
+2 O
+
+England B-LOC
+
+Batting O
+( O
+tabulated O
+under O
+matches O
+, O
+innings O
+, O
+not O
+outs O
+, O
+runs O
+, O
+
+Bowling O
+( O
+tabulated O
+under O
+overs O
+, O
+maidens O
+, O
+runs O
+, O
+wickets O
+, O
+
+average O
+) O
+: O
+
+Pakistan B-LOC
+
+No-one O
+will O
+argue O
+with O
+that O
+. O
+
+BUCHAREST B-LOC
+1996-08-27 O
+
+10-15 O
+15-5 O
+15-11 O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-27 O
+
+" O
+I O
+still O
+have O
+my O
+days O
+where O
+I O
+feel O
+great O
+out O
+there O
+. O
+" O
+
+Women O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+Women O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+- O
+4 O
+7-5 O
+
+4-6 O
+6-4 O
+
+Women O
+'s O
+singles O
+
+5 O
+) O
+6-1 O
+
+0 O
+1-0 O
+Retired O
+( O
+ankle O
+injury O
+) O
+
+6-1 O
+
+Women O
+'s O
+singles O
+
+Men O
+'s O
+singles O
+
+Major B-MISC
+League I-MISC
+Baseball I-MISC
+
+lost O
+, O
+winning O
+percentage O
+and O
+games O
+behind O
+) O
+: O
+
+MILWAUKEE B-ORG
+AT O
+CHICAGO B-LOC
+
+TEXAS B-ORG
+AT O
+KANSAS B-LOC
+CITY I-LOC
+
+BOSTON B-ORG
+AT O
+CALIFORNIA B-LOC
+
+NEW B-ORG
+YORK I-ORG
+AT O
+SEATTLE B-LOC
+
+W O
+L O
+PCT O
+GB O
+
+WESTERN B-MISC
+DIVISION I-MISC
+
+TUESDAY O
+, O
+AUGUST O
+27TH O
+SCHEDULE O
+
+ATLANTA B-ORG
+AT O
+PITTSBURGH B-LOC
+
+SAN B-LOC
+FRANCISCO I-LOC
+1996-08-27 O
+
+NEW B-LOC
+YORK I-LOC
+
+played O
+on O
+Monday O
+( O
+home O
+team O
+in O
+CAPS O
+) O
+: O
+
+Cleveland B-ORG
+2 O
+DETROIT B-ORG
+1 O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-26 O
+
+" O
+Everyone O
+has O
+moments O
+when O
+they O
+get O
+tight O
+. O
+
+Maybe O
+it O
+was O
+a O
+combination O
+of O
+the O
+heat O
+and O
+something O
+I O
+ate O
+. O
+" O
+
+At O
+the O
+end O
+of O
+the O
+day O
+, O
+a O
+spate O
+of O
+withdrawals O
+from O
+the O
+tournament O
+were O
+announced O
+. O
+
+PARIS B-LOC
+1996-08-27 O
+
+PARIS B-LOC
+1996-08-27 O
+
+soccer O
+match O
+played O
+on O
+Tuesday O
+: O
+
+Auxerre B-ORG
+0 O
+Marseille B-ORG
+0 O
+
+Summaries O
+of O
+Bundesliga B-MISC
+matches O
+
+Halftime O
+
+2-0 O
+. O
+
+Attendance O
+48,800 O
+. O
+
+24,800 O
+. O
+
+1-0 O
+. O
+
+played O
+on O
+Tuesday O
+: O
+
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+for O
+, O
+goals O
+against O
+, O
+points O
+) O
+: O
+
+AMSTERDAM B-LOC
+1996-08-27 O
+
+AMSTERDAM B-LOC
+1996-08-27 O
+
+HELSINKI B-LOC
+1996-08-27 O
+
+Scorers O
+: O
+
+Standings O
+( O
+tabulate O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+MILAN B-LOC
+1996-08-27 O
+
+" O
+He O
+has O
+been O
+cleared O
+. O
+
+HAARLEM B-LOC
+, O
+Netherlands B-LOC
+1996-08-27 O
+
+BUDAPEST B-LOC
+1996-08-27 O
+
+PRAGUE B-LOC
+1996-08-27 O
+
+The O
+following O
+is O
+a O
+list O
+of O
+
+Price O
+Volume O
+Turnover O
+
+AFTER O
+THE O
+BELL O
+- O
+After O
+hours O
+slows O
+in O
+light O
+volume O
+. O
+
+CHICAGO B-LOC
+1996-08-27 O
+
+" O
+If O
+there O
+is O
+unusual O
+activity O
+, O
+certainly O
+we O
+look O
+at O
+it O
+, O
+but O
+that O
+'s O
+not O
+to O
+say O
+we O
+'re O
+doing O
+anything O
+official O
+, O
+" O
+he O
+said O
+. O
+
+ELIZABETH B-LOC
+, O
+N.J. B-LOC
+1996-08-27 O
+
+" O
+At O
+24 O
+, O
+25 O
+or O
+26 O
+you O
+could O
+get O
+away O
+with O
+it O
+, O
+not O
+having O
+played O
+first-team O
+games O
+. O
+
+-- O
+Dublin B-ORG
+Newsroom I-ORG
++6613377 O
+
+PRETORIA B-LOC
+1996-08-27 O
+
+Peter B-PER
+Smerdon I-PER
+
+But O
+communications O
+at O
+this O
+time O
+of O
+year O
+are O
+very O
+difficult O
+because O
+of O
+rains O
+and O
+a O
+lack O
+of O
+power O
+, O
+" O
+he O
+added O
+. O
+
+The O
+evening O
+of O
+the O
+same O
+day O
+the O
+missionaries O
+were O
+put O
+in O
+prison O
+or O
+isolation O
+. O
+
+Later O
+the O
+mission O
+was O
+looted O
+, O
+" O
+it O
+added O
+. O
+
+He O
+said O
+no O
+exact O
+date O
+had O
+been O
+set O
+but O
+it O
+was O
+possible O
+the O
+local O
+elections O
+would O
+take O
+place O
+in O
+the O
+spring O
+of O
+1997 O
+. O
+
+LJUBLJANA B-LOC
+1996-08-27 O
+
+BUCHAREST B-LOC
+1996-08-27 O
+
+Belinda B-PER
+Goldsmith I-PER
+
+TALLINN B-LOC
+1996-08-27 O
+
+If O
+there O
+is O
+no O
+result O
+the O
+decision O
+will O
+be O
+ceded O
+to O
+an O
+electoral O
+college O
+. O
+
+The O
+final O
+decision O
+will O
+now O
+be O
+made O
+by O
+a O
+larger O
+assembly O
+. O
+
+The O
+election O
+will O
+now O
+go O
+before O
+an O
+electoral O
+college O
+involving O
+MPs O
+and O
+local O
+government O
+representatives O
+that O
+will O
+be O
+convened O
+by O
+the O
+parliamentary O
+Speaker O
+in O
+the O
+next O
+day O
+or O
+so O
+. O
+
+It O
+could O
+take O
+up O
+to O
+a O
+month O
+before O
+a O
+new O
+vote O
+but O
+the O
+timetable O
+is O
+not O
+yet O
+clear O
+. O
+
+TIRANA B-LOC
+1996-08-27 O
+
+He O
+could O
+face O
+up O
+to O
+five O
+years O
+in O
+jail O
+if O
+convicted O
+. O
+
+TALLINN B-LOC
+1996-08-27 O
+
+To O
+win O
+a O
+clear O
+mandate O
+for O
+the O
+five-year O
+presidential O
+term O
+, O
+a O
+candidate O
+must O
+secure O
+68 O
+votes O
+from O
+the O
+101-member O
+parliament O
+. O
+
+If O
+a O
+third O
+round O
+of O
+voting O
+fails O
+to O
+give O
+either O
+candidate O
+68 O
+votes O
+, O
+the O
+parliamentary O
+speaker O
+has O
+to O
+convene O
+an O
+electoral O
+college O
+of O
+all O
+101 O
+MPs O
+and O
+273 O
+local O
+government O
+representatives O
+for O
+a O
+new O
+vote O
+that O
+could O
+take O
+up O
+to O
+a O
+month O
+. O
+
+" O
+The O
+police O
+suspect O
+( O
+the O
+girls O
+) O
+were O
+under O
+the O
+influence O
+of O
+drugs O
+as O
+some O
+girls O
+admitted O
+they O
+took O
+unspecified O
+pills O
+. O
+" O
+
+MOSCOW B-LOC
+1996-08-27 O
+
+SAO B-PER
+PAULO I-PER
+1996-08-27 O
+
+Depending O
+on O
+you O
+, O
+we O
+will O
+either O
+live O
+or O
+die O
+, O
+" O
+it O
+said O
+. O
+
+CARACAS B-LOC
+1996-08-27 O
+
+Enraged O
+drunks O
+and O
+street O
+people O
+in O
+this O
+town O
+known O
+for O
+its O
+machismo O
+have O
+organised O
+a O
+so-far O
+unsuccessful O
+search O
+for O
+the O
+culprit O
+who O
+finds O
+victims O
+in O
+the O
+dark O
+streets O
+surrounding O
+a O
+local O
+market O
+. O
+
+The O
+first O
+of O
+the O
+victims O
+were O
+two O
+vagrants O
+who O
+slept O
+in O
+an O
+abandoned O
+car O
+in O
+front O
+of O
+a O
+local O
+bank O
+, O
+the O
+newspaper O
+said O
+. O
+
+" O
+Its O
+just O
+desserts O
+for O
+all O
+the O
+' O
+bolos O
+' O
+( O
+drunkards O
+) O
+who O
+sleep O
+in O
+the O
+streets O
+of O
+our O
+beautiful O
+town O
+, O
+" O
+said O
+a O
+woman O
+who O
+worked O
+in O
+the O
+local O
+market O
+. O
+
+BRASILIA B-LOC
+1996-08-27 O
+
+BUENOS B-LOC
+AIRES I-LOC
+1996-08-26 O
+
+BEIJING B-LOC
+1996-08-27 O
+
+JAKARTA B-LOC
+1996-08-27 O
+
+BEIJING B-LOC
+1996-08-27 O
+
+HONG B-LOC
+KONG I-LOC
+1996-08-27 O
+
+No O
+decision O
+has O
+yet O
+been O
+made O
+on O
+how O
+to O
+deal O
+with O
+the O
+boy O
+. O
+
+We O
+have O
+seen O
+elections O
+as O
+a O
+step O
+in O
+the O
+normalisation O
+process O
+, O
+" O
+the O
+foreign O
+ministry O
+official O
+said O
+. O
+
+BAGHDAD B-LOC
+1996-08-27 O
+
+DODGE B-LOC
+CITY I-LOC
+1996-08-27 O
+
+Trade O
+was O
+quiet O
+, O
+with O
+no O
+sales O
+slaughter O
+steers O
+or O
+heifers O
+confirmed O
+. O
+
+Confirmed O
+- O
+none O
+. O
+
+Their O
+answer O
+to O
+choice O
+is O
+control O
+and O
+punishment O
+. O
+
+Our O
+answer O
+is O
+trust O
+, O
+compassion O
+and O
+respect O
+, O
+" O
+she O
+said O
+. O
+
+CHICAGO B-LOC
+1996-08-27 O
+
+note O
+: O
+nc=acomparison O
+, O
+na=not O
+available O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-27 O
+
+Revenue O
+
+ref O
+. O
+
+) O
+ser O
+. O
+' O
+
+96 O
+
+State O
+: O
+AL B-LOC
+
+Rating O
+: O
+Aa3 O
+/ O
+VMIG O
+1 O
+
+WASHINGTON B-LOC
+1996-08-27 O
+
+Announcement O
+As O
+of O
+08/26/96 O
+. O
+
+Rating O
+: O
+A O
+
+" O
+Both O
+mother O
+and O
+baby O
+are O
+doing O
+fine O
+and O
+are O
+in O
+wonderful O
+health O
+, O
+" O
+he O
+said O
+, O
+adding O
+that O
+it O
+was O
+the O
+couple O
+'s O
+first O
+child O
+. O
+
+Tuesday O
+'s O
+poll O
+involved O
+1,002 O
+registered O
+voters O
+and O
+had O
+a O
+margin O
+of O
+error O
+of O
+3.5 O
+percentage O
+points O
+. O
+
+That O
+compared O
+to O
+26-57 O
+in O
+the O
+previous O
+poll O
+. O
+
+CHICAGO B-LOC
+1996-08-27 O
+
+Flour O
+mills O
+sold O
+much O
+of O
+their O
+production O
+through O
+September O
+leaving O
+little O
+available O
+for O
+prompt O
+shipment O
+. O
+
+In O
+addition O
+to O
+social O
+ostracism O
+, O
+the O
+condition O
+also O
+carries O
+a O
+high O
+risk O
+of O
+cancer O
+. O
+
+It O
+will O
+be O
+corrected O
+by O
+gradually O
+expanding O
+healthy O
+skin O
+with O
+a O
+surgical O
+balloon O
+, O
+then O
+transplanting O
+that O
+skin O
+to O
+the O
+afflicted O
+side O
+of O
+her O
+face O
+. O
+
+More O
+saline O
+solution O
+will O
+be O
+inserted O
+in O
+16 O
+weekly O
+treatments O
+. O
+
+, O
+waterworks O
+system O
+mortgage O
+revenue O
+bonds O
+, O
+Series O
+1996 O
+, O
+with O
+a O
+true O
+interest O
+cost O
+of O
+5.2893 O
+percent O
+. O
+
+Condominium O
+sales O
+edged O
+up O
+6.0 O
+percent O
+for O
+July O
+and O
+24.8 O
+percent O
+for O
+the O
+year O
+, O
+the O
+group O
+said O
+, O
+while O
+prices O
+for O
+condos O
+nudged O
+up O
+less O
+than O
+1.0 O
+percent O
+to O
+an O
+average O
+of O
+$ O
+123,394 O
+. O
+
+1996-08-27 O
+
+The O
+train O
+'s O
+engine O
+and O
+its O
+six O
+cars O
+derailed O
+but O
+were O
+still O
+standing O
+, O
+state O
+police O
+said O
+. O
+
+The O
+exact O
+number O
+of O
+passangers O
+on O
+the O
+train O
+was O
+not O
+known O
+. O
+" O
+
+by O
+the O
+disease O
+of O
+scepticism O
+, O
+gloom O
+and O
+resignation O
+, O
+you O
+would O
+not O
+be O
+here O
+. O
+
+You O
+are O
+a O
+true O
+example O
+for O
+the O
+nation O
+, O
+" O
+he O
+said O
+. O
+
+THE B-ORG
+ISLAND I-ORG
+
+--- O
+
+--- O
+
+Rupam B-PER
+Banerjee I-PER
+
+The O
+nun O
+'s O
+birthday O
+prompted O
+greetings O
+, O
+bouquets O
+and O
+prayers O
+from O
+around O
+the O
+world O
+. O
+
+" O
+Ask O
+for O
+a O
+miracle O
+. O
+
+Street O
+children O
+, O
+some O
+of O
+them O
+born O
+to O
+prostitutes O
+, O
+held O
+prayers O
+on O
+the O
+street O
+. O
+" O
+
+She O
+is O
+like O
+a O
+goddess O
+, O
+" O
+said O
+Raju O
+, O
+8 O
+, O
+who O
+has O
+a O
+mother O
+but O
+no O
+father O
+. O
+
+" O
+I O
+do O
+not O
+know O
+who O
+she O
+is O
+. O
+
+ISLAMABAD B-LOC
+1996-08-27 O
+
+" O
+Our O
+policy O
+has O
+to O
+be O
+fundamentally O
+based O
+on O
+respect O
+for O
+the O
+rule O
+of O
+law O
+and O
+insistence O
+that O
+it O
+be O
+observed O
+, O
+" O
+he O
+said O
+. O
+
+Sayed B-PER
+Salahuddin I-PER
+
+KABUL B-LOC
+1996-08-27 O
+
+The O
+factions O
+should O
+agree O
+to O
+appoint O
+a O
+transitional O
+leader O
+, O
+draft O
+a O
+new O
+constitution O
+, O
+collect O
+heavy O
+weapons O
+, O
+create O
+a O
+national O
+army O
+and O
+hold O
+free O
+elections O
+in O
+which O
+the O
+transitional O
+leader O
+would O
+be O
+barred O
+from O
+standing O
+, O
+he O
+added O
+. O
+
+KARACHI B-LOC
+, O
+Pakistan B-LOC
+1996-08-27 O
+
+The O
+auction O
+is O
+set O
+for O
+settlement O
+on O
+Thursday O
+. O
+
+Gopal B-PER
+Sharma I-PER
+
+INDORE B-LOC
+, O
+India B-LOC
+1996-08-27 O
+
+They O
+said O
+arrivals O
+were O
+poor O
+due O
+to O
+the O
+festival O
+season O
+. O
+
+Soyoil O
+prices O
+fell O
+on O
+increased O
+selling O
+against O
+poor O
+demand O
+. O
+
+Soyoil O
+refined O
+fell O
+by O
+200 O
+rupees O
+on O
+weak O
+undertone O
+. O
+
+--------------------- O
+
+Black B-LOC
+11,900-12,100 O
+
+Soyoil O
+solvent O
+plant O
+delivery O
+30,300-30,400 O
+
+Soyoil O
+solvent O
+market O
+delivery O
+30,700-30,800 O
+
+Soyoil O
+refined O
+plant O
+delivery O
+32,700-32,800 O
+
+-------------------------------- O
+
+Soymeal O
+( O
+in O
+rupees O
+per O
+tonne O
+, O
+free O
+on O
+rail-FOR O
+) O
+
+Yellow B-MISC
+Black I-MISC
+
+( O
+$ O
+1=35.73 O
+rupees O
+) O
+
+DHAKA B-LOC
+1996-08-27 O
+
+DHAKA B-LOC
+1996-08-27 O
+
+The O
+year-on-year O
+rise O
+was O
+8.2 O
+percent O
+to O
+June O
+, O
+1996 O
+. O
+
+BANGLADESH B-LOC
+'S O
+MONEY O
+SUPPLY O
+
+JUNE O
+MAY O
+JUNE O
+1995 O
+
+M2 O
+money O
+supply O
+( O
+bln O
+taka O
+) O
+456.8 O
+439.9 O
+422.1 O
+
+August O
+27 O
+fix O
+August O
+26 O
+fix O
+
+ALLENTOWN B-LOC
+, O
+Pa B-LOC
+. O
+
+1996-08-27 O
+
+HAARLEM B-LOC
+, O
+Netherlands B-LOC
+1996-08-27 O
+
+H1 O
+1996 O
+H1 O
+1995 O
+
+Sales O
+Op O
+profit O
+Sales O
+Op O
+profit O
+
+Consumer O
+magazines O
+618 O
+90 O
+568 O
+80 O
+
+Commercial O
+TV O
+127 O
+6 O
+loss O
+174 O
+33 O
+profit O
+
+Education O
+42 O
+6 O
+36 O
+3 O
+
+HANOVER B-LOC
+, O
+Germany B-LOC
+1996-08-27 O
+
+STANSTED B-LOC
+, O
+England B-LOC
+1996-08-27 O
+
+Eyewitnesses O
+said O
+six O
+crew O
+members O
+had O
+also O
+been O
+allowed O
+to O
+leave O
+the O
+aircraft O
+. O
+
+Police O
+said O
+a O
+number O
+of O
+crew O
+members O
+had O
+left O
+the O
+aircraft O
+and O
+said O
+details O
+would O
+be O
+given O
+at O
+a O
+news O
+conference O
+expected O
+to O
+be O
+held O
+in O
+the O
+next O
+few O
+minutes O
+by O
+the O
+local O
+police O
+chief O
+. O
+
+LONDON B-LOC
+1996-08-27 O
+
+WARRANTS O
+STRIKE O
+ISS O
+PRICE O
+PREMIUM O
+GEARING O
+
+ANKARA B-LOC
+1996-08-27 O
+
+The O
+officials O
+said O
+the O
+rebels O
+set O
+ablaze O
+two O
+buses O
+and O
+released O
+all O
+but O
+three O
+passengers O
+. O
+
+WASHINGTON B-LOC
+1996-08-27 O
+
+Estimated O
+price O
+range O
+$ O
+13 O
+- O
+$ O
+15 O
+/ O
+shr O
+
+Shrs O
+offered O
+by O
+company O
+2.5 O
+million O
+
+Financial O
+Data O
+in O
+000s O
+: O
+1995 O
+1994 O
+
+- O
+Net O
+Income O
+( O
+loss O
+) O
+$ O
+2,074 O
+( O
+$ O
+3,422 O
+) O
+
+Further O
+details O
+were O
+not O
+immediately O
+available O
+. O
+
+She O
+added O
+, O
+" O
+But O
+we O
+need O
+to O
+do O
+more O
+. O
+
+OFFICIAL O
+RESULTS O
+OF O
+THE O
+OCTOBER O
+16 O
+, O
+1994 O
+GENERAL O
+ELECTION O
+: O
+
+LONDON B-LOC
+1996-08-27 O
+
+The O
+identity O
+and O
+number O
+of O
+the O
+hijackers O
+was O
+not O
+known O
+. O
+
+" O
+After O
+I O
+was O
+told O
+they O
+were O
+dyed O
+, O
+I O
+checked O
+them O
+over O
+again O
+. O
+
+If O
+not O
+for O
+the O
+informant O
+, O
+the O
+painted O
+parrots O
+' O
+true O
+colours O
+would O
+not O
+have O
+been O
+known O
+for O
+six O
+months O
+, O
+he O
+said O
+. O
+
+JAKARTA B-LOC
+1996-08-27 O
+
+SEOUL B-LOC
+1996-08-27 O
+
+Authorities O
+branded O
+the O
+violence O
+, O
+in O
+which O
+a O
+police O
+officer O
+was O
+killed O
+, O
+as O
+an O
+act O
+of O
+terror O
+. O
+
+" O
+The O
+ministry O
+has O
+ordered O
+the O
+embassy O
+to O
+take O
+urgent O
+security O
+measures O
+against O
+possible O
+terrorist O
+attacks O
+, O
+" O
+the O
+official O
+said O
+, O
+asking O
+not O
+to O
+be O
+named O
+. O
+
+" O
+The O
+completion O
+of O
+the O
+test O
+ban O
+treaty O
+would O
+be O
+an O
+important O
+and O
+practical O
+step O
+in O
+the O
+gradual O
+process O
+of O
+achieving O
+total O
+nuclear O
+disarmament O
+, O
+" O
+it O
+said O
+. O
+
+" O
+Some O
+nuclear O
+powers O
+stubbornly O
+uphold O
+policies O
+of O
+nuclear O
+deterrence O
+based O
+on O
+first O
+use O
+of O
+nuclear O
+weapons O
+, O
+" O
+it O
+said O
+. O
+
+The O
+outbreak O
+has O
+prompted O
+authorities O
+to O
+tighten O
+sanitary O
+standards O
+at O
+slaughterhouses O
+and O
+meatpacking O
+plants O
+and O
+sparked O
+calls O
+for O
+an O
+overhaul O
+of O
+the O
+nation O
+'s O
+school O
+lunch O
+programme O
+. O
+
+The O
+ministers O
+agreed O
+at O
+Tuesday O
+'s O
+cabinet O
+meeting O
+to O
+step O
+up O
+inspection O
+measures O
+for O
+school O
+lunches O
+in O
+September O
+and O
+October O
+, O
+when O
+schools O
+around O
+the O
+country O
+resume O
+. O
+
+The O
+surge O
+reflected O
+strong O
+demand O
+from O
+the O
+beverage O
+can O
+and O
+housing O
+construction O
+sectors O
+, O
+federation O
+officials O
+said O
+. O
+
+July O
+foil O
+output O
+was O
+off O
+0.2 O
+percent O
+year-on-year O
+at O
+11,525 O
+tonnes O
+, O
+while O
+foil O
+shipments O
+fell O
+0.8 O
+percent O
+to O
+11,244 O
+tonnes O
+. O
+
+Shipments O
+to O
+the O
+auto O
+sector O
+fell O
+5.5 O
+percent O
+to O
+15,286 O
+tonnes O
+, O
+while O
+the O
+construction O
+sector O
+rose O
+2.4 O
+percent O
+to O
+79,390 O
+tonnes O
+. O
+
+TAIPEI B-LOC
+1996-08-27 O
+
+The O
+bank O
+said O
+in O
+a O
+statement O
+it O
+was O
+cutting O
+its O
+prime O
+lending O
+rate O
+to O
+7.35 O
+percent O
+from O
+7.40 O
+percent O
+. O
+
+It O
+also O
+would O
+cut O
+its O
+three-month-to-three-year O
+time O
+deposit O
+rates O
+by O
+between O
+0.05 O
+and O
+0.10 O
+percentage O
+points O
+. O
+
+" O
+This O
+is O
+a O
+war O
+that O
+has O
+been O
+declared O
+on O
+us O
+and O
+we O
+want O
+our O
+people O
+to O
+come O
+and O
+see O
+the O
+site O
+where O
+they O
+declared O
+the O
+war O
+. O
+" O
+
+WASHINGTON B-LOC
+1996-08-28 O
+
+The O
+decree O
+plugs O
+a O
+legal O
+void O
+in O
+which O
+magistrates O
+could O
+have O
+forced O
+the O
+former O
+prime O
+minister O
+to O
+take O
+one O
+of O
+the O
+three O
+stations O
+he O
+controls O
+off O
+the O
+air O
+because O
+of O
+a O
+court O
+ruling O
+that O
+no O
+single O
+proprietor O
+should O
+be O
+allowed O
+to O
+keep O
+three O
+channels O
+. O
+
+LINZ B-LOC
+, O
+Austria B-LOC
+1996-08-28 O
+
+The O
+police O
+spokesman O
+said O
+he O
+was O
+not O
+sure O
+whether O
+any O
+more O
+passengers O
+were O
+still O
+trapped O
+in O
+the O
+wreckage O
+. O
+
+Doctors O
+and O
+medical O
+staff O
+from O
+a O
+hospital O
+across O
+the O
+road O
+from O
+the O
+station O
+were O
+at O
+the O
+scene O
+of O
+the O
+accident O
+within O
+minutes O
+and O
+were O
+able O
+to O
+treat O
+the O
+injured O
+quickly O
+, O
+he O
+added O
+. O
+
+international O
+athletics O
+meeting O
+on O
+Wednesday O
+: O
+
+Men O
+'s O
+110 O
+metres O
+hurdles O
+: O
+
+Men O
+'s O
+javelin O
+: O
+
+Women O
+'s O
+pole O
+vault O
+: O
+
+Men O
+'s O
+800 O
+metres O
+: O
+
+Women O
+'s O
+javelin O
+: O
+
+NORTHAMPTON B-LOC
+, O
+England B-LOC
+1996-08-28 O
+
+Leading O
+completed O
+
+stated O
+) O
+: O
+
+3. O
+McEwen B-PER
+same O
+time O
+
+6. O
+Koerts B-PER
+7 O
+
+7. O
+Ozers B-PER
+8 O
+
+1. O
+Colonna B-PER
+8:22:00 O
+
+3. O
+McEwen B-PER
+same O
+time O
+
+4. O
+Teutenberg B-PER
+4 O
+seconds O
+
+CYCLING O
+- O
+WORLD O
+CHAMPIONSHIPS O
+RESULTS O
+. O
+
+Quarter-finals O
+
+( O
+Denmark B-LOC
+) O
+4:24.660 O
+
+Keirin B-LOC
+final O
+
+time O
+of O
+55 O
+minutes O
+47.4 O
+seconds O
+
+Martin B-PER
+Ayres I-PER
+
+Who O
+knows O
+what O
+will O
+happen O
+in O
+the O
+later O
+stages O
+? O
+" O
+
+MANCHESTER B-LOC
+, O
+England B-LOC
+1996-08-28 O
+
+LONDON B-LOC
+1996-08-28 O
+
+Barnsley B-ORG
+3 O
+Reading B-ORG
+0 O
+
+Stoke B-ORG
+1 O
+Bradford B-ORG
+0 O
+
+Swindon B-ORG
+1 O
+Oldham B-ORG
+0 O
+
+LONDON B-LOC
+1996-08-28 O
+
+" O
+The O
+more O
+important O
+thing O
+for O
+me O
+was O
+to O
+get O
+them O
+down O
+here O
+and O
+have O
+a O
+chat O
+. O
+
+To O
+go O
+another O
+five O
+weeks O
+without O
+that O
+chance O
+would O
+have O
+been O
+foolish O
+, O
+" O
+he O
+added O
+. O
+
+It O
+was O
+his O
+fourth O
+riding O
+offence O
+this O
+season O
+. O
+
+But O
+he O
+has O
+had O
+second O
+thoughts O
+since O
+then O
+. O
+" O
+
+I O
+'m O
+only O
+34 O
+. O
+
+LONDON B-LOC
+1996-08-28 O
+
+MONTREAL B-LOC
+1996-08-28 O
+
+JOHANNESBURG B-LOC
+1996-08-28 O
+
+Team O
+: O
+
+JOHANNESBURG B-LOC
+1996-08-28 O
+
+MOSCOW B-LOC
+1996-08-28 O
+
+HONG B-LOC
+KONG I-LOC
+1996-08-28 O
+
+15-6 O
+15-2 O
+
+15-13 O
+15-11 O
+15-2 O
+
+15-10 O
+16-17 O
+15-1 O
+
+7-15 O
+15-6 O
+15-11 O
+
+15-10 O
+15-10 O
+15-10 O
+
+R O
+
+MANILA B-LOC
+1996-08-28 O
+
+JERUSALEM B-LOC
+1996-08-28 O
+
+Results O
+of O
+first O
+division O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+" O
+I O
+'m O
+not O
+here O
+to O
+fight O
+the O
+press O
+or O
+talk O
+about O
+the O
+food O
+or O
+entertain O
+the O
+people O
+off O
+the O
+court O
+. O
+
+I O
+have O
+much O
+less O
+fun O
+off O
+the O
+court O
+. O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+Men O
+'s O
+singles O
+, O
+first O
+round O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+Men O
+'s O
+singles O
+, O
+first O
+round O
+
+( O
+End O
+first O
+round O
+) O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+AMERICAN B-MISC
+LEAGUE I-MISC
+
+W O
+L O
+PCT O
+GB O
+
+WESTERN B-MISC
+DIVISION I-MISC
+
+WEDNESDAY O
+, O
+AUGUST O
+28TH O
+SCHEDULE O
+
+MILWAUKEE B-ORG
+AT O
+CHICAGO B-LOC
+
+TEXAS B-ORG
+AT O
+KANSAS B-LOC
+CITY I-LOC
+
+NEW B-ORG
+YORK I-ORG
+AT O
+SEATTLE B-LOC
+
+NATIONAL B-MISC
+LEAGUE I-MISC
+
+W O
+L O
+PCT O
+GB O
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+WEDNESDAY O
+, O
+AUGUST O
+28TH O
+SCHEDULE O
+
+CINCINNATI B-ORG
+AT O
+COLORADO B-LOC
+
+CHICAGO B-ORG
+AT O
+HOUSTON B-LOC
+
+PHILADELPHIA B-ORG
+AT O
+SAN B-LOC
+FRANCISCO I-LOC
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+HOUSTON B-ORG
+6 O
+Chicago B-ORG
+5 O
+
+Cincinnati B-ORG
+4 O
+COLORADO B-ORG
+3 O
+
+" O
+To O
+be O
+in O
+that O
+situation O
+today O
+, O
+a O
+couple O
+of O
+times O
+having O
+to O
+play O
+well O
+, O
+get O
+down O
+and O
+play O
+point-by-point O
+, O
+definitely O
+is O
+a O
+good O
+start O
+. O
+" O
+
+MADRID B-LOC
+1996-08-28 O
+
+Attendance O
+11,000 O
+. O
+
+MADRID B-LOC
+1996-08-28 O
+
+ROME B-LOC
+1996-08-28 O
+
+Two O
+cup O
+matches O
+could O
+not O
+be O
+played O
+on O
+Wednesday O
+due O
+to O
+argument O
+over O
+first O
+round O
+results O
+. O
+
+BONN B-LOC
+1996-08-28 O
+
+ROME B-LOC
+1996-08-28 O
+
+matches O
+played O
+on O
+Wednesday O
+: O
+
+Spal B-ORG
+2 O
+Reggiana B-ORG
+4 O
+
+Cesena B-ORG
+3 O
+Roma B-ORG
+1 O
+
+Bologna B-ORG
+2 O
+Torino B-ORG
+1 O
+
+Cosenza B-ORG
+1 O
+Fiorentina B-ORG
+3 O
+
+Bari B-ORG
+1 O
+Verona B-ORG
+1 O
+
+Pescara B-ORG
+3 O
+Parma B-ORG
+1 O
+
+Monza B-ORG
+0 O
+Napoli B-ORG
+1 O
+
+Chievo B-ORG
+2 O
+Cagliari B-ORG
+3 O
+
+Ravenna B-ORG
+0 O
+Inter B-ORG
+1 O
+
+54th O
+) O
+. O
+
+48,000 O
+. O
+
+0-1 O
+. O
+
+27,000 O
+. O
+
+0-0 O
+. O
+
+15,000 O
+. O
+
+AMSTERDAM B-LOC
+1996-08-28 O
+
+Halftime O
+0-1 O
+. O
+
+Attendance O
+
+Attendance O
+10,000 O
+. O
+
+Attendance O
+22,434 O
+. O
+
+56rd O
+) O
+. O
+
+Played O
+on O
+Tuesday O
+. O
+
+Attendance O
+4,000 O
+. O
+
+BONN B-LOC
+1996-08-28 O
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+5,000 O
+. O
+
+0-1 O
+. O
+
+7,000 O
+. O
+
+2-0 O
+. O
+
+15,000 O
+. O
+
+1-0 O
+. O
+
+14,000 O
+. O
+
+0-1 O
+. O
+
+PARIS B-LOC
+1996-08-28 O
+
+division O
+after O
+Wednesday O
+'s O
+matches O
+( O
+tabulate O
+under O
+played O
+, O
+won O
+, O
+
+drawn O
+, O
+lost O
+, O
+goals O
+for O
+, O
+against O
+, O
+points O
+) O
+: O
+
+PARIS B-LOC
+1996-08-28 O
+
+matches O
+on O
+Wednesday O
+: O
+
+Lens B-ORG
+3 O
+Montpellier B-ORG
+2 O
+
+Metz B-ORG
+3 O
+Strasbourg B-ORG
+1 O
+
+BONN B-LOC
+1996-08-28 O
+
+It O
+would O
+be O
+great O
+to O
+have O
+him O
+here O
+. O
+
+COLOMBO B-LOC
+1996-08-28 O
+
+COLOMBO B-LOC
+1996-08-28 O
+
+Wednesday O
+: O
+
+India B-LOC
+
+Extras O
+( O
+b-1 O
+lb-3 O
+w-9 O
+nb-3 O
+) O
+16 O
+
+Total O
+( O
+5 O
+wickets O
+, O
+50 O
+overs O
+) O
+226 O
+
+Fall O
+of O
+wickets O
+: O
+1-4 O
+2-57 O
+3-186 O
+4-217 O
+5-217 O
+. O
+
+Extras O
+( O
+lb-3 O
+nb-3 O
+w-2 O
+) O
+8 O
+
+COLOMBO B-LOC
+1996-08-28 O
+
+CAPE B-LOC
+TOWN I-LOC
+1996-08-28 O
+
+Subpoenas O
+are O
+due O
+to O
+be O
+served O
+on O
+a O
+number O
+of O
+people O
+this O
+week O
+. O
+" O
+
+" O
+At O
+the O
+moment O
+we O
+have O
+a O
+preliminary O
+list O
+of O
+less O
+than O
+10 O
+people O
+, O
+but O
+this O
+is O
+just O
+the O
+beginning O
+, O
+" O
+he O
+said O
+. O
+
+The O
+commission O
+was O
+set O
+up O
+last O
+year O
+to O
+probe O
+30 O
+years O
+of O
+human-rights O
+violations O
+during O
+the O
+apartheid O
+era O
+. O
+
+SOFIA B-LOC
+1996-08-28 O
+
+The O
+plane O
+, O
+surrounded O
+by O
+11 O
+fire-engines O
+, O
+is O
+being O
+checked O
+for O
+explosives O
+at O
+the O
+moment O
+. O
+
+Reserve O
+estimates O
+from O
+this O
+well O
+are O
+at O
+250,000 O
+gross O
+barrels O
+of O
+oil O
+. O
+
+. O
+" O
+
+WASHINGTON B-LOC
+1996-08-28 O
+
+( O
+BILLIONS O
+OF O
+DLRS O
+) O
+
+Aug O
+27 O
+Aug O
+26 O
+
+Fed B-ORG
+acct O
+5.208 O
+4.425 O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+In O
+the O
+first O
+seven O
+months O
+of O
+1996 O
+, O
+shipments O
+of O
+copper O
+sheet O
+, O
+coil O
+and O
+strip O
+were O
+2.2 O
+percent O
+ahead O
+of O
+the O
+same O
+period O
+last O
+year O
+. O
+
+Alloy O
+shipments O
+, O
+however O
+, O
+were O
+7.5 O
+percent O
+down O
+. O
+
+Service O
+centers O
+continued O
+to O
+lower O
+their O
+inventories O
+in O
+July O
+when O
+total O
+copper O
+stocks O
+were O
+off O
+two O
+percent O
+and O
+alloy O
+products O
+down O
+1.9 O
+percent O
+. O
+
+HARLEYSVILLE B-LOC
+, O
+Pa B-LOC
+. O
+
+Quarterly O
+
+Latest O
+Prior O
+
+Amount O
+$ O
+0.21 O
+$ O
+0.19 O
+
+LONDON B-LOC
+1996-08-28 O
+
+The O
+maximum O
+noise O
+level O
+during O
+the O
+day O
+is O
+trimmed O
+by O
+three O
+decibels O
+to O
+94 O
+, O
+while O
+the O
+night O
+time O
+level O
+is O
+reduced O
+by O
+two O
+decibels O
+to O
+87 O
+. O
+
+They O
+can O
+be O
+flown O
+in O
+quieter O
+ways O
+, O
+" O
+a O
+spokesman O
+said O
+. O
+
+The O
+number O
+of O
+monitors O
+will O
+be O
+increased O
+and O
+some O
+will O
+be O
+repositioned O
+to O
+detect O
+noisy O
+planes O
+. O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-27 O
+
+No O
+further O
+details O
+were O
+immediately O
+available O
+. O
+
+WELLINGTON B-LOC
+1996-08-28 O
+
+COLOMBO B-LOC
+1996-08-28 O
+
+He O
+declined O
+to O
+say O
+how O
+many O
+people O
+were O
+being O
+considered O
+for O
+asylum O
+. O
+
+A O
+court O
+sentenced O
+two O
+in O
+December O
+and O
+the O
+third O
+in O
+January O
+. O
+
+FREETOWN B-LOC
+1996-08-28 O
+
+Continuing O
+attacks O
+are O
+generally O
+ascribed O
+to O
+renegade O
+soldiers O
+or O
+uncontrolled O
+bands O
+of O
+rebels O
+and O
+refugees O
+displaced O
+by O
+the O
+fighting O
+starting O
+to O
+return O
+to O
+their O
+homes O
+. O
+
+NAIROBI B-LOC
+1996-08-28 O
+
+The O
+latest O
+sets O
+a O
+timetable O
+for O
+disarmament O
+by O
+the O
+end O
+of O
+January O
+and O
+elections O
+by O
+May O
+30 O
+. O
+
+Dozens O
+of O
+people O
+opposed O
+to O
+the O
+government O
+are O
+in O
+detention O
+. O
+
+Peter B-PER
+Laca I-PER
+
+WARSAW B-LOC
+1996-08-28 O
+
+TIRANA B-LOC
+1996-08-28 O
+
+SOFIA B-LOC
+1996-08-28 O
+
+The O
+ministry O
+has O
+said O
+that O
+it O
+planned O
+to O
+return O
+96.6 O
+percent O
+of O
+the O
+arable O
+land O
+or O
+5.2 O
+million O
+hectares O
+to O
+its O
+original O
+owners O
+by O
+the O
+end O
+of O
+this O
+year O
+. O
+
+Duncan B-PER
+Shiels I-PER
+
+" O
+They O
+just O
+voted O
+along O
+ethnic O
+lines O
+where O
+they O
+could O
+. O
+" O
+
+This O
+vote O
+seals O
+the O
+division O
+of O
+my O
+country O
+. O
+" O
+
+" O
+Probably O
+100 O
+refugees O
+were O
+shown O
+where O
+to O
+put O
+their O
+cross O
+, O
+" O
+he O
+said O
+. O
+
+" O
+The O
+envelopes O
+, O
+each O
+with O
+the O
+five O
+different O
+voting O
+slips O
+, O
+were O
+sealed O
+until O
+voting O
+and O
+had O
+written O
+instructions O
+on O
+how O
+to O
+vote O
+, O
+" O
+she O
+said O
+. O
+" O
+
+This O
+tactical O
+manoeuvre O
+also O
+shows O
+that O
+in O
+the O
+ruling O
+circle O
+there O
+is O
+no O
+unity O
+of O
+action O
+, O
+" O
+he O
+said O
+. O
+
+BUCHAREST B-LOC
+1996-08-28 O
+
+January-June O
+revenues O
+went O
+up O
+to O
+8.26 O
+trillion O
+lei O
+from O
+6.96 O
+trillion O
+lei O
+in O
+the O
+first O
+five O
+months O
+this O
+year O
+. O
+
+In O
+July O
+the O
+government O
+gave O
+a O
+6.0-percent O
+wage O
+and O
+pension O
+indexation O
+to O
+cover O
+energy O
+, O
+fuel O
+and O
+bread O
+price O
+increases O
+, O
+which O
+quickened O
+inflation O
+to O
+7.5 O
+percent O
+last O
+month O
+. O
+
+On O
+Wednesday O
+, O
+the O
+leu O
+'s O
+official O
+rate O
+was O
+3,161 O
+to O
+the O
+dollar O
+. O
+
+They O
+were O
+held O
+for O
+71 O
+days O
+before O
+relatives O
+paid O
+a O
+ransom O
+to O
+free O
+them O
+. O
+
+BOGOTA B-LOC
+, O
+Colombia B-LOC
+1996-08-28 O
+
+The O
+quake O
+was O
+felt O
+for O
+about O
+seven O
+seconds O
+in O
+most O
+of O
+the O
+country O
+but O
+preliminary O
+reports O
+said O
+no O
+one O
+was O
+hurt O
+, O
+it O
+added O
+. O
+
+BRASILIA B-LOC
+1996-08-28 O
+
+SYDNEY B-LOC
+1996-08-29 O
+
+Operating O
+profit O
+9.75 O
+vs O
+5.79 O
+
+Total O
+dividend O
+( O
+cents O
+) O
+6.0 O
+vs O
+6.0 O
+
+Sales O
+148.29 O
+vs O
+133.82 O
+
+Other O
+income O
+1.90 O
+vs O
+2.07 O
+
+Dividend O
+is O
+100 O
+percent O
+franked O
+
+Pay O
+date O
+Nov O
+25 O
+
+Reg O
+date O
+Nov O
+11 O
+
+Tax O
+3.67 O
+vs O
+1.82 O
+
+Depreciation O
+3.25 O
+vs O
+2.79 O
+
+Council O
+resolutions O
+are O
+not O
+necessarily O
+binding O
+. O
+
+ANKARA B-LOC
+1996-08-28 O
+
+" O
+He O
+was O
+not O
+involved O
+... O
+
+on O
+the O
+contrary O
+he O
+was O
+harassed O
+by O
+the O
+elements O
+which O
+carried O
+out O
+the O
+hijacking O
+, O
+" O
+he O
+said O
+. O
+
+Several O
+had O
+brought O
+their O
+families O
+along O
+, O
+including O
+children O
+. O
+
+Judith B-PER
+Crosson I-PER
+
+VENTURA B-LOC
+, O
+Calif. B-LOC
+1996-08-28 O
+
+Welcome O
+to O
+the O
+club O
+. O
+
+I O
+want O
+to O
+tell O
+you O
+with O
+all O
+my O
+heart O
+that O
+we O
+want O
+to O
+win O
+your O
+vote O
+. O
+" O
+
+We O
+'ve O
+got O
+an O
+international O
+problem O
+and O
+I O
+'m O
+prepared O
+to O
+use O
+our O
+military O
+might O
+. O
+
+I O
+did O
+n't O
+say O
+anything O
+about O
+cigarettes O
+. O
+
+I O
+was O
+talking O
+about O
+drugs O
+. O
+
+Come O
+on O
+, O
+you O
+know O
+better O
+than O
+that O
+. O
+" O
+
+A O
+recent O
+survey O
+showed O
+that O
+illegal O
+drug O
+use O
+among O
+12-17 O
+year-olds O
+had O
+doubled O
+in O
+the O
+past O
+four O
+years O
+. O
+
+" O
+We O
+need O
+all O
+the O
+help O
+we O
+can O
+get O
+. O
+
+, O
+at O
+$ O
+11 O
+mln O
+. O
+
+, O
+KS B-LOC
+
+RE O
+: O
+$ O
+45,020,000 O
+
+WATER O
+REVENUE O
+BONDS O
+
+$ O
+22,040,000 O
+SER O
+. O
+
+1996A O
+
+$ O
+22,980,000 O
+RFDG O
+, O
+SER O
+. O
+
+Delivery O
+Date O
+: O
+09/05/1996 O
+( O
+FIRM O
+) O
+
+06/01 O
+12/01 O
+
+MATURITY O
+SER O
+A O
+SER O
+B O
+SER O
+A O
+SER O
+B O
+
+------------------------------------------------------------- O
+
+1998 O
+665M O
+840M O
+570M O
+
+2001 O
+- O
+70M O
+- O
+
+2002 O
+- O
+895M O
+600M O
+
+2004 O
+655M O
+90M O
+965M O
+
+2009 O
+65M O
+- O
+- O
+
+2011 O
+30M O
+- O
+90M O
+
+Expectations O
+the O
+storm O
+would O
+turn O
+more O
+to O
+the O
+north O
+partly O
+eased O
+concerns O
+, O
+they O
+said O
+. O
+
+-- O
+Jerry B-PER
+Bieszk I-PER
+312-408-8725 O
+
+As O
+an O
+example O
+of O
+just O
+how O
+dry O
+it O
+was O
+, O
+data O
+showed O
+that O
+between O
+October O
+1 O
+, O
+1995 O
+and O
+March O
+1 O
+, O
+1996 O
+, O
+the O
+state O
+received O
+an O
+average O
+of O
+only O
+4.6 O
+inches O
+of O
+rainfall O
+. O
+
+JACKSONVILLE B-LOC
+, O
+Fla. B-LOC
+1996-08-28 O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-28 O
+
+Evelyn B-PER
+Leopold I-PER
+
+UNITED B-ORG
+NATIONS I-ORG
+1996-08-28 O
+
+It O
+did O
+not O
+identify O
+the O
+man O
+. O
+
+CALLS O
+PUTS O
+PCT O
+OF O
+TOTAL O
+
+PARIS B-LOC
+1996-08-28 O
+
+The O
+companies O
+had O
+been O
+contacted O
+at O
+the O
+time O
+and O
+had O
+not O
+been O
+fined O
+for O
+failing O
+to O
+pay O
+, O
+the O
+official O
+said O
+. O
+
+ZURICH B-LOC
+1996-08-28 O
+
+Sept O
+conf O
+bond O
+up O
+12 O
+at O
+113.02 O
+. O
+
+-- O
+Cash O
+: O
+
+It O
+is O
+a O
+holy O
+war O
+for O
+us O
+, O
+" O
+he O
+said O
+. O
+
+We O
+will O
+take O
+it O
+over O
+early O
+next O
+month O
+, O
+" O
+he O
+said O
+. O
+
+BOMBAY B-LOC
+1996-08-28 O
+
+" O
+There O
+is O
+little O
+we O
+can O
+do O
+when O
+at O
+mid-sea O
+. O
+
+" O
+We O
+have O
+not O
+gone O
+to O
+sea O
+since O
+August O
+19 O
+, O
+but O
+refugees O
+are O
+arriving O
+daily O
+nevertheless O
+. O
+
+How O
+could O
+we O
+alone O
+be O
+held O
+responsible O
+for O
+the O
+influx O
+? O
+" O
+
+On O
+Tuesday O
+, O
+cotton O
+prices O
+fell O
+on O
+profit-taking O
+prompted O
+by O
+increased O
+offerings O
+from O
+state O
+agencies O
+. O
+
+ATHENS B-LOC
+1996-08-28 O
+
+These O
+remarks O
+gave O
+the O
+yen O
+some O
+backbone O
+and O
+the O
+dollar O
+failed O
+to O
+progress O
+further O
+. O
+
+Dealers O
+said O
+shares O
+were O
+also O
+affected O
+by O
+a O
+slippage O
+in O
+bond O
+prices O
+due O
+to O
+lower O
+than O
+expected O
+June O
+industrial O
+production O
+, O
+showing O
+the O
+economy O
+was O
+still O
+faltering O
+. O
+
+Silver O
+was O
+at O
+521.15 O
+cents O
+. O
+
+LONDON B-LOC
+1996-08-28 O
+
+ANKARA B-LOC
+1996-08-28 O
+
+DIYARBAKIR B-LOC
+, O
+Turkey B-LOC
+1996-08-28 O
+
+Benevolent B-ORG
+Assoc I-ORG
+. I-ORG
+
+State O
+: O
+CO B-LOC
+
+WASHINGTON B-LOC
+1996-08-27 O
+
+-- O
+Further O
+details O
+were O
+not O
+immediately O
+available O
+. O
+
+Quarterly O
+
+Patricia B-PER
+Vowinkel I-PER
+
+In O
+addition O
+, O
+she O
+said O
+she O
+was O
+concerned O
+the O
+plan O
+may O
+not O
+offer O
+investors O
+enough O
+protection O
+from O
+additional O
+, O
+future O
+liabilities O
+. O
+
+But O
+the O
+driver O
+'s O
+wife O
+kept O
+her O
+nerve O
+, O
+got O
+out O
+her O
+camera O
+and O
+photographed O
+him O
+. O
+
+The O
+man O
+has O
+been O
+charged O
+with O
+dangerous O
+driving O
+, O
+coercion O
+and O
+threatening O
+behaviour O
+. O
+
+BERLIN B-LOC
+1996-08-28 O
+
+( O
+millions O
+of O
+guilders O
+unless O
+otherwise O
+stated O
+) O
+
+Industrial O
+systems O
+and O
+components O
+
+- O
+Turnover O
+756 O
+vs O
+829 O
+
+- O
+New O
+orders O
+received O
+876 O
+vs O
+933 O
+
+Industrial O
+services O
+
+- O
+Turnover O
+657 O
+vs O
+700 O
+
+- O
+Operating O
+profit O
+9 O
+vs O
+3 O
+
+- O
+New O
+orders O
+received O
+( O
+billions O
+) O
+1.00 O
+vs O
+1.09 O
+
+- O
+Order O
+book O
+( O
+billions O
+) O
+2.37 O
+vs O
+2.01 O
+
+NOTE O
+- O
+Order O
+book O
+figures O
+refer O
+to O
+value O
+of O
+orders O
+on O
+books O
+at O
+end O
+of O
+period O
+. O
+
+The O
+magazine O
+said O
+video O
+cameras O
+had O
+also O
+been O
+used O
+to O
+film O
+the O
+couple O
+and O
+that O
+a O
+sound-track O
+existed O
+. O
+
+- O
+- O
+- O
+- O
+
+BUNOL B-LOC
+, O
+Spain B-LOC
+1996-08-28 O
+
+ATHENS B-LOC
+1996-08-28 O
+
+-- O
+Finance O
+ministry O
+scrambles O
+to O
+find O
+temporary O
+solution O
+to O
+regulation O
+which O
+slaps O
+a O
+15 O
+percent O
+tax O
+rate O
+on O
+gains O
+from O
+trading O
+of O
+bonds O
+and O
+coupons O
+by O
+mutual O
+funds O
+
+-- O
+Finance O
+ministry O
+will O
+cut O
+12-month O
+T-bill O
+rate O
+by O
+10 O
+basis O
+points O
+to O
+12.70 O
+percent O
+in O
+the O
+upcoming O
+end O
+August O
+issue O
+
+KERDOS B-ORG
+
+EXPRESS B-ORG
+
+-- O
+Government O
+defends O
+" O
+hard O
+drachma O
+" O
+policy O
+, O
+says O
+it O
+will O
+continue O
+unchanged O
+after O
+the O
+elections O
+
+Net O
+profit O
+28.9 O
+vs O
+24.5 O
+
+Operating O
+profit O
+44.4 O
+vs O
+40.7 O
+
+LONDON B-LOC
+1996-08-28 O
+
+" O
+Our O
+bonds O
+were O
+better O
+bid O
+initially O
+but O
+they O
+sold O
+off O
+on O
+a O
+lack O
+of O
+demand O
+, O
+and O
+the O
+short O
+end O
+went O
+with O
+it O
+too O
+on O
+a O
+lower O
+currency O
+. O
+
+Police O
+have O
+declared O
+an O
+" O
+emergent O
+situation O
+" O
+in O
+the O
+area O
+, O
+giving O
+them O
+powers O
+to O
+raid O
+houses O
+, O
+search O
+cars O
+, O
+close O
+schools O
+, O
+quarantine O
+the O
+area O
+and O
+evacuate O
+people O
+. O
+
+All O
+three O
+wounded O
+are O
+in O
+a O
+satisfactory O
+condition O
+in O
+hospital O
+. O
+
+SHANGHAI B-LOC
+1996-08-28 O
+
+Capacity O
+is O
+expected O
+to O
+reach O
+one O
+million O
+engines O
+by O
+the O
+year O
+2000 O
+, O
+it O
+said O
+. O
+
+PHNOM B-LOC
+PENH I-LOC
+1996-08-28 O
+
+TOKYO B-LOC
+1996-08-28 O
+
+I O
+believe O
+this O
+policy O
+has O
+not O
+changed O
+, O
+" O
+he O
+said O
+. O
+
+The O
+economy O
+is O
+not O
+recovering O
+smoothly O
+or O
+at O
+a O
+fast O
+pace O
+. O
+" O
+
+Six O
+months O
+ended O
+June O
+30 O
+
+Exceptional O
+items O
+nil O
+vs O
+nil O
+
+Books O
+close O
+September O
+23-27 O
+
+Dividend O
+payable O
+October O
+8 O
+
+JAKARTA B-LOC
+1996-08-28 O
+
+He O
+said O
+there O
+was O
+no O
+immediate O
+explanation O
+for O
+the O
+attack O
+or O
+any O
+information O
+on O
+those O
+responsible O
+. O
+
+The O
+killing O
+was O
+under O
+investigation O
+, O
+she O
+said O
+. O
+
+" O
+Investors O
+unloaded O
+their O
+shares O
+due O
+to O
+the O
+poor O
+earnings O
+outlook O
+following O
+a O
+sharp O
+profit O
+decline O
+. O
+
+Figures O
+were O
+as O
+follows O
+( O
+in O
+tonnes O
+) O
+: O
+
+July O
+96 O
+June O
+96 O
+July O
+95 O
+
+Total O
+3,684 O
+3,292 O
+7,011 O
+
+China B-LOC
+961 O
+1,683 O
+5,539 O
+
+Refined O
+zinc O
+imports O
+in O
+the O
+first O
+seven O
+months O
+of O
+1996 O
+totalled O
+115,941 O
+tonnes O
+, O
+up O
+38.4 O
+percent O
+from O
+83,801 O
+tonnes O
+in O
+the O
+year-ago O
+period O
+. O
+
+HONG B-LOC
+KONG I-LOC
+1996-08-28 O
+
+Such O
+hesitancy O
+on O
+the O
+part O
+of O
+the O
+government O
+had O
+damaged O
+public O
+confidence O
+in O
+the O
+rule O
+of O
+law O
+, O
+the O
+paper O
+said O
+. O
+
+EL B-ORG
+MUNDO I-ORG
+
+ABC B-ORG
+
+- O
+Worldwide O
+alarm O
+over O
+child O
+prostitution O
+
+- O
+Government O
+will O
+finish O
+pension O
+reform O
+before O
+the O
+year O
+2000 O
+
+Three O
+dissidents O
+and O
+their O
+translator O
+were O
+killed O
+in O
+the O
+gangland-style O
+machinegun O
+attack O
+. O
+
+COPENHAGEN B-LOC
+1996-08-28 O
+
+Evelyn B-PER
+Leopold I-PER
+
+UNITED B-ORG
+NATIONS I-ORG
+1996-08-28 O
+
+In O
+addition O
+another O
+$ O
+12 O
+million O
+was O
+anticipated O
+to O
+cover O
+other O
+expenses O
+, O
+such O
+as O
+oil O
+experts O
+and O
+administrative O
+costs O
+. O
+
+roughly O
+3 O
+percent O
+. O
+" O
+
+Microfiche O
+production O
+system O
+Open O
+procedure O
+Invitation O
+to O
+tender O
+DI O
+96/04 O
+Micromation O
+( O
+96 O
+/ O
+C O
+251/07 O
+) O
+
+Average O
+prices O
+and O
+representative O
+prices O
+for O
+table O
+wines O
+at O
+the O
+various O
+marketing O
+centres O
+( O
+96 O
+/ O
+C O
+251/02 O
+) O
+
+BRUSSELS B-LOC
+1996-08-29 O
+
+" O
+Obviously O
+we O
+are O
+interested O
+in O
+this O
+research O
+. O
+
+" O
+We O
+have O
+always O
+avoided O
+the O
+question O
+of O
+numbers O
+of O
+animals O
+to O
+be O
+slaughtered O
+, O
+that O
+'s O
+not O
+the O
+issue O
+. O
+
+NORTHAMPTON B-LOC
+, O
+England B-LOC
+1996-08-29 O
+
+Leading O
+scores O
+after O
+
+Leading O
+overall O
+placings O
+after O
+three O
+stages O
+: O
+
+MANCHESTER B-LOC
+, O
+England B-LOC
+1996-08-29 O
+
+CYCLING O
+- O
+WORLD O
+CHAMPIONSHIP O
+RESULTS O
+. O
+
+MANCHESTER B-LOC
+, O
+England B-LOC
+1996-08-29 O
+
+Results O
+at O
+the O
+world O
+track O
+cycling O
+championships O
+on O
+Thursday O
+: O
+
+seconds O
+
+45.810 O
+
+three O
+matches O
+) O
+: O
+
+seconds O
+and O
+12.033 O
+seconds O
+) O
+
+Scoreboard O
+of O
+the O
+
+Pakistan B-LOC
+
+Inzamam-ul-Haq B-PER
+not O
+out O
+37 O
+
+Total O
+( O
+for O
+5 O
+wickets O
+, O
+innings O
+closed O
+) O
+225 O
+
+Fall O
+: O
+1-82 O
+2-141 O
+3-160 O
+4-174 O
+5-203 O
+. O
+
+Fall O
+of O
+wickets O
+: O
+1-57 O
+2-98 O
+3-146 O
+4-200 O
+5-220 O
+. O
+
+DOETINCHEM B-LOC
+, O
+Netherlands B-LOC
+1996-08-29 O
+
+29 O
+seconds O
+
+1. O
+Sorensen B-PER
+10.57:33 O
+
+4. O
+Den B-PER
+Bakker I-PER
+7 O
+
+5. O
+Lietti B-PER
+8 O
+
+MANCHESTER B-LOC
+, O
+England B-LOC
+1996-08-29 O
+
+LONDON B-LOC
+1996-08-29 O
+
+LONDON B-LOC
+1996-08-30 O
+
+LONDON B-LOC
+1996-08-29 O
+
+HARARE B-LOC
+1996-08-29 O
+
+Add O
+results O
+
+HONG B-LOC
+KONG I-LOC
+1996-08-29 O
+
+SEOUL B-LOC
+1996-08-29 O
+
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+for O
+, O
+goals O
+against O
+, O
+points O
+) O
+: O
+
+W O
+D O
+L O
+G O
+/ O
+F O
+G O
+/ O
+A O
+P O
+
+SEOUL B-LOC
+1996-08-29 O
+
+Results O
+of O
+South B-MISC
+Korean I-MISC
+
+pro-baseball O
+games O
+played O
+on O
+Wednesday O
+. O
+
+OB B-ORG
+4 O
+LG B-ORG
+3 O
+
+Ssangbangwool B-ORG
+12 O
+Hanwha B-ORG
+0 O
+
+Lotte B-ORG
+4 O
+Hyundai B-ORG
+0 O
+
+Samsung B-ORG
+7 O
+Haitai B-ORG
+1 O
+
+won O
+, O
+drawn O
+, O
+lost O
+, O
+winning O
+percentage O
+, O
+games O
+behind O
+first O
+place O
+) O
+
+W O
+D O
+L O
+PCT O
+GB O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-29 O
+
+6- O
+3 O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+Women O
+'s O
+singles O
+, O
+second O
+round O
+
+Men O
+'s O
+singles O
+, O
+second O
+round O
+
+Add O
+Men O
+'s O
+singles O
+, O
+second O
+round O
+
+Men O
+'s O
+singles O
+, O
+second O
+round O
+
+4-6 O
+7-6 O
+( O
+7-4 O
+) O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-29 O
+
+Major B-MISC
+League I-MISC
+Baseball I-MISC
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+KANSAS B-ORG
+CITY I-ORG
+AT O
+DETROIT B-LOC
+
+EASTERN B-MISC
+DIVISION I-MISC
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+WESTERN B-MISC
+DIVISION I-MISC
+
+THURSDAY O
+, O
+AUGUST O
+29TH O
+SCHEDULE O
+
+CHICAGO B-ORG
+AT O
+HOUSTON B-LOC
+
+CINCINNATI B-ORG
+AT O
+COLORADO B-LOC
+
+SEATTLE B-LOC
+1996-08-29 O
+
+He O
+walked O
+three O
+and O
+struck O
+out O
+three O
+in O
+winning O
+for O
+the O
+10th O
+time O
+in O
+his O
+last O
+11 O
+decisions O
+. O
+
+At O
+California B-LOC
+, O
+
+In O
+Seattle B-LOC
+, O
+
+National B-MISC
+League I-MISC
+
+COLORADO B-ORG
+10 O
+Cincinnati B-ORG
+9 O
+
+American B-MISC
+League I-MISC
+
+TORONTO B-ORG
+6 O
+Minnesota B-ORG
+1 O
+
+Boston B-ORG
+7 O
+CALIFORNIA B-ORG
+4 O
+
+" O
+What O
+I O
+'m O
+trying O
+to O
+do O
+is O
+be O
+aggressive O
+all O
+the O
+time O
+, O
+maybe O
+go O
+up O
+to O
+the O
+net O
+a O
+few O
+times O
+like O
+I O
+did O
+tonight O
+. O
+
+The O
+crowds O
+, O
+they O
+speak O
+louder O
+or O
+they O
+move O
+. O
+
+That O
+'s O
+where O
+the O
+real O
+champion O
+wins O
+. O
+
+Now O
+she O
+feels O
+she O
+is O
+in O
+the O
+swing O
+of O
+things O
+. O
+
+This O
+time O
+it O
+did O
+n't O
+happen O
+. O
+
+It O
+gets O
+my O
+adrenalin O
+going O
+, O
+those O
+taxi O
+drivers O
+. O
+
+AMSTERDAM B-LOC
+1996-08-28 O
+
+Attendance O
+10,760 O
+. O
+
+AMSTERDAM B-LOC
+1996-08-29 O
+
+Played O
+on O
+Tuesday O
+: O
+
+Standings O
+( O
+tabulate O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+BERLIN B-LOC
+1996-08-29 O
+
+AMSTERDAM B-LOC
+1996-08-29 O
+
+ATHENS B-LOC
+1996-08-29 O
+
+CONTRACT O
+( O
+MONTH O
+) O
+APT O
+CLOSE O
+SETTLEMENT O
+PREVIOUS O
+SETTLE O
+
+LONG O
+GILT O
+( O
+SEP O
+) O
+( O
+1/32 O
+) O
+107-12 O
+107-10 O
+107-06 O
+
+" O
+We O
+can O
+meet O
+the O
+required O
+deadlines O
+for O
+organising O
+the O
+elections O
+. O
+
+The O
+timing O
+of O
+that O
+mission O
+has O
+yet O
+to O
+be O
+determined O
+. O
+
+N'DJAMENA B-LOC
+1996-08-29 O
+
+He O
+won O
+69 O
+percent O
+of O
+votes O
+in O
+the O
+second O
+round O
+of O
+presidential O
+elections O
+on O
+July O
+3 O
+, O
+1996 O
+.. O
+
+LA B-ORG
+VOIE I-ORG
+
+SARAJEVO B-LOC
+1996-08-29 O
+
+Peter B-PER
+Greste I-PER
+
+BELGRADE B-LOC
+1996-08-29 O
+
+The O
+company O
+has O
+organised O
+regular O
+auctions O
+of O
+its O
+shares O
+to O
+create O
+an O
+orderly O
+market O
+in O
+the O
+paper O
+. O
+
+BELGRADE B-LOC
+1996-08-29 O
+
+It O
+affects O
+the O
+gastro-intestinal O
+tract O
+, O
+causing O
+high O
+fever O
+, O
+headache O
+and O
+vomiting O
+. O
+
+But O
+they O
+do O
+not O
+want O
+to O
+talk O
+to O
+anyone O
+. O
+" O
+
+And O
+that O
+is O
+impossible O
+. O
+" O
+
+CARACAS B-LOC
+1996-08-28 O
+
+BOGOTA B-LOC
+, O
+Colombia B-LOC
+1996-08-29 O
+
+They O
+said O
+the O
+drug O
+had O
+been O
+packed O
+into O
+a O
+shipping O
+container O
+and O
+was O
+surrounded O
+by O
+ground O
+coffee O
+. O
+
+No O
+arrests O
+had O
+been O
+made O
+, O
+a O
+police O
+spokesman O
+said O
+. O
+
+CARACAS B-LOC
+1996-08-29 O
+
+Over O
+the O
+seven O
+months O
+, O
+the O
+private O
+sector O
+accounted O
+for O
+76 O
+percent O
+of O
+total O
+exports O
+, O
+with O
+" O
+common O
+metals O
+" O
+the O
+strongest O
+export O
+sector O
+accounting O
+for O
+$ O
+951 O
+million O
+, O
+or O
+42.5 O
+percent O
+of O
+total O
+exports O
+. O
+
+" O
+Chemical O
+products O
+" O
+came O
+next O
+with O
+a O
+13 O
+percent O
+share O
+, O
+then O
+" O
+transport O
+materials O
+" O
+with O
+nine O
+percent O
+, O
+and O
+finally O
+foods O
+, O
+drinks O
+and O
+tobacco O
+with O
+6.3 O
+percent O
+. O
+
+" O
+It O
+is O
+an O
+ongoing O
+task O
+. O
+
+BRASILIA B-LOC
+1996-08-29 O
+
+" O
+There O
+are O
+people O
+who O
+are O
+taking O
+advantage O
+of O
+the O
+news O
+to O
+put O
+pressure O
+on O
+rates O
+, O
+however O
+, O
+there O
+are O
+enough O
+players O
+who O
+will O
+buy O
+and O
+that O
+will O
+keep O
+rates O
+from O
+rising O
+too O
+much O
+, O
+" O
+said O
+one O
+dealer O
+. O
+
+The O
+letter O
+was O
+signed O
+by O
+some O
+200 O
+area O
+residents O
+and O
+indigenous O
+leaders O
+. O
+
+Up O
+for O
+grabs O
+in O
+the O
+election O
+are O
+the O
+state O
+legislature O
+and O
+75 O
+town O
+halls O
+. O
+
+Despite O
+the O
+criticism O
+, O
+acting O
+state O
+Gov O
+. O
+
+BANGKOK B-LOC
+1996-08-29 O
+
+The O
+prime O
+minister O
+, O
+who O
+has O
+already O
+lost O
+one O
+coalition O
+partner O
+this O
+month O
+, O
+is O
+expected O
+to O
+have O
+a O
+tough O
+battle O
+in O
+the O
+debate O
+because O
+of O
+infighting O
+in O
+his O
+own O
+party O
+and O
+warnings O
+of O
+more O
+pullouts O
+by O
+other O
+coalition O
+partners O
+. O
+
+CHICAGO B-LOC
+1996-08-29 O
+
+I O
+am O
+and O
+always O
+will O
+be O
+grateful O
+for O
+the O
+great O
+contributions O
+he O
+has O
+made O
+to O
+my O
+campaigns O
+and O
+for O
+the O
+invaluable O
+work O
+he O
+has O
+done O
+for O
+me O
+over O
+the O
+last O
+two O
+years O
+. O
+" O
+
+It O
+was O
+apparently O
+neglected O
+on O
+his O
+long O
+" O
+whistle-stop O
+" O
+train O
+trip O
+to O
+the O
+convention O
+, O
+during O
+which O
+he O
+revelled O
+in O
+contact O
+with O
+friendly O
+crowds O
+across O
+the O
+country O
+'s O
+heartland O
+. O
+
+He O
+was O
+also O
+hoarse O
+and O
+was O
+giving O
+his O
+voice O
+a O
+rest O
+. O
+
+But O
+more O
+than O
+that O
+, O
+he O
+'s O
+very O
+resolute O
+about O
+what O
+he O
+wants O
+to O
+do O
+. O
+" O
+
+I O
+always O
+expect O
+elections O
+to O
+get O
+close O
+. O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-29 O
+
+Previous O
+
+10 O
+Year O
+A-rated O
+Gen'l O
+Obligation O
+4.90 O
+% O
+4.90 O
+% O
+----- O
+
+20 O
+Year O
+A-rated O
+Gen'l O
+Obligation O
+5.55 O
+% O
+5.50 O
+% O
++0.05 O
+
+PHILADELPHIA B-LOC
+1996-08-29 O
+
+Death O
+strikes O
+in O
+early O
+adulthood O
+. O
+
+Individuals O
+with O
+the O
+disease O
+have O
+a O
+non-working O
+version O
+of O
+a O
+gene O
+responsible O
+for O
+producing O
+a O
+crucial O
+muscle O
+protein O
+called O
+dystrophin O
+. O
+
+The O
+virus O
+, O
+which O
+also O
+was O
+altered O
+to O
+minimise O
+its O
+susceptibility O
+to O
+the O
+immune O
+system O
+, O
+was O
+then O
+injected O
+into O
+the O
+muscle O
+cells O
+of O
+mice O
+bred O
+to O
+lack O
+dystrophin O
+genes O
+. O
+
+In O
+the O
+experiment O
+, O
+between O
+30 O
+to O
+40 O
+percent O
+of O
+the O
+muscle O
+fibers O
+in O
+one O
+group O
+of O
+mice O
+produced O
+dystrophin O
+for O
+two O
+weeks O
+before O
+diminishing O
+. O
+
+Similar O
+results O
+had O
+been O
+obtained O
+previously O
+in O
+test-tube O
+cell O
+cultures O
+, O
+but O
+not O
+in O
+live O
+animals O
+, O
+the O
+university O
+said O
+. O
+
+The O
+university O
+said O
+methods O
+are O
+still O
+needed O
+to O
+make O
+enough O
+of O
+the O
+altered O
+virus O
+to O
+treat O
+humans O
+, O
+to O
+further O
+decrease O
+the O
+immune-system O
+response O
+to O
+the O
+virus O
+, O
+and O
+to O
+deliver O
+the O
+virus O
+to O
+human O
+muscle O
+tissue O
+. O
+
+Export O
+Business O
+- O
+Grain O
+/ O
+oilseeds O
+complex O
+. O
+
+CHICAGO B-LOC
+1996-08-29 O
+
+For O
+Sept O
+10-30 O
+: O
+16,300 O
+tonnes O
+of O
+dark O
+northern O
+spring O
+( O
+DNS O
+) O
+at O
+$ O
+212.00 O
+; O
+7,000 O
+of O
+hard O
+red O
+winter O
+( O
+HRW O
+) O
+at O
+$ O
+205.10 O
+; O
+2,700 O
+of O
+western O
+white O
+( O
+WW O
+) O
+at O
+$ O
+202.65 O
+. O
+
+-- O
+Chicago B-LOC
+newsdesk O
+312-408-8720-- O
+
+The O
+hide O
+and O
+offal O
+value O
+from O
+a O
+typical O
+slaughter O
+steer O
+for O
+Thursday O
+was O
+estimated O
+at O
+$ O
+9.76 O
+per O
+cwt O
+live O
+, O
+up O
+$ O
+0.03 O
+when O
+compared O
+with O
+Wednesday O
+'s O
+value O
+. O
+
+The O
+monthly O
+index O
+fell O
+to O
+83.0 O
+in O
+July O
+against O
+a O
+reading O
+of O
+85.0 O
+in O
+June O
+, O
+the O
+private O
+business O
+research O
+group O
+said O
+. O
+
+Capt O
+. O
+
+He O
+said O
+the O
+man O
+on O
+the O
+videotape O
+did O
+not O
+match O
+the O
+description O
+given O
+by O
+the O
+jewelry O
+store O
+owner O
+. O
+
+WASHINGTON B-LOC
+1996-08-29 O
+
+But O
+he O
+added O
+without O
+elaborating O
+, O
+" O
+hopefully O
+we O
+will O
+see O
+some O
+things O
+come O
+out O
+in O
+this O
+next O
+trial O
+. O
+" O
+
+The O
+judge O
+in O
+the O
+civil O
+trial O
+has O
+imposed O
+a O
+sweeping O
+gag O
+order O
+that O
+prohibits O
+lawyers O
+, O
+witnesses O
+and O
+parties O
+to O
+the O
+case O
+from O
+discussing O
+it O
+with O
+the O
+media O
+or O
+elsewhere O
+in O
+public O
+. O
+
+His O
+lawyers O
+have O
+said O
+his O
+defence O
+in O
+the O
+civil O
+trial O
+that O
+starts O
+Sept O
+. O
+
+Now O
+, O
+I O
+resign O
+so O
+I O
+will O
+not O
+become O
+the O
+issue O
+, O
+" O
+he O
+said O
+. O
+
+I O
+will O
+not O
+dignify O
+such O
+journalism O
+with O
+a O
+reply O
+or O
+an O
+answer O
+. O
+
+The O
+foot O
+had O
+to O
+be O
+removed O
+so O
+the O
+infant O
+could O
+be O
+fitted O
+with O
+a O
+prosthesis O
+. O
+
+An O
+orthopedic O
+surgeon O
+was O
+given O
+permission O
+by O
+the O
+child O
+'s O
+parents O
+and O
+the O
+hospital O
+to O
+keep O
+the O
+foot O
+for O
+research O
+and O
+educational O
+purposes O
+. O
+
+Health O
+officials O
+said O
+the O
+surgeon O
+told O
+authorities O
+he O
+stored O
+the O
+foot O
+in O
+his O
+freezer O
+at O
+home O
+, O
+but O
+the O
+freezer O
+recently O
+broke O
+down O
+and O
+the O
+contents O
+spoiled O
+. O
+
+It O
+was O
+a O
+bush O
+that O
+bagged O
+the O
+bad O
+guys O
+. O
+
+WASHINGTON B-LOC
+1996-08-29 O
+
+-- O
+
+Gluten O
+feed O
+21 O
+pct O
+bulk O
+Spot O
+- O
+117.00 O
+unc O
+
+Gluten O
+meal O
+60 O
+pct O
+bulk O
+rail O
+Spot O
+- O
+320.00 O
+up O
+5 O
+
+A O
+cutback O
+plan O
+could O
+slim O
+their O
+numbers O
+to O
+1,700 O
+from O
+4,200 O
+. O
+
+DAWN B-ORG
+
+Some O
+27 O
+people O
+were O
+rescued O
+from O
+the O
+private O
+jail O
+set O
+up O
+by O
+the O
+police O
+. O
+
+BUSINESS B-ORG
+RECORDER I-ORG
+
+THE B-ORG
+NATION I-ORG
+
+THE B-ORG
+NEWS I-ORG
+
+THE B-ORG
+MUSLIM I-ORG
+
+-- O
+Islamabad B-LOC
+newsroom O
+9251-274757 O
+
+Witnesses O
+said O
+wrecked O
+tanks O
+and O
+vehicles O
+littered O
+both O
+sides O
+of O
+the O
+heavily-mined O
+road O
+. O
+
+NEW B-LOC
+DELHI I-LOC
+1996-08-29 O
+
+KATHMANDU B-LOC
+1996-08-29 O
+
+COLOMBO B-LOC
+1996-08-29 O
+
+It O
+is O
+the O
+second O
+time O
+in O
+three O
+days O
+that O
+the O
+rebels O
+attacked O
+police O
+. O
+
+DENVER B-PER
+1996-08-29 O
+
+" O
+The O
+fires O
+keep O
+moving O
+back O
+because O
+of O
+the O
+winds O
+, O
+" O
+he O
+said O
+, O
+forcing O
+the O
+utility O
+to O
+shut O
+those O
+transmission O
+lines O
+for O
+a O
+second O
+time O
+this O
+week O
+. O
+
+Local O
+authorities O
+charged O
+a O
+teenager O
+for O
+starting O
+the O
+blaze O
+. O
+
+In O
+four O
+days O
+, O
+the O
+fire O
+destroyed O
+20,000 O
+acres O
+of O
+forest O
+land O
+. O
+
+Monthly O
+
+Latest O
+Prior O
+
+Amount O
+$ O
+0.056 O
+$ O
+0.056 O
+
+Record O
+Sept O
+13 O
+
+Martin B-PER
+Wolk I-PER
+
+" O
+Once O
+you O
+announce O
+your O
+intention O
+to O
+exit O
+a O
+business O
+, O
+it O
+becomes O
+a O
+complete O
+buyer O
+'s O
+market O
+, O
+" O
+he O
+said O
+. O
+
+" O
+As O
+the O
+market O
+develops O
+the O
+question O
+is O
+, O
+are O
+they O
+able O
+to O
+make O
+that O
+transition O
+to O
+be O
+a O
+much O
+larger O
+company O
+? O
+" O
+
+Randall B-PER
+said O
+. O
+
+-- O
+Seattle B-LOC
+bureau O
+206-386-4848 O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-29 O
+
+Quarter O
+ended O
+June O
+30 O
+Six O
+Months O
+ended O
+June O
+30 O
+
+1996 O
+1995 O
+1996 O
+1995 O
+
+7,718,000 O
+6,828,000 O
+14,668,000 O
+13,091,000 O
+
+Net O
+Income O
+9,167,000 O
+11,175,000 O
+16,909,000 O
+10,880,000 O
+
+Net O
+Income O
+Per O
+
+Weighted O
+average O
+number O
+of O
+
+shares O
+outstanding O
+
+Historical O
+income O
+before O
+income O
+
+tax O
+provision O
+
+9,306,000 O
+11,346,000 O
+17,166,000 O
+11,046,000 O
+
+Pro O
+forma O
+income O
+tax O
+
+provision O
+3,820,000 O
+4,658,000 O
+7,047,000 O
+4,534,000 O
+
+outstanding O
+14,775,000 O
+14,775,000 O
+14,775,000 O
+14,775,000 O
+
+LONDON B-LOC
+1996-08-29 O
+
+I O
+'m O
+not O
+a O
+supermodel O
+you O
+know O
+, O
+" O
+he O
+said O
+. O
+
+TEHRAN B-LOC
+1996-08-29 O
+
+DUBAI B-LOC
+1996-08-29 O
+
+" O
+On O
+the O
+jet O
+kerosene O
+side O
+we O
+must O
+be O
+cautious O
+about O
+quality O
+. O
+
+But O
+traders O
+see O
+the O
+market O
+remaining O
+tight O
+in O
+the O
+short-term O
+, O
+with O
+some O
+surplus O
+arising O
+closer O
+to O
+October O
+. O
+
+" O
+Gas O
+oil O
+will O
+remain O
+tight O
+in O
+the O
+short O
+term O
+up O
+to O
+mid-September O
+with O
+the O
+premium O
+of O
+around O
+$ O
+1 O
+for O
+0.5 O
+percent O
+( O
+sulphur O
+material O
+) O
+. O
+
+Traders O
+said O
+there O
+was O
+not O
+much O
+demand O
+for O
+one O
+percent O
+sulphur O
+material O
+gas O
+oil O
+, O
+with O
+the O
+premium O
+at O
+40 O
+to O
+45 O
+cents O
+. O
+
+Instead O
+an O
+undercover O
+police O
+officer O
+pretended O
+to O
+be O
+interested O
+in O
+buying O
+it O
+and O
+arrested O
+them O
+. O
+
+JERUSALEM B-LOC
+1996-08-29 O
+
+WASHINGTON B-LOC
+1996-08-29 O
+
+Egypt B-LOC
+199,900 O
+Nil O
+
+S. B-LOC
+Korea I-LOC
+149,100-A O
+
+Japan B-LOC
+74,600 O
+
+Indonesia B-LOC
+55,000-B O
+
+NEW B-LOC
+YORK I-LOC
+1996-08-29 O
+
+The O
+newspaper O
+also O
+reported O
+: O
+
+* O
+Stock O
+funds O
+see O
+cash O
+pour O
+in O
+again O
+in O
+July O
+. O
+
+CHICAGO B-LOC
+1996-08-28 O
+
+Investigators O
+said O
+they O
+still O
+do O
+not O
+have O
+enough O
+evidence O
+to O
+determine O
+whether O
+a O
+bomb O
+, O
+a O
+missile O
+or O
+mechanical O
+failure O
+caused O
+the O
+crash O
+. O
+
+Leila B-PER
+Corcoran I-PER
+
+More O
+than O
+185,000 O
+black O
+soldiers O
+fought O
+and O
+37,000 O
+died O
+. O
+
+" O
+I O
+would O
+like O
+to O
+no O
+( O
+sic O
+) O
+if O
+you O
+are O
+still O
+in O
+slavery O
+if O
+you O
+are O
+, O
+it O
+will O
+not O
+be O
+long O
+before O
+we O
+shall O
+have O
+crushed O
+the O
+system O
+that O
+now O
+oppreses O
+you O
+for O
+in O
+the O
+course O
+of O
+three O
+months O
+you O
+shall O
+have O
+your O
+liberty O
+. O
+
+The O
+soldier O
+was O
+subsequently O
+pardoned O
+. O
+
+In O
+a O
+picture O
+required O
+for O
+his O
+military O
+discharge O
+, O
+Pvt O
+. O
+
+" O
+These O
+( O
+writings O
+) O
+are O
+not O
+only O
+poetic O
+but O
+a O
+linguistic O
+treasure O
+trove O
+. O
+
+The O
+records O
+also O
+provide O
+insight O
+into O
+medical O
+thinking O
+of O
+the O
+day O
+. O
+
+CHICAGO B-LOC
+1996-08-28 O
+
+AJACCIO B-LOC
+, O
+Corsica B-LOC
+1996-08-29 O
+
+No O
+one O
+was O
+hurt O
+. O
+
+The O
+newspaper O
+said O
+separatists O
+may O
+take O
+advantage O
+of O
+social O
+unrest O
+widely O
+expected O
+on O
+the O
+mainland O
+in O
+coming O
+weeks O
+over O
+government O
+austerity O
+plans O
+to O
+stoke O
+a O
+popular O
+backlash O
+against O
+the O
+government O
+. O
+
+STOCKHOLM B-LOC
+1996-08-29 O
+
+Huge O
+swings O
+in O
+the O
+price O
+of O
+pulp O
+over O
+the O
+past O
+few O
+years O
+have O
+made O
+pulp O
+producers O
+' O
+profitability O
+unpredictable O
+, O
+and O
+made O
+investing O
+in O
+new O
+production O
+capacity O
+a O
+risky O
+business O
+. O
+
+It O
+said O
+global O
+production O
+of O
+pulp O
+amounted O
+to O
+around O
+200 O
+million O
+tonnes O
+per O
+year O
+, O
+of O
+which O
+around O
+20 O
+percent O
+or O
+40 O
+million O
+tonnes O
+was O
+sold O
+on O
+the O
+spot O
+market O
+. O
+
+AMSTERDAM B-LOC
+1996-08-29 O
+
+All O
+figures O
+in O
+thousands O
+of O
+tonnes O
+: O
+
+Gasoline O
+400 O
+400-425 O
+425 O
+
+BONN B-LOC
+1996-08-29 O
+
+Police O
+who O
+had O
+turned O
+out O
+in O
+force O
+all O
+around O
+the O
+government O
+quarter O
+fearing O
+violence O
+looked O
+on O
+in O
+amusement O
+. O
+
+CATANIA B-LOC
+, O
+Sicily B-LOC
+1996-08-29 O
+
+They O
+wanted O
+to O
+get O
+a O
+weight O
+off O
+their O
+consciences O
+, O
+" O
+a O
+police O
+spokesman O
+said O
+. O
+
+LIMERICK B-LOC
+, O
+Ireland B-LOC
+1996-08-29 O
+
+Police O
+said O
+the O
+thieves O
+intercepted O
+a O
+woman O
+arriving O
+to O
+work O
+at O
+the O
+canteen O
+, O
+forced O
+her O
+to O
+open O
+the O
+safe O
+where O
+takings O
+were O
+kept O
+and O
+made O
+off O
+with O
+the O
+cash O
+. O
+
+He O
+did O
+not O
+say O
+how O
+they O
+had O
+contracted O
+the O
+illness O
+. O
+
+Although O
+fake O
+guns O
+are O
+legal O
+, O
+the O
+use O
+he O
+made O
+of O
+them O
+means O
+he O
+could O
+be O
+tried O
+, O
+" O
+a O
+police O
+official O
+said O
+. O
+
+OSLO B-LOC
+1996-08-29 O
+
+Cellars O
+were O
+flooded O
+, O
+trees O
+uprooted O
+and O
+roofs O
+damaged O
+, O
+but O
+there O
+were O
+no O
+reports O
+of O
+any O
+injuries O
+, O
+an O
+interior O
+affairs O
+ministry O
+spokesman O
+said O
+. O
+
+Some O
+trains O
+were O
+delayed O
+as O
+fallen O
+trees O
+blocked O
+lines O
+. O
+
+But O
+the O
+coastal O
+towns O
+got O
+off O
+lightly O
+as O
+the O
+flooding O
+that O
+had O
+been O
+expected O
+due O
+to O
+a O
+combination O
+of O
+spring O
+tides O
+and O
+high O
+winds O
+failed O
+to O
+materialise O
+. O
+
+MADRID B-LOC
+1996-08-29 O
+
+The O
+girl O
+was O
+taken O
+to O
+hospital O
+. O
+
+INGOLSTADT B-LOC
+1996-08-29 O
+
+HELSINKI B-LOC
+1996-08-29 O
+
+LONDON B-LOC
+1996-08-29 O
+
+" O
+We O
+'ve O
+always O
+taken O
+the O
+view O
+that O
+we O
+are O
+the O
+sort O
+of O
+company O
+that O
+'s O
+quite O
+capable O
+of O
+working O
+in O
+difficult O
+circumstances O
+-- O
+we O
+'re O
+rather O
+used O
+to O
+it O
+. O
+
+WELLINGTON B-LOC
+1996-08-29 O
+
+None O
+of O
+our O
+basic O
+precepts O
+have O
+been O
+challenged O
+. O
+" O
+
+The O
+government O
+would O
+put O
+land O
+on O
+the O
+market O
+to O
+stop O
+rentals O
+" O
+going O
+through O
+the O
+roof O
+" O
+, O
+but O
+this O
+would O
+mean O
+reclamation O
+, O
+with O
+possible O
+environmental O
+problems O
+. O
+
+TAIPEI B-LOC
+1996-08-29 O
+
+-- O
+Doreen B-PER
+Siow I-PER
+65-8703092 O
+
+TYPE O
+straight O
+bond O
+ISSUE O
+NO O
+13 O
+AMT O
+10 O
+bln O
+yen O
+
+Sep.96 O
+
+Mar.97 O
+INT O
+PAY O
+5 O
+. O
+
+Mar O
+/ O
+Sep O
+
+SEOUL B-LOC
+1996-08-29 O
+
+Year O
+to O
+March O
+31 O
+, O
+1997 O
+
+LATEST O
+ACTUAL O
+
+Ord O
+div O
+10.00 O
+yen O
+8.00 O
+yen O
+
+- O
+Commem O
+div O
+- O
+2.00 O
+yen O
+
+No O
+one O
+was O
+injures O
+, O
+he O
+said O
+. O
+
+Six O
+months O
+to O
+September O
+30 O
+, O
+1996 O
+
+( O
+in O
+billions O
+of O
+yen O
+unless O
+specified O
+) O
+
+LATEST O
+PREVIOUS O
+ACTUAL O
+
+Current O
+1.09 O
+1.09 O
+918 O
+million O
+
+Net O
+934 O
+million O
+490 O
+million O
+538 O
+million O
+
+The O
+judicial O
+review O
+sought O
+by O
+directorate-grade O
+bureaucrats O
+will O
+apply O
+to O
+only O
+about O
+1,000 O
+of O
+the O
+approximately O
+33,000 O
+civil O
+servants O
+affected O
+. O
+
+SINGAPORE B-LOC
+1996-08-29 O
+
+But O
+nothing O
+has O
+been O
+decided O
+as O
+they O
+are O
+still O
+waiting O
+for O
+an O
+X-ray O
+machine O
+to O
+determine O
+the O
+problem O
+. O
+" O
+
+( O
+in O
+millions O
+of O
+baht O
+unless O
+stated O
+) O
+
+Six O
+months O
+
+1996 O
+1995 O
+
+NOTES O
+: O
+Second O
+quarter O
+figures O
+not O
+available O
+. O
+
+INDICATORS O
+- O
+monthly O
+MTH O
+/ O
+MTH O
+PVS O
+YR-AGO O
+INDEX O
+TOTAL O
+
+Core O
+Inflation O
++0.1 O
++0,2 O
++0,2 O
+- O
+- O
+
+BALANCE O
+OF O
+PAYMENTS O
+
+RESERVES O
+( O
+$ O
+MLN O
+) O
+Jul O
++1,161 O
++400.9 O
++310.4 O
+- O
+54,703.0 O
+
+Yr O
+/ O
+yr O
+rise O
+( O
+% O
+) O
++1.2 O
++1.5 O
++7.1 O
+119.6 O
+- O
+
+( O
+trln O
+pts O
+) O
+- O
+- O
+- O
+- O
+75.912 O
+
+Deficit O
+/ O
+surplus O
+May O
+- O
+215.0 O
+- O
+269.3 O
+- O
+248.3 O
+- O
+- O
+
+Deficit O
+yr O
+to O
+date O
+- O
+1,334.0 O
+- O
+1,119.0 O
+- O
+1,420.9 O
+- O
+- O
+
+Deficit O
+/ O
+surplus O
+Jul O
++282.1 O
+- O
+380.6 O
++230.4 O
+- O
+
+Def O
+. O
+
+/ O
+surplus O
+to O
+date O
+- O
+1,184.0 O
+- O
+1,466.1 O
+- O
+1,456.7 O
+- O
+2.6 O
+trln O
+
+EPA O
+Q2 O
++168,130 O
++31,230 O
++167,330 O
+12.3 O
+million O
+
+GDP O
+
+Absolute O
+amount O
+( O
+trln O
+pts O
+) O
+18.1 O
+17.8 O
+16.9 O
+- O
+69.7 O
+
+Jobless O
+figures O
+are O
+registered O
+unemployed O
+at O
+labour O
+ministry O
+. O
+
+Trade O
+data O
+are O
+customs-cleared O
+, O
+published O
+by O
+economy O
+ministry O
+. O
+
+Latest O
+M4 O
+, O
+currency O
+reserves O
+, O
+industrial O
+production O
+data O
+are O
+provisional O
+. O
+
+GDP O
+figures O
+are O
+quarterly O
+on O
+annualised O
+basis O
+. O
+
+Data O
+give O
+variation O
+in O
+employed O
+persons O
+, O
+in O
+thousands O
+. O
+
+Government O
+budget O
+figures O
+relate O
+to O
+central O
+government O
+finances O
+only O
+. O
+
+Headlines O
+from O
+major O
+national O
+newspapers O
+. O
+
+EL B-ORG
+MUNDO I-ORG
+
+- O
+Government O
+wants O
+to O
+charge O
+for O
+prescriptions O
+and O
+some O
+medical O
+services O
+
+DIARIO B-ORG
+16 I-ORG
+
+GACETA B-ORG
+DE I-ORG
+LOS I-ORG
+NEGOCIOS I-ORG
+
+VIENNA B-LOC
+1996-08-29 O
+
+PARIS B-LOC
+1996-08-28 O
+
+* O
+
+NEW B-LOC
+YORK I-LOC
+
+Currently O
+, O
+the O
+dollar O
+stands O
+at O
+about O
+1.48 O
+marks O
+and O
+109 O
+yen O
+. O
+
+Inc B-ORG
+. O
+
+" O
+If O
+he O
+left O
+, O
+the O
+first O
+question O
+people O
+would O
+ask O
+the O
+next O
+guy O
+is O
+, O
+' O
+What O
+'s O
+your O
+view O
+on O
+the O
+dollar O
+? O
+' O
+
+AMSTETTEN B-LOC
+, O
+Austria B-LOC
+1996-08-30 O
+
+BARRY B-LOC
+, O
+Wales B-LOC
+1996-08-30 O
+
+The O
+other O
+final O
+of O
+the O
+night O
+, O
+the O
+women O
+'s O
+24-kms O
+points O
+race O
+, O
+also O
+ended O
+in O
+success O
+for O
+the O
+reigning O
+champion O
+. O
+
+CYCLING O
+- O
+WORLD O
+TRACK O
+CHAMPIONSHIP O
+RESULTS O
+. O
+
+Results O
+at O
+the O
+world O
+track O
+cycling O
+championships O
+on O
+Friday O
+: O
+
+One O
+lap O
+behind O
+: O
+
+ABDERDEEN B-LOC
+, O
+Scotland B-LOC
+1996-08-30 O
+
+He O
+has O
+a O
+great O
+deal O
+of O
+experience O
+and O
+I O
+'m O
+sure O
+he O
+will O
+quickly O
+establish O
+himself O
+in O
+both O
+the O
+team O
+and O
+the O
+affection O
+of O
+our O
+fans O
+. O
+" O
+
+Practice O
+times O
+set O
+on O
+Friday O
+
+NORTHAMPTON B-LOC
+, O
+England B-LOC
+1996-08-30 O
+
+Leading O
+scores O
+after O
+
+LONDON B-LOC
+1996-08-30 O
+
+on O
+Friday O
+: O
+
+Plymouth B-ORG
+2 O
+Preston B-ORG
+1 O
+

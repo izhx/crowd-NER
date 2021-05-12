@@ -1,3 +1,9 @@
 [submodule "nmnlp"]
 	path = nmnlp
 	url = https://github.com/izhx/nmnlp.git
+[submodule "PICO-data"]
+	path = PICO-data
+	url = https://github.com/yinfeiy/PICO-data.git
+[submodule "AURC"]
+	path = AURC
+	url = https://github.com/trtm/AURC.git

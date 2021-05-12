@@ -22,7 +22,7 @@ _ARG_PARSER.add_argument('--worker_dim', type=int, default=None)
 _ARG_PARSER.add_argument('--pgn_layers', type=int, default=None)
 _ARG_PARSER.add_argument('--share_param', type=bool, default=None)
 _ARG_PARSER.add_argument('--extra_gold', type=float, default=None)
-_ARG_PARSER.add_argument('--exclude_bad', type=bool, default=True)
+_ARG_PARSER.add_argument('--exclude', type=str, default='none')
 _ARG_PARSER.add_argument('--start', type=int, default=None)
 _ARG_PARSER.add_argument('--lr', type=float, default=None)
 
@@ -40,14 +40,14 @@ if _ARGS:
 
     import nmnlp
     from nmnlp.common.config import load_yaml
-    from nmnlp.common.util import output, cache_path, load_cache, dump_cache
+    from nmnlp.common.util import output  # , cache_path, load_cache, dump_cache
     from nmnlp.common.writer import Writer
     from nmnlp.core import Trainer, Vocabulary
     from nmnlp.core.optim import build_optimizer
 
     from util import allowed_transition
     from models import build_model
-    from datasets import CoNLL03Crowd, BAD_AID
+    from datasets import CoNLL03Crowd, EXC_AID
 else:
     raise Exception('Argument error.')
 
@@ -134,8 +134,13 @@ def run_once(cfg, dataset, vocab, device, writer=None, seed=123):
 
 
 def main(seed):
-    cfg = argparse.Namespace(**load_yaml(f"./dev/config/{_ARGS.yaml}.yml"))
-
+    yaml_path = f"./dev/config/{_ARGS.yaml}.yml"
+    cfg = argparse.Namespace(**load_yaml(yaml_path))
+    print(f'  Load from <{yaml_path}>')
+    if _ARGS.exclude == 'middle':
+        cfg.data['data_dir'] = 'data/one-third/'
+    elif _ARGS.exclude == 'small':
+        cfg.data['data_dir'] = 'data/small/'
     device = torch.device("cuda:0")
     data_kwargs, vocab_kwargs = dict(cfg.data), dict(cfg.vocab)
     use_bert = 'bert' in cfg.model['word_embedding']['name_or_path']
@@ -159,26 +164,27 @@ def main(seed):
         cache_name += f"-g{_ARGS.extra_gold}"
         prefix += f"-g{_ARGS.extra_gold}"
         cfg.data['extra_gold'] = _ARGS.extra_gold
-    if _ARGS.exclude_bad:
-        cache_name += "-exclude_bad"
-        prefix += "-exclude_bad"
-        cfg.data['exclude_bad'] = _ARGS.exclude_bad
-        cfg.model['bad_ids'] = [0] + list(BAD_AID)
+    if _ARGS.exclude != 'none':
+        ex_name = f"-exclude_{_ARGS.exclude}"
+        cache_name += ex_name
+        prefix += ex_name
+        cfg.data['exclude'] = _ARGS.exclude
+        cfg.model['bad_ids'] = set([0] + list(EXC_AID[_ARGS.exclude]))
 
-    if not os.path.exists(cache_path(cache_name)):
-        dataset = argparse.Namespace(
-            **CoNLL03Crowd.build(**cfg.data, tokenizer=tokenizer))
-        vocab = Vocabulary.from_data(dataset, **vocab_kwargs)
-        vocab.set_field(['O', 'B-LOC', 'I-LOC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC'], 'tags')
+    # if not os.path.exists(cache_path(cache_name)):
+    dataset = argparse.Namespace(
+        **CoNLL03Crowd.build(**cfg.data, tokenizer=tokenizer, seed=seed))
+    vocab = Vocabulary.from_data(dataset, **vocab_kwargs)
+    vocab.set_field(['O', 'B-LOC', 'I-LOC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC'], 'tags')
 
-        if use_bert:
-            # 若用BERT，则把words词表替换为BERT的
-            vocab.token_to_index['words'] = tokenizer.vocab
-            vocab.index_to_token['words'] = tokenizer.ids_to_tokens
-        if _ARGS.cache:
-            dump_cache((dataset, vocab), cache_name)
-    else:
-        dataset, vocab = load_cache(cache_name)
+    if use_bert:
+        # 若用BERT，则把words词表替换为BERT的
+        vocab.token_to_index['words'] = tokenizer.vocab
+        vocab.index_to_token['words'] = tokenizer.ids_to_tokens
+    #     if _ARGS.cache:
+    #         dump_cache((dataset, vocab), cache_name)
+    # else:
+    #     dataset, vocab = load_cache(cache_name)
 
     dataset.train.index_with(vocab)
     dataset.dev.index_with(vocab)

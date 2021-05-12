@@ -110,8 +110,123 @@ def bio_to_span(seq: List[str]):
     return spans
 
 
+def filter(lines, tags=2, length=8) -> bool:
+    if len(lines) < length:
+        return False
+    if sum(1 if 'B-' in i[1] else 0 for i in lines) < tags:
+        return False
+    return True
+
+
+def multi(data, name, total):
+    good = set(i for i, lines in enumerate(data) if filter(lines, 3))
+    print('good: ', len(good))
+    p1 = set(random.sample(good, int(total * 0.01)))
+    p1d = [d for i, d in enumerate(data) if i in p1]
+    print('prop: 0.01, num: ', len(p1d))
+    write_lines(p1d, f"{name}-0.01.txt")
+    left = good.difference(p1)
+    print('1 left: ', len(left))
+    p4 = set(random.sample(left, int(total * 0.04)))
+    p5d = p1d + [d for i, d in enumerate(data) if i in p4]
+    print('prop: 0.05, num: ', len(p5d))
+    write_lines(p5d, f"{name}-0.05.txt")
+    left = left.difference(p4)
+    print('5 left: ', len(left))
+
+    need = total // 5 - len(left)
+    if need > 0:
+        print('need: ', need)
+        two = set(i for i, lines in enumerate(data) if filter(lines, 1, 5))
+        two = two.difference(good)
+        if len(two) < need:
+            raise Exception('bugou')
+        p20 = left.union(set(random.sample(two, need)))
+        left = two.difference(p20)
+        two = two.difference(p20)
+    else:
+        p20 = set(random.sample(left, total // 5))
+        left = left.difference(p20)
+        print('25 left: ', len(left))
+    p25d = p5d + [d for i, d in enumerate(data) if i in p20]
+    print('prop: 0.25, num: ', len(p25d))
+    write_lines(p25d, f"{name}-0.25.txt")
+    if 'gold' in name:
+        print('prop: 1.0, num: ', len(data), '  gold')
+        p100d = data
+    else:
+        need = total - len(p25d) - len(left)
+        if need < 0:
+            p100 = set(random.sample(left, len(p25d) * 3))
+            # left = left.difference(p25)
+        elif 'two' in locals():
+            one = set(i for i, lines in enumerate(data) if filter(lines, 1, 2))
+            one = one.difference(two).difference(good)
+            print('one: ', len(one))
+            ids = set(i for i, lines in enumerate(data) if filter(lines, 0, 4))
+            ids = ids.difference(one).difference(two).difference(good)
+            print('need: ', need, ', ids: ', len(ids))
+            p100 = left.union(set(random.sample(ids, need))).union(one)
+        else:
+            two = set(i for i, lines in enumerate(data) if filter(lines, 1, 5))
+            two = two.difference(good).difference(left).difference(p20)
+            p100 = set(random.sample(two, need)).union(left)
+
+        p100d = p25d + [d for i, d in enumerate(data) if i in p100]
+        print('prop: 1.0, num: ', len(p100d))
+    write_lines(p100d, f"{name}-1.0.txt")
+    return
+
+
+def select_bad(data, name):
+    bad = set(i for i, lines in enumerate(data) if not filter(lines, 1, 5))
+    print('bad: ', len(bad))
+    p1 = set(random.sample(bad, 60))
+    p1d = [d for i, d in enumerate(data) if i in p1]
+    print('prop: 0.01, num: ', len(p1d))
+    write_lines(p1d, f"{name}-0.01.txt")
+    left = bad.difference(p1)
+    print('1 left: ', len(left))
+    p5 = set(random.sample(left, 240))
+    p5d = p1d + [d for i, d in enumerate(data) if i in p5]
+    print('prop: 0.05, num: ', len(p5d))
+    write_lines(p5d, f"{name}-0.05.txt")
+    left = left.difference(p5)
+    print('5 left: ', len(left))
+
+    two = set(i for i, lines in enumerate(data) if not filter(lines, 1, 8))
+    two = two.difference(bad)
+    need = 1197 - len(left)
+    if need > 0:
+        print('need: ', need)
+        p25 = left.union(set(random.sample(two, need)))
+    else:
+        p25 = set(random.sample(left, 1197))
+        left = left.difference(p25)
+        print('25 left: ', len(left))
+    p25d = p5d + [d for i, d in enumerate(data) if i in p25]
+    print('prop: 0.25, num: ', len(p25d))
+    write_lines(p25d, f"{name}-0.25.txt")
+    if 'gold' in name:
+        print('prop: 1.0, num: ', len(data))
+        p100d = data
+    else:
+        one = set(i for i, lines in enumerate(data) if not filter(lines, 2, 8))
+        one = one.difference(two).difference(bad)
+        print('one: ', len(one))
+        ids = set(i for i, lines in enumerate(data) if not filter(lines, 3, 22))
+        ids = ids.difference(one).difference(two).difference(bad)
+        need = 5985 - len(p25d) - len(left) - len(one)
+        print('need: ', need, ', ids: ', len(ids))
+        p100 = left.union(set(random.sample(ids, need))).union(one)
+        p100d = p25d + [d for i, d in enumerate(data) if i in p100]
+        print('prop: 1.0, num: ', len(p100d))
+    write_lines(p100d, f"{name}-1.0.txt")
+    return
+
+
 def sample_data():
-    DIR = 'dev/data/conll03-crowd/'
+    DIR = 'data/small/'
     # crowd = list(read_lines(DIR + 'answers.txt'))
     # train, test = list(), list()
     # for line in crowd:
@@ -138,73 +253,22 @@ def sample_data():
     #         distant.add(i)
     # conll_rest = [c for i, c in enumerate(conll) if i in distant]
 
-    def filter(lines, tags=2, length=8) -> bool:
-        if len(lines) < length:
-            return False
-        if sum(1 if 'B-' in i[1] else 0 for i in lines) < tags:
-            return False
-        return True
-
     with open('dev/data/rest.pkl', mode='rb') as f:
         conll_rest = pickle.load(f)
 
-    def multi(data, name):
-        good = set(i for i, lines in enumerate(data) if filter(lines, 3))
-        print('good: ', len(good))
-        p1 = set(random.sample(good, 60))
-        p1d = [d for i, d in enumerate(data) if i in p1]
-        print('prop: 0.01, num: ', len(p1d))
-        write_lines(p1d, f"{DIR}{name}-0.01.txt")
-        left = good.difference(p1)
-        print('1 left: ', len(left))
-        p5 = set(random.sample(left, 240))
-        p5d = p1d + [d for i, d in enumerate(data) if i in p5]
-        print('prop: 0.05, num: ', len(p5d))
-        write_lines(p5d, f"{DIR}{name}-0.05.txt")
-        left = left.difference(p5)
-        print('5 left: ', len(left))
-
-        two = set(i for i, lines in enumerate(data) if filter(lines, 2))
-        two = two.difference(good)
-        need = 1197 - len(left)
-        if need > 0:
-            print('need: ', need)
-            p25 = left.union(set(random.sample(two, need)))
-        else:
-            p25 = set(random.sample(left, 1197))
-            left = left.difference(p25)
-            print('25 left: ', len(left))
-        p25d = p5d + [d for i, d in enumerate(data) if i in p25]
-        print('prop: 0.25, num: ', len(p25d))
-        write_lines(p25d, f"{DIR}{name}-0.25.txt")
-        if name == 'gold':
-            print('prop: 1.0, num: ', len(data))
-            p100d = data
-        else:
-            one = set(i for i, lines in enumerate(data) if filter(lines, 1, 2))
-            one = one.difference(two).difference(good)
-            print('one: ', len(one))
-            ids = set(i for i, lines in enumerate(data) if filter(lines, 0, 4))
-            ids = ids.difference(one).difference(two).difference(good)
-            need = 5985 - len(p25d) - len(left) - len(one)
-            print('need: ', need, ', ids: ', len(ids))
-            p100 = left.union(set(random.sample(ids, need))).union(one)
-            p100d = p25d + [d for i, d in enumerate(data) if i in p100]
-            print('prop: 1.0, num: ', len(p100d))
-        write_lines(p100d, f"{DIR}{name}-1.0.txt")
-        return
-
-    multi(gold, 'gold')
+    multi(gold, DIR + 'gold-123', len(gold))
     print('\n')
-    multi(conll_rest, 'rest')
+    multi(conll_rest, DIR + 'rest-123', len(gold))
 
-    # for p in (0.01, 0.05, 0.25, 1.0):  60, 300, 1497, 5985
-    #     num = int(ALL * p + 1)
-    #     print('prop: ', p, ', num: ', num)
-    #     sampled = random.sample(conll_rest, num)
-    #     write_lines(sampled, f"{DIR}rest-{p}.txt")
-    #     sampled = random.sample(gold, num)
-    #     write_lines(sampled, f"{DIR}gold-{p}.txt")
+    # select_bad(gold, 'data/gold_bad-123')
+    # print('\n')
+    # select_bad(conll_rest, 'data/rest_bad-123')
+
+    # 只选很少用户 比如 6,34,41, 17,42, 37,38
+    # 然后是中等，25个左右
+
+    # 这个选的时候要两阶段，先选user，然后排除一些标得人少的句子？
+
     return
 
 
@@ -297,7 +361,7 @@ def scores_by_worker():
 
 
 def main():
-    # sample_data()
+    sample_data()
     data = list()
     for p in (
         'dev/out/cc-gt/test.txt',
@@ -335,4 +399,5 @@ def main():
 
 
 if __name__ == "__main__":
+    random.seed(123)
     main()

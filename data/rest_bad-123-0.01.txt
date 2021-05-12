@@ -1,0 +1,601 @@
+It O
+was O
+mostly O
+short O
+points O
+. O
+" O
+
+Stabaek B-ORG
+4 O
+Stromsgodset B-ORG
+0 O
+
+BRATISLAVA B-LOC
+1996-08-26 O
+
+She O
+played O
+one O
+great O
+game O
+and O
+than O
+a O
+few O
+errors O
+. O
+
+The O
+challenge O
+was O
+just O
+for O
+me O
+to O
+keep O
+playing O
+my O
+own O
+game O
+. O
+" O
+
+CENTRAL B-MISC
+DIVISION I-MISC
+
+Standings O
+( O
+tabulated O
+under O
+played O
+, O
+won O
+, O
+drawn O
+, O
+lost O
+, O
+goals O
+
+Of O
+that O
+amount O
+, O
+4.05 O
+million O
+and O
+5.67 O
+million O
+shares O
+will O
+be O
+allocated O
+to O
+the O
+company O
+'s O
+trade O
+creditors O
+. O
+
+The O
+price O
+will O
+be O
+determined O
+through O
+book-building O
+. O
+
+LARNACA B-LOC
+, O
+Cyprus B-LOC
+1996-08-27 O
+
+No1 O
+Bare O
+Bright O
+91 O
+to O
+92 O
+cents O
+/ O
+pound O
+
+Lead O
+batteries O
+, O
+delivered O
+consumer O
+4.5 O
+to O
+6.0 O
+cents O
+/ O
+pound O
+
+( O
+D O
+) O
+
+CHILLICOTHE B-LOC
+, O
+Ohio B-LOC
+1996-08-25 O
+
+PARIS B-LOC
+1996-08-26 O
+
+But O
+there O
+was O
+no O
+repeat O
+of O
+the O
+ugly O
+scenes O
+that O
+used O
+to O
+scar O
+the O
+street O
+festival O
+, O
+and O
+police O
+praised O
+the O
+crowds O
+over O
+the O
+two O
+days O
+of O
+festivities O
+as O
+good-natured O
+. O
+
+Shopkeepers O
+still O
+board O
+up O
+their O
+windows O
+and O
+many O
+residents O
+leave O
+town O
+for O
+the O
+weekend O
+, O
+but O
+for O
+four O
+or O
+five O
+years O
+there O
+has O
+been O
+no O
+disorder O
+and O
+relatively O
+little O
+crime O
+. O
+
+played O
+on O
+Tuesday O
+: O
+
+10. O
+Teutenberg B-PER
+0:10 O
+
+He O
+'s O
+certainly O
+is O
+still O
+very O
+much O
+part O
+of O
+my O
+plans O
+for O
+the O
+future O
+. O
+
+TALLINN B-LOC
+1996-08-27 O
+
+In O
+the O
+latest O
+attack O
+, O
+the O
+killer O
+raped O
+and O
+stabbed O
+a O
+young O
+woman O
+in O
+a O
+lift O
+, O
+leaving O
+her O
+body O
+on O
+a O
+landing O
+. O
+
+The O
+total O
+number O
+of O
+victims O
+was O
+still O
+unknown O
+. O
+
+It O
+also O
+offers O
+to O
+refinance O
+up O
+to O
+50 O
+percent O
+of O
+the O
+debt O
+held O
+by O
+state O
+banks O
+whose O
+governments O
+decide O
+to O
+keep O
+control O
+of O
+their O
+banks O
+. O
+
+He O
+will O
+leave O
+on O
+Thursday O
+. O
+
+Rep B-MISC
+. O
+
+NORTH B-LOC
+DAKOTA I-LOC
+
+-- O
+Chicago B-LOC
+newsdesk O
+312-408-8720-- O
+
+LANKADEEPA B-ORG
+
+" O
+This O
+is O
+not O
+desireable O
+... O
+
+The O
+so-called O
+order O
+handling O
+rules O
+, O
+which O
+were O
+proposed O
+last O
+September O
+, O
+were O
+approved O
+in O
+a O
+4-0 O
+vote O
+. O
+
+Men O
+'s O
+400 O
+metres O
+: O
+
+Some O
+say O
+that O
+'s O
+too O
+old O
+for O
+an O
+athlete O
+, O
+" O
+he O
+said O
+. O
+
+15-7 O
+15-6 O
+
+Results O
+of O
+Major B-MISC
+League I-MISC
+
+Attendance O
+27,600 O
+. O
+
+Attendance O
+9,000 O
+. O
+
+0-0 O
+. O
+
+Pay O
+Sept O
+30 O
+
+I O
+said O
+you O
+should O
+n't O
+smoke O
+either O
+. O
+
+He O
+said O
+the O
+market O
+began O
+strong O
+, O
+gave O
+up O
+some O
+gains O
+at O
+midday O
+and O
+then O
+was O
+able O
+to O
+recover O
+back O
+at O
+the O
+close O
+, O
+but O
+all O
+on O
+light O
+volume O
+. O
+
+Rating O
+: O
+Aa2 O
+/ O
+VMIG O
+1 O
+
+ROME B-LOC
+1996-08-28 O
+
+First O
+half O
+1996 O
+
+Turnover O
+119.49 O
+vs O
+134.40 O
+
+She O
+gave O
+no O
+further O
+details O
+. O
+
+BRUSSELS B-LOC
+1996-08-28 O
+
+Extras O
+( O
+b-2 O
+lb-4 O
+w-7 O
+) O
+13 O
+
+W O
+L O
+PCT O
+GB O
+
+W O
+L O
+PCT O
+GB O
+
+Baseball O
+games O
+played O
+on O
+Wednesday O
+( O
+home O
+team O
+in O
+CAPS O
+) O
+: O
+
+" O
+The O
+request O
+I O
+have O
+received O
+is O
+for O
+their O
+officials O
+to O
+come O
+and O
+talk O
+to O
+my O
+officials O
+. O
+
+I O
+expect O
+to O
+have O
+a O
+great O
+deal O
+of O
+up O
+and O
+down O
+days O
+between O
+now O
+and O
+then O
+, O
+" O
+she O
+said O
+of O
+the O
+November O
+5 O
+election O
+date O
+. O
+
+Muscular O
+dystrophy O
+is O
+a O
+fatal O
+illness O
+in O
+which O
+the O
+body O
+'s O
+muscle O
+tissue O
+degenerates O
+and O
+is O
+replaced O
+by O
+fat O
+. O
+
+SEATTLE B-LOC
+1996-08-29 O
+
+17,024,000 O
+18,174,000 O
+31,834,000 O
+24,137,000 O
+
+" O
+There O
+will O
+be O
+fluctuations O
+in O
+individual O
+years O
+, O
+but O
+it O
+wo O
+n't O
+be O
+a O
+big O
+margin O
+, O
+" O
+he O
+said O
+. O
+
+Both O
+state O
+agency O
+bonds O
+will O
+have O
+seven-year O
+maturity O
+and O
+will O
+be O
+issued O
+on O
+September O
+5 O
+, O
+he O
+said O
+. O
+
+Jul-18.Jul O
+
+Ride O
+for O
+third O
+place O
+: O
+
